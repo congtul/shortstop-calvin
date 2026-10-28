@@ -1,0 +1,3 @@
+[submodule "mdt_policy"]
+	path = mdt_policy
+	url = https://github.com/intuitive-robots/mdt_policy.git

@@ -1,0 +1,18 @@
+family sizes {'push': 222, 'rotate': 223, 'lift': 222, 'drawer': 185, 'switch': 148}
+(a) Unshielded: push 45.9, rotate 56.5, lift 62.2, drawer 68.1, switch 62.2
+(a) STL-Monitor: push 44.1, rotate 52.0, lift 58.1, drawer 16.2, switch 16.9
+(a) MPC-Filter: push 61.7, rotate 74.9, lift 79.7, drawer 89.7, switch 93.2
+(a) CBF: push 62.6, rotate 78.5, lift 80.2, drawer 90.8, switch 96.6
+(a) ShortStop: push 65.3, rotate 74.4, lift 81.1, drawer 91.4, switch 94.6
+(b) Unshielded: p5 -4.5 median 5.4 mm, share below 10 mm 55.8%
+(b) STL-Monitor: p5 10.0 median 27.0 mm, share below 10 mm 5.0%
+(b) MPC-Filter: p5 18.0 median 24.9 mm, share below 10 mm 1.5%
+(b) CBF: p5 14.7 median 20.8 mm, share below 10 mm 1.3%
+(b) ShortStop: p5 17.9 median 24.8 mm, share below 10 mm 1.6%
+(c) Unshielded: n 557 median 66 p90 95 mean 70.2
+(c) MPC-Filter: n 557 median 66 p90 97 mean 72.2
+(c) CBF: n 557 median 66 p90 97 mean 72.6
+(c) ShortStop: n 557 median 66 p90 101 mean 72.6
+(c) ShortStop minus Unshielded steps: median 0, slower 258, equal 74, faster 225
+(c) beyond +-40 steps: 18 scenes
+(c) |difference| <= 10 steps: 89.6% of scenes

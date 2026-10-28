@@ -1,0 +1,84 @@
+diff --git a/.gitmodules b/.gitmodules
+index 085fb83..bfca072 100644
+--- a/.gitmodules
++++ b/.gitmodules
+@@ -1,3 +1,3 @@
+ [submodule "calvin_env"]
+ 	path = calvin_env
+-	url = git@github.com:mees/calvin_env.git
++	url = https://github.com/mees/calvin_env.git
+diff --git a/conf/mdt_evaluate.yaml b/conf/mdt_evaluate.yaml
+index c0564e4..ae46a3a 100644
+--- a/conf/mdt_evaluate.yaml
++++ b/conf/mdt_evaluate.yaml
+@@ -8,19 +8,19 @@ eval_cfg_overwrite:
+       lang_dataset:
+         lang_folder: lang_annotations
+   overwrite_module_cfg:
+-    voltron_cache: /home/i53/student/yagmurlu/code/mdt_policy/vcache
++    voltron_cache: ${oc.env:SHORTSTOP_ROOT}/mdt_policy/vcache
+ 
+ ep_len: 360
+-num_sequences: 1000
+-num_videos: 10
++num_sequences: 10
++num_videos: 1
+ lang_embeddings: null
+ render: False
+-log_wandb: True
++log_wandb: False
+ wandb:
+   entity: omeryagmurlu
+-debug: False
+-dataset_path: /home/i53/student/yagmurlu/code/mdt_policy/dataset/task_D_D
+-train_folder: /home/i53/student/yagmurlu/code/mdt_policy/pretrained_models/CALVIN ABCD/mdtv_1_abcd
++debug: True
++dataset_path: ${oc.env:SHORTSTOP_ROOT}/mdt_policy/dataset/calvin_debug_dataset
++train_folder: ${oc.env:SHORTSTOP_ROOT}/mdt_policy/pretrained_models/CALVIN_ABCD/mdtv_1_abcd
+ model_name: mdt_test
+ device: 0
+ sampler_type: ddim
+diff --git a/mdt/evaluation/mdt_evaluate.py b/mdt/evaluation/mdt_evaluate.py
+index 805370b..f4545cb 100644
+--- a/mdt/evaluation/mdt_evaluate.py
++++ b/mdt/evaluation/mdt_evaluate.py
+@@ -200,7 +200,7 @@ def rollout(env, model, task_oracle, cfg, subtask, lang_embeddings, val_annotati
+         obs, _, _, current_info = env.step(action)
+         if cfg.debug:
+             img = env.render(mode="rgb_array")
+-            join_vis_lang(img, lang_annotation)
++            # join_vis_lang(img, lang_annotation)  # disabled: headless WSL
+             # time.sleep(0.1)
+         if record:
+             # update video
+@@ -259,8 +259,11 @@ def main(cfg):
+             raise NotImplementedError("cfg_value != 1 not implemented yet")
+ 
+         model.eval()
++
++        log_dir = get_log_dir(cfg.train_folder)
++        run = None
++
+         if log_wandb:
+-            log_dir = get_log_dir(cfg.train_folder)
+             os.makedirs(log_dir / "wandb", exist_ok=False)
+             run = wandb.init(
+                 project='calvin_eval',
+@@ -270,7 +273,16 @@ def main(cfg):
+                 dir=log_dir / "wandb",
+             )
+ 
+-            results[checkpoint], plans[checkpoint] = evaluate_policy(model, env, lang_embeddings, cfg, num_videos=cfg.num_videos, save_dir=Path(log_dir))
++        results[checkpoint], plans[checkpoint] = evaluate_policy(
++            model,
++            env,
++            lang_embeddings,
++            cfg,
++            num_videos=cfg.num_videos,
++            save_dir=Path(log_dir) if log_dir else None,
++        )
++
++        if log_wandb:
+             print_and_save(results, plans, cfg, log_dir=log_dir)
+             run.finish()
+ 

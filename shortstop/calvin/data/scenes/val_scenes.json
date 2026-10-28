@@ -1,0 +1,7194 @@
+{
+ "version": 1,
+ "created": "2026-10-04T14:07:58",
+ "split": "val",
+ "pool": "val",
+ "settings": {
+  "total_scenes": 50,
+  "partition_seed": 0,
+  "val_fraction": 0.5,
+  "scene_seed": 1,
+  "policy_seed_base": 5000000,
+  "obstacle_radius": 0.05,
+  "max_obstacle_candidates": 60,
+  "max_state_retries": 5,
+  "planner_margin": 0.01,
+  "min_start_clearance": 0.05,
+  "hit_rate_range": [
+   0.05,
+   0.4
+  ],
+  "center_offset_max": 0.2,
+  "contact_tol": 0.03,
+  "down_cone_deg": 45.0,
+  "lift_extra": 0.02,
+  "base_position": [
+   -0.34,
+   -0.46,
+   0.24
+  ],
+  "frame": "robot_base_local"
+ },
+ "partition": {
+  "val_state_indices": [
+   0,
+   2,
+   4,
+   5,
+   7,
+   8,
+   10,
+   14,
+   16,
+   18,
+   19,
+   22,
+   24,
+   26,
+   27,
+   30,
+   33,
+   37,
+   40,
+   43,
+   44,
+   45,
+   46,
+   50,
+   51,
+   54,
+   55,
+   56,
+   59,
+   60,
+   61,
+   62,
+   63,
+   66,
+   71,
+   73,
+   74,
+   80,
+   83,
+   86,
+   89,
+   90,
+   92,
+   93,
+   94,
+   96,
+   97,
+   98,
+   101,
+   106,
+   107,
+   108,
+   109,
+   110,
+   111,
+   112,
+   113,
+   118,
+   122,
+   123,
+   124,
+   126,
+   130,
+   131,
+   134,
+   136,
+   137,
+   138,
+   139,
+   143,
+   145,
+   146,
+   152,
+   153,
+   154,
+   156,
+   157,
+   158,
+   160,
+   161,
+   163,
+   167,
+   170,
+   171,
+   175,
+   176,
+   177,
+   178,
+   180,
+   182,
+   184,
+   185,
+   187,
+   188,
+   189,
+   191
+  ],
+  "test_state_indices": [
+   1,
+   3,
+   6,
+   9,
+   11,
+   12,
+   13,
+   15,
+   17,
+   20,
+   21,
+   23,
+   25,
+   28,
+   29,
+   31,
+   32,
+   34,
+   35,
+   36,
+   38,
+   39,
+   41,
+   42,
+   47,
+   48,
+   49,
+   52,
+   53,
+   57,
+   58,
+   64,
+   65,
+   67,
+   68,
+   69,
+   70,
+   72,
+   75,
+   76,
+   77,
+   78,
+   79,
+   81,
+   82,
+   84,
+   85,
+   87,
+   88,
+   91,
+   95,
+   99,
+   100,
+   102,
+   103,
+   104,
+   105,
+   114,
+   115,
+   116,
+   117,
+   119,
+   120,
+   121,
+   125,
+   127,
+   128,
+   129,
+   132,
+   133,
+   135,
+   140,
+   141,
+   142,
+   144,
+   147,
+   148,
+   149,
+   150,
+   151,
+   155,
+   159,
+   162,
+   164,
+   165,
+   166,
+   168,
+   169,
+   172,
+   173,
+   174,
+   179,
+   181,
+   183,
+   186,
+   190
+  ]
+ },
+ "excluded_tasks": [],
+ "door_contact_offsets": {
+  "close_drawer": {
+   "offset_from_box_min": [
+    0.21060245816298828,
+    0.07253907375020062,
+    0.04431514017844236
+   ],
+   "std": [
+    0.0029544877345418687,
+    0.003622510957307626,
+    0.004295963130574291
+   ],
+   "n_successful": 50,
+   "q_end": 0.1
+  },
+  "move_slider_left": {
+   "offset_from_box_min": [
+    0.14031236856865978,
+    0.05299534144098162,
+    0.09224401450054102
+   ],
+   "std": [
+    0.0038441895461533543,
+    0.0022037005992898047,
+    0.003481693560054389
+   ],
+   "n_successful": 50,
+   "q_end": 0.15
+  },
+  "move_slider_right": {
+   "offset_from_box_min": [
+    0.14078216278559907,
+    0.04731322628571504,
+    0.09368374959835427
+   ],
+   "std": [
+    0.00643141406953688,
+    0.003062167575815894,
+    0.0027564162593620985
+   ],
+   "n_successful": 80,
+   "q_end": 0.13000000000000003
+  },
+  "open_drawer": {
+   "offset_from_box_min": [
+    0.23678175496080925,
+    0.03818138435062876,
+    0.04649470521080775
+   ],
+   "std": [
+    0.0039983064620300384,
+    0.0020220029958315563,
+    0.0038529320068483057
+   ],
+   "n_successful": 50,
+   "q_end": 0.12
+  }
+ },
+ "workspace": {
+  "close_drawer": {
+   "n_rollouts": 50,
+   "n_success": 50
+  },
+  "lift_blue_block_slider": {
+   "n_rollouts": 80,
+   "n_success": 80
+  },
+  "lift_blue_block_table": {
+   "n_rollouts": 50,
+   "n_success": 50
+  },
+  "lift_pink_block_slider": {
+   "n_rollouts": 50,
+   "n_success": 49
+  },
+  "lift_pink_block_table": {
+   "n_rollouts": 80,
+   "n_success": 80
+  },
+  "lift_red_block_slider": {
+   "n_rollouts": 50,
+   "n_success": 49
+  },
+  "lift_red_block_table": {
+   "n_rollouts": 80,
+   "n_success": 79
+  },
+  "move_slider_left": {
+   "n_rollouts": 50,
+   "n_success": 50
+  },
+  "move_slider_right": {
+   "n_rollouts": 80,
+   "n_success": 80
+  },
+  "open_drawer": {
+   "n_rollouts": 50,
+   "n_success": 50
+  },
+  "push_blue_block_left": {
+   "n_rollouts": 80,
+   "n_success": 59
+  },
+  "push_blue_block_right": {
+   "n_rollouts": 50,
+   "n_success": 48
+  },
+  "push_into_drawer": {
+   "n_rollouts": 50,
+   "n_success": 50
+  },
+  "push_pink_block_left": {
+   "n_rollouts": 50,
+   "n_success": 37
+  },
+  "push_pink_block_right": {
+   "n_rollouts": 80,
+   "n_success": 66
+  },
+  "push_red_block_left": {
+   "n_rollouts": 80,
+   "n_success": 66
+  },
+  "push_red_block_right": {
+   "n_rollouts": 80,
+   "n_success": 58
+  },
+  "rotate_blue_block_left": {
+   "n_rollouts": 50,
+   "n_success": 50
+  },
+  "rotate_blue_block_right": {
+   "n_rollouts": 50,
+   "n_success": 49
+  },
+  "rotate_pink_block_left": {
+   "n_rollouts": 80,
+   "n_success": 80
+  },
+  "rotate_pink_block_right": {
+   "n_rollouts": 50,
+   "n_success": 47
+  },
+  "rotate_red_block_left": {
+   "n_rollouts": 50,
+   "n_success": 50
+  },
+  "rotate_red_block_right": {
+   "n_rollouts": 80,
+   "n_success": 77
+  },
+  "turn_off_led": {
+   "n_rollouts": 50,
+   "n_success": 50
+  },
+  "turn_off_lightbulb": {
+   "n_rollouts": 50,
+   "n_success": 50
+  },
+  "turn_on_led": {
+   "n_rollouts": 50,
+   "n_success": 50
+  },
+  "turn_on_lightbulb": {
+   "n_rollouts": 80,
+   "n_success": 80
+  }
+ },
+ "failures": [],
+ "scenes": [
+  {
+   "scene_id": "val_0000",
+   "split": "val",
+   "task_name": "rotate_blue_block_left",
+   "initial_state_index": 187,
+   "initial_state": {
+    "led": 1,
+    "lightbulb": 1,
+    "slider": "left",
+    "drawer": "open",
+    "red_block": "slider_right",
+    "blue_block": "table",
+    "pink_block": "slider_left",
+    "grasped": 0
+   },
+   "robot_obs": [
+    0.02586889,
+    -0.2313129,
+    0.5712808,
+    3.09045411,
+    -0.02908596,
+    1.50013585,
+    0.07999963,
+    -1.21779124,
+    1.03987629,
+    2.11978254,
+    -2.34205014,
+    -0.87015899,
+    1.64119093,
+    0.55344928,
+    1.0
+   ],
+   "scene_obs": [
+    0.28,
+    0.22,
+    0.0,
+    0.088,
+    1.0,
+    1.0,
+    0.070341633,
+    0.0924044687,
+    0.460990009,
+    0.0,
+    0.0,
+    1.3823894830656211,
+    0.229995412,
+    -0.11999514,
+    0.45999001,
+    0.0,
+    0.0,
+    1.4442476189245403,
+    -0.240851662,
+    0.0924044687,
+    0.460990009,
+    0.0,
+    0.0,
+    1.4394240295012921
+   ],
+   "obstacle_center_local": [
+    0.7118065258707195,
+    0.2699291245114588,
+    0.4951867877718433
+   ],
+   "obstacle_center_world": [
+    0.37180652587071944,
+    -0.19007087548854124,
+    0.7351867877718432
+   ],
+   "obstacle_radius": 0.05,
+   "policy_seed": 5000000,
+   "provenance": {
+    "candidates_drawn": 231,
+    "workspace_point_index": 101141,
+    "start_clearance": 0.21148247153289562,
+    "rejected": {
+     "start_clearance": 204,
+     "target_keepout": 0,
+     "hit_rate": 26,
+     "infeasible": 0
+    },
+    "workspace_rollout_hit_rate": 0.18,
+    "state_retries": 1,
+    "contact_goal": {
+     "box_min": [
+      0.569995412,
+      0.34000486,
+      0.21999001
+     ],
+     "box_max": [
+      0.569995412,
+      0.34000486,
+      0.21999001
+     ],
+     "obj": "block_blue"
+    },
+    "completion_goal": {
+     "wrist_turn": -1.0471975511965976,
+     "degrees": 60
+    },
+    "planner_attempts": [
+     {
+      "n_contact_ik": 4,
+      "contact_iters": 0,
+      "n_completion_ik": 1,
+      "completion_iters": 0
+     }
+    ],
+    "planner_contact_config": [
+     -0.7595375586922993,
+     0.9802941443307054,
+     1.495077690126027,
+     -2.039273486355423,
+     -1.3458243386638415,
+     2.2592815830667887,
+     0.55344928
+    ],
+    "planner_completion_config": [
+     -0.7595375586922993,
+     0.9802941443307054,
+     1.495077690126027,
+     -2.039273486355423,
+     -1.3458243386638415,
+     2.2592815830667887,
+     -0.4937482711965976
+    ]
+   }
+  },
+  {
+   "scene_id": "val_0001",
+   "split": "val",
+   "task_name": "push_pink_block_right",
+   "initial_state_index": 98,
+   "initial_state": {
+    "led": 1,
+    "lightbulb": 0,
+    "slider": "right",
+    "drawer": "closed",
+    "red_block": "table",
+    "blue_block": "slider_right",
+    "pink_block": "table",
+    "grasped": 0
+   },
+   "robot_obs": [
+    0.02586889,
+    -0.2313129,
+    0.5712808,
+    3.09045411,
+    -0.02908596,
+    1.50013585,
+    0.07999963,
+    -1.21779124,
+    1.03987629,
+    2.11978254,
+    -2.34205014,
+    -0.87015899,
+    1.64119093,
+    0.55344928,
+    1.0
+   ],
+   "scene_obs": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    1.0,
+    0.0500000896,
+    -0.120000177,
+    0.459990009,
+    0.0,
+    0.0,
+    1.896484447632316,
+    0.070341633,
+    0.0924044687,
+    0.460990009,
+    0.0,
+    0.0,
+    1.5462940354078833,
+    0.229995412,
+    -0.11999514,
+    0.45999001,
+    0.0,
+    0.0,
+    1.922010946792149
+   ],
+   "obstacle_center_local": [
+    0.6362147816947796,
+    0.17528753658428758,
+    0.6162940005864199
+   ],
+   "obstacle_center_world": [
+    0.2962147816947796,
+    -0.28471246341571244,
+    0.8562940005864199
+   ],
+   "obstacle_radius": 0.05,
+   "policy_seed": 5000001,
+   "provenance": {
+    "candidates_drawn": 49,
+    "workspace_point_index": 96023,
+    "start_clearance": 0.1298990956871876,
+    "rejected": {
+     "start_clearance": 42,
+     "target_keepout": 0,
+     "hit_rate": 6,
+     "infeasible": 0
+    },
+    "workspace_rollout_hit_rate": 0.1875,
+    "state_retries": 0,
+    "contact_goal": {
+     "box_min": [
+      0.569995412,
+      0.34000486,
+      0.21999001
+     ],
+     "box_max": [
+      0.569995412,
+      0.34000486,
+      0.21999001
+     ],
+     "obj": "block_pink"
+    },
+    "completion_goal": {
+     "box_min": [
+      0.669995412,
+      0.34000486,
+      0.21999001
+     ],
+     "box_max": [
+      0.669995412,
+      0.34000486,
+      0.21999001
+     ],
+     "obj": "block_pink",
+     "pushed_by": [
+      0.1,
+      0
+     ]
+    },
+    "planner_attempts": [
+     {
+      "n_contact_ik": 4,
+      "contact_iters": 0,
+      "n_completion_ik": 4,
+      "completion_iters": 0
+     }
+    ],
+    "planner_contact_config": [
+     -0.7595375586922993,
+     0.9802941443307054,
+     1.495077690126027,
+     -2.039273486355423,
+     -1.3458243386638415,
+     2.2592815830667887,
+     0.55344928
+    ],
+    "planner_completion_config": [
+     -0.6374007727938158,
+     1.080494090931182,
+     1.376176095214246,
+     -1.792530595990269,
+     -1.4241188145221126,
+     2.3646593354196805,
+     0.55344928
+    ]
+   }
+  },
+  {
+   "scene_id": "val_0002",
+   "split": "val",
+   "task_name": "rotate_blue_block_right",
+   "initial_state_index": 126,
+   "initial_state": {
+    "led": 1,
+    "lightbulb": 0,
+    "slider": "left",
+    "drawer": "closed",
+    "red_block": "slider_right",
+    "blue_block": "table",
+    "pink_block": "table",
+    "grasped": 0
+   },
+   "robot_obs": [
+    0.02586889,
+    -0.2313129,
+    0.5712808,
+    3.09045411,
+    -0.02908596,
+    1.50013585,
+    0.07999963,
+    -1.21779124,
+    1.03987629,
+    2.11978254,
+    -2.34205014,
+    -0.87015899,
+    1.64119093,
+    0.55344928,
+    1.0
+   ],
+   "scene_obs": [
+    0.28,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    1.0,
+    0.070341633,
+    0.0924044687,
+    0.460990009,
+    0.0,
+    0.0,
+    1.4235389706413686,
+    0.229995412,
+    -0.11999514,
+    0.45999001,
+    0.0,
+    0.0,
+    1.2309909022051677,
+    0.0500000896,
+    -0.120000177,
+    0.459990009,
+    0.0,
+    0.0,
+    1.5260079303236587
+   ],
+   "obstacle_center_local": [
+    0.7362861309508769,
+    0.26386446286458665,
+    0.4832948029719466
+   ],
+   "obstacle_center_world": [
+    0.3962861309508769,
+    -0.19613553713541337,
+    0.7232948029719466
+   ],
+   "obstacle_radius": 0.05,
+   "policy_seed": 5000002,
+   "provenance": {
+    "candidates_drawn": 35,
+    "workspace_point_index": 123262,
+    "start_clearance": 0.23717104256663157,
+    "rejected": {
+     "start_clearance": 31,
+     "target_keepout": 0,
+     "hit_rate": 3,
+     "infeasible": 0
+    },
+    "workspace_rollout_hit_rate": 0.14,
+    "state_retries": 0,
+    "contact_goal": {
+     "box_min": [
+      0.569995412,
+      0.34000486,
+      0.21999001
+     ],
+     "box_max": [
+      0.569995412,
+      0.34000486,
+      0.21999001
+     ],
+     "obj": "block_blue"
+    },
+    "completion_goal": {
+     "wrist_turn": 1.0471975511965976,
+     "degrees": -60
+    },
+    "planner_attempts": [
+     {
+      "n_contact_ik": 4,
+      "contact_iters": 0,
+      "n_completion_ik": 1,
+      "completion_iters": 0
+     }
+    ],
+    "planner_contact_config": [
+     -0.7595375586922993,
+     0.9802941443307054,
+     1.495077690126027,
+     -2.039273486355423,
+     -1.3458243386638415,
+     2.2592815830667887,
+     0.55344928
+    ],
+    "planner_completion_config": [
+     -0.7595375586922993,
+     0.9802941443307054,
+     1.495077690126027,
+     -2.039273486355423,
+     -1.3458243386638415,
+     2.2592815830667887,
+     1.6006468311965976
+    ]
+   }
+  },
+  {
+   "scene_id": "val_0003",
+   "split": "val",
+   "task_name": "lift_pink_block_slider",
+   "initial_state_index": 94,
+   "initial_state": {
+    "led": 0,
+    "lightbulb": 1,
+    "slider": "left",
+    "drawer": "open",
+    "red_block": "slider_left",
+    "blue_block": "table",
+    "pink_block": "slider_right",
+    "grasped": 0
+   },
+   "robot_obs": [
+    0.02586889,
+    -0.2313129,
+    0.5712808,
+    3.09045411,
+    -0.02908596,
+    1.50013585,
+    0.07999963,
+    -1.21779124,
+    1.03987629,
+    2.11978254,
+    -2.34205014,
+    -0.87015899,
+    1.64119093,
+    0.55344928,
+    1.0
+   ],
+   "scene_obs": [
+    0.28,
+    0.22,
+    0.0,
+    0.088,
+    1.0,
+    0.0,
+    -0.240851662,
+    0.0924044687,
+    0.460990009,
+    0.0,
+    0.0,
+    1.2632801938645035,
+    0.229995412,
+    -0.11999514,
+    0.45999001,
+    0.0,
+    0.0,
+    1.7937692699118641,
+    0.070341633,
+    0.0924044687,
+    0.460990009,
+    0.0,
+    0.0,
+    1.6015335473810137
+   ],
+   "obstacle_center_local": [
+    -0.09759948194620385,
+    0.20601487393002288,
+    0.6429864365334989
+   ],
+   "obstacle_center_world": [
+    -0.4375994819462039,
+    -0.25398512606997714,
+    0.8829864365334988
+   ],
+   "obstacle_radius": 0.05,
+   "policy_seed": 5000003,
+   "provenance": {
+    "candidates_drawn": 65,
+    "workspace_point_index": 35991,
+    "start_clearance": 0.20478484636392258,
+    "rejected": {
+     "start_clearance": 41,
+     "target_keepout": 0,
+     "hit_rate": 23,
+     "infeasible": 0
+    },
+    "workspace_rollout_hit_rate": 0.22,
+    "state_retries": 0,
+    "contact_goal": {
+     "box_min": [
+      0.41034163300000004,
+      0.5524044687,
+      0.220990009
+     ],
+     "box_max": [
+      0.41034163300000004,
+      0.5524044687,
+      0.220990009
+     ],
+     "obj": "block_pink"
+    },
+    "completion_goal": {
+     "box_min": [
+      0.41034163300000004,
+      0.5524044687,
+      0.27099000900000003
+     ],
+     "box_max": [
+      0.41034163300000004,
+      0.5524044687,
+      0.27099000900000003
+     ],
+     "obj": "block_pink",
+     "lifted_by": 0.05
+    },
+    "planner_attempts": [
+     {
+      "n_contact_ik": 4,
+      "contact_iters": 0,
+      "n_completion_ik": 4,
+      "completion_iters": 0
+     }
+    ],
+    "planner_contact_config": [
+     -0.32616701206809484,
+     0.7807139464318862,
+     1.315342643279115,
+     -2.045801808854784,
+     -1.1615198878511852,
+     2.5713629343844957,
+     0.55344928
+    ],
+    "planner_completion_config": [
+     -0.32207343433587887,
+     0.769165902192043,
+     1.3442261555152866,
+     -2.0216315362820327,
+     -1.1625189390888602,
+     2.5842305174627698,
+     0.55344928
+    ]
+   }
+  },
+  {
+   "scene_id": "val_0004",
+   "split": "val",
+   "task_name": "turn_off_led",
+   "initial_state_index": 156,
+   "initial_state": {
+    "led": 1,
+    "lightbulb": 1,
+    "slider": "right",
+    "drawer": "open",
+    "red_block": "table",
+    "blue_block": "table",
+    "pink_block": "slider_right",
+    "grasped": 0
+   },
+   "robot_obs": [
+    0.02586889,
+    -0.2313129,
+    0.5712808,
+    3.09045411,
+    -0.02908596,
+    1.50013585,
+    0.07999963,
+    -1.21779124,
+    1.03987629,
+    2.11978254,
+    -2.34205014,
+    -0.87015899,
+    1.64119093,
+    0.55344928,
+    1.0
+   ],
+   "scene_obs": [
+    0.0,
+    0.22,
+    0.0,
+    0.088,
+    1.0,
+    1.0,
+    0.0500000896,
+    -0.120000177,
+    0.459990009,
+    0.0,
+    0.0,
+    1.1900262976880034,
+    0.229995412,
+    -0.11999514,
+    0.45999001,
+    0.0,
+    0.0,
+    1.2092583331757205,
+    0.070341633,
+    0.0924044687,
+    0.460990009,
+    0.0,
+    0.0,
+    1.85498632823822
+   ],
+   "obstacle_center_local": [
+    0.25232499949384046,
+    0.4563942865570544,
+    0.6149543494773511
+   ],
+   "obstacle_center_world": [
+    -0.08767500050615956,
+    -0.003605713442945635,
+    0.854954349477351
+   ],
+   "obstacle_radius": 0.05,
+   "policy_seed": 5000004,
+   "provenance": {
+    "candidates_drawn": 115,
+    "workspace_point_index": 27815,
+    "start_clearance": 0.09730896539360216,
+    "rejected": {
+     "start_clearance": 106,
+     "target_keepout": 1,
+     "hit_rate": 7,
+     "infeasible": 0
+    },
+    "workspace_rollout_hit_rate": 0.3,
+    "state_retries": 0,
+    "contact_goal": {
+     "box_min": [
+      0.1851092947721482,
+      0.3050000007152555,
+      0.21699999999999975
+     ],
+     "box_max": [
+      0.25489070522785195,
+      0.37499999928474415,
+      0.24699999946355822
+     ],
+     "light": "led",
+     "q": 0.0
+    },
+    "completion_goal": {
+     "box_min": [
+      0.1851092947721482,
+      0.30500000071525574,
+      0.19699999999999973
+     ],
+     "box_max": [
+      0.25489070522785195,
+      0.37499999928474437,
+      0.2269999994635582
+     ],
+     "light": "led",
+     "q": 0.020000000000000004
+    },
+    "planner_attempts": [
+     {
+      "n_contact_ik": 4,
+      "contact_iters": 0,
+      "n_completion_ik": 4,
+      "completion_iters": 0
+     }
+    ],
+    "planner_contact_config": [
+     -1.0050712277218932,
+     1.008369334578646,
+     2.0764168177867504,
+     -2.5440810862984775,
+     -0.8021376814013693,
+     1.7248138602548462,
+     0.55344928
+    ],
+    "planner_completion_config": [
+     -0.9743561853041959,
+     0.9954701603080811,
+     2.0454910997110667,
+     -2.575525904661761,
+     -0.8061780375263239,
+     1.7478386811721405,
+     0.55344928
+    ]
+   }
+  },
+  {
+   "scene_id": "val_0005",
+   "split": "val",
+   "task_name": "push_blue_block_left",
+   "initial_state_index": 157,
+   "initial_state": {
+    "led": 1,
+    "lightbulb": 1,
+    "slider": "right",
+    "drawer": "open",
+    "red_block": "table",
+    "blue_block": "table",
+    "pink_block": "slider_left",
+    "grasped": 0
+   },
+   "robot_obs": [
+    0.02586889,
+    -0.2313129,
+    0.5712808,
+    3.09045411,
+    -0.02908596,
+    1.50013585,
+    0.07999963,
+    -1.21779124,
+    1.03987629,
+    2.11978254,
+    -2.34205014,
+    -0.87015899,
+    1.64119093,
+    0.55344928,
+    1.0
+   ],
+   "scene_obs": [
+    0.0,
+    0.22,
+    0.0,
+    0.088,
+    1.0,
+    1.0,
+    0.229995412,
+    -0.11999514,
+    0.45999001,
+    0.0,
+    0.0,
+    1.5562897376975948,
+    0.0500000896,
+    -0.120000177,
+    0.459990009,
+    0.0,
+    0.0,
+    1.3230979040057531,
+    -0.240851662,
+    0.0924044687,
+    0.460990009,
+    0.0,
+    0.0,
+    1.7915554800432765
+   ],
+   "obstacle_center_local": [
+    0.7025692113872678,
+    0.21771757420531912,
+    0.47899821038293267
+   ],
+   "obstacle_center_world": [
+    0.3625692113872678,
+    -0.2422824257946809,
+    0.7189982103829327
+   ],
+   "obstacle_radius": 0.05,
+   "policy_seed": 5000005,
+   "provenance": {
+    "candidates_drawn": 7,
+    "workspace_point_index": 77060,
+    "start_clearance": 0.20353174076851327,
+    "rejected": {
+     "start_clearance": 3,
+     "target_keepout": 0,
+     "hit_rate": 3,
+     "infeasible": 0
+    },
+    "workspace_rollout_hit_rate": 0.3625,
+    "state_retries": 0,
+    "contact_goal": {
+     "box_min": [
+      0.39000008960000004,
+      0.33999982300000003,
+      0.219990009
+     ],
+     "box_max": [
+      0.39000008960000004,
+      0.33999982300000003,
+      0.219990009
+     ],
+     "obj": "block_blue"
+    },
+    "completion_goal": {
+     "box_min": [
+      0.2900000896,
+      0.33999982300000003,
+      0.219990009
+     ],
+     "box_max": [
+      0.2900000896,
+      0.33999982300000003,
+      0.219990009
+     ],
+     "obj": "block_blue",
+     "pushed_by": [
+      -0.1,
+      0
+     ]
+    },
+    "planner_attempts": [
+     {
+      "n_contact_ik": 4,
+      "contact_iters": 0,
+      "n_completion_ik": 4,
+      "completion_iters": 0
+     }
+    ],
+    "planner_contact_config": [
+     -0.8978545820309866,
+     0.9038743033870691,
+     1.7465437478427321,
+     -2.309886413285186,
+     -1.020614991537603,
+     1.9936204289567625,
+     0.55344928
+    ],
+    "planner_completion_config": [
+     -0.8396320632658877,
+     0.9201785273873997,
+     1.7994153489322124,
+     -2.4304777247156117,
+     -0.9656293019699793,
+     1.965350077007919,
+     0.55344928
+    ]
+   }
+  },
+  {
+   "scene_id": "val_0006",
+   "split": "val",
+   "task_name": "rotate_pink_block_right",
+   "initial_state_index": 143,
+   "initial_state": {
+    "led": 1,
+    "lightbulb": 0,
+    "slider": "left",
+    "drawer": "open",
+    "red_block": "slider_left",
+    "blue_block": "slider_right",
+    "pink_block": "table",
+    "grasped": 0
+   },
+   "robot_obs": [
+    0.02586889,
+    -0.2313129,
+    0.5712808,
+    3.09045411,
+    -0.02908596,
+    1.50013585,
+    0.07999963,
+    -1.21779124,
+    1.03987629,
+    2.11978254,
+    -2.34205014,
+    -0.87015899,
+    1.64119093,
+    0.55344928,
+    1.0
+   ],
+   "scene_obs": [
+    0.28,
+    0.22,
+    0.0,
+    0.0,
+    0.0,
+    1.0,
+    -0.240851662,
+    0.0924044687,
+    0.460990009,
+    0.0,
+    0.0,
+    1.3275834375664368,
+    0.070341633,
+    0.0924044687,
+    0.460990009,
+    0.0,
+    0.0,
+    1.5971233941991163,
+    0.229995412,
+    -0.11999514,
+    0.45999001,
+    0.0,
+    0.0,
+    1.7489368983741866
+   ],
+   "obstacle_center_local": [
+    0.6656498379745548,
+    0.1581781519869723,
+    0.5344576266844822
+   ],
+   "obstacle_center_world": [
+    0.32564983797455477,
+    -0.3018218480130277,
+    0.7744576266844821
+   ],
+   "obstacle_radius": 0.05,
+   "policy_seed": 5000006,
+   "provenance": {
+    "candidates_drawn": 103,
+    "workspace_point_index": 14218,
+    "start_clearance": 0.16234390099085383,
+    "rejected": {
+     "start_clearance": 86,
+     "target_keepout": 1,
+     "hit_rate": 15,
+     "infeasible": 0
+    },
+    "workspace_rollout_hit_rate": 0.34,
+    "state_retries": 0,
+    "contact_goal": {
+     "box_min": [
+      0.569995412,
+      0.34000486,
+      0.21999001
+     ],
+     "box_max": [
+      0.569995412,
+      0.34000486,
+      0.21999001
+     ],
+     "obj": "block_pink"
+    },
+    "completion_goal": {
+     "wrist_turn": 1.0471975511965976,
+     "degrees": -60
+    },
+    "planner_attempts": [
+     {
+      "n_contact_ik": 4,
+      "contact_iters": 0,
+      "n_completion_ik": 1,
+      "completion_iters": 0
+     }
+    ],
+    "planner_contact_config": [
+     -0.7595375586922993,
+     0.9802941443307054,
+     1.495077690126027,
+     -2.039273486355423,
+     -1.3458243386638415,
+     2.2592815830667887,
+     0.55344928
+    ],
+    "planner_completion_config": [
+     -0.7595375586922993,
+     0.9802941443307054,
+     1.495077690126027,
+     -2.039273486355423,
+     -1.3458243386638415,
+     2.2592815830667887,
+     1.6006468311965976
+    ]
+   }
+  },
+  {
+   "scene_id": "val_0007",
+   "split": "val",
+   "task_name": "rotate_red_block_left",
+   "initial_state_index": 146,
+   "initial_state": {
+    "led": 1,
+    "lightbulb": 1,
+    "slider": "right",
+    "drawer": "closed",
+    "red_block": "table",
+    "blue_block": "slider_right",
+    "pink_block": "table",
+    "grasped": 0
+   },
+   "robot_obs": [
+    0.02586889,
+    -0.2313129,
+    0.5712808,
+    3.09045411,
+    -0.02908596,
+    1.50013585,
+    0.07999963,
+    -1.21779124,
+    1.03987629,
+    2.11978254,
+    -2.34205014,
+    -0.87015899,
+    1.64119093,
+    0.55344928,
+    1.0
+   ],
+   "scene_obs": [
+    0.0,
+    0.0,
+    0.0,
+    0.088,
+    1.0,
+    1.0,
+    0.229995412,
+    -0.11999514,
+    0.45999001,
+    0.0,
+    0.0,
+    1.3929005480816612,
+    0.070341633,
+    0.0924044687,
+    0.460990009,
+    0.0,
+    0.0,
+    1.2360134313437703,
+    0.0500000896,
+    -0.120000177,
+    0.459990009,
+    0.0,
+    0.0,
+    1.900927142194277
+   ],
+   "obstacle_center_local": [
+    0.4501150537078661,
+    0.41913628094083877,
+    0.6498675407086693
+   ],
+   "obstacle_center_world": [
+    0.11011505370786606,
+    -0.04086371905916125,
+    0.8898675407086692
+   ],
+   "obstacle_radius": 0.05,
+   "policy_seed": 5000007,
+   "provenance": {
+    "candidates_drawn": 144,
+    "workspace_point_index": 88678,
+    "start_clearance": 0.07099490954611107,
+    "rejected": {
+     "start_clearance": 128,
+     "target_keepout": 0,
+     "hit_rate": 15,
+     "infeasible": 0
+    },
+    "workspace_rollout_hit_rate": 0.34,
+    "state_retries": 0,
+    "contact_goal": {
+     "box_min": [
+      0.569995412,
+      0.34000486,
+      0.21999001
+     ],
+     "box_max": [
+      0.569995412,
+      0.34000486,
+      0.21999001
+     ],
+     "obj": "block_red"
+    },
+    "completion_goal": {
+     "wrist_turn": -1.0471975511965976,
+     "degrees": 60
+    },
+    "planner_attempts": [
+     {
+      "n_contact_ik": 4,
+      "contact_iters": 0,
+      "n_completion_ik": 1,
+      "completion_iters": 0
+     }
+    ],
+    "planner_contact_config": [
+     -0.7595375586922993,
+     0.9802941443307054,
+     1.495077690126027,
+     -2.039273486355423,
+     -1.3458243386638415,
+     2.2592815830667887,
+     0.55344928
+    ],
+    "planner_completion_config": [
+     -0.7595375586922993,
+     0.9802941443307054,
+     1.495077690126027,
+     -2.039273486355423,
+     -1.3458243386638415,
+     2.2592815830667887,
+     -0.4937482711965976
+    ]
+   }
+  },
+  {
+   "scene_id": "val_0008",
+   "split": "val",
+   "task_name": "lift_pink_block_table",
+   "initial_state_index": 8,
+   "initial_state": {
+    "led": 0,
+    "lightbulb": 0,
+    "slider": "right",
+    "drawer": "closed",
+    "red_block": "slider_right",
+    "blue_block": "slider_left",
+    "pink_block": "table",
+    "grasped": 0
+   },
+   "robot_obs": [
+    0.02586889,
+    -0.2313129,
+    0.5712808,
+    3.09045411,
+    -0.02908596,
+    1.50013585,
+    0.07999963,
+    -1.21779124,
+    1.03987629,
+    2.11978254,
+    -2.34205014,
+    -0.87015899,
+    1.64119093,
+    0.55344928,
+    1.0
+   ],
+   "scene_obs": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.070341633,
+    0.0924044687,
+    0.460990009,
+    0.0,
+    0.0,
+    1.4118036978924677,
+    -0.240851662,
+    0.0924044687,
+    0.460990009,
+    0.0,
+    0.0,
+    1.4163192553895723,
+    0.0500000896,
+    -0.120000177,
+    0.459990009,
+    0.0,
+    0.0,
+    1.581768246353052
+   ],
+   "obstacle_center_local": [
+    0.5293486971213516,
+    0.04898100926386004,
+    0.5640819364291144
+   ],
+   "obstacle_center_world": [
+    0.18934869712135155,
+    -0.41101899073614,
+    0.8040819364291144
+   ],
+   "obstacle_radius": 0.05,
+   "policy_seed": 5000008,
+   "provenance": {
+    "candidates_drawn": 191,
+    "workspace_point_index": 60183,
+    "start_clearance": 0.06188658331001212,
+    "rejected": {
+     "start_clearance": 162,
+     "target_keepout": 2,
+     "hit_rate": 26,
+     "infeasible": 0
+    },
+    "workspace_rollout_hit_rate": 0.375,
+    "state_retries": 0,
+    "contact_goal": {
+     "box_min": [
+      0.39000008960000004,
+      0.33999982300000003,
+      0.219990009
+     ],
+     "box_max": [
+      0.39000008960000004,
+      0.33999982300000003,
+      0.219990009
+     ],
+     "obj": "block_pink"
+    },
+    "completion_goal": {
+     "box_min": [
+      0.39000008960000004,
+      0.33999982300000003,
+      0.28999000900000005
+     ],
+     "box_max": [
+      0.39000008960000004,
+      0.33999982300000003,
+      0.28999000900000005
+     ],
+     "obj": "block_pink",
+     "lifted_by": 0.07
+    },
+    "planner_attempts": [
+     {
+      "n_contact_ik": 4,
+      "contact_iters": 0,
+      "n_completion_ik": 4,
+      "completion_iters": 0
+     }
+    ],
+    "planner_contact_config": [
+     -0.8978545820309866,
+     0.9038743033870691,
+     1.7465437478427321,
+     -2.309886413285186,
+     -1.020614991537603,
+     1.9936204289567625,
+     0.55344928
+    ],
+    "planner_completion_config": [
+     -0.9196789855527783,
+     0.9086544029304893,
+     1.8497595359008834,
+     -2.2669484152198294,
+     -1.0092832556678895,
+     1.9923684980136285,
+     0.55344928
+    ]
+   }
+  },
+  {
+   "scene_id": "val_0009",
+   "split": "val",
+   "task_name": "lift_blue_block_table",
+   "initial_state_index": 177,
+   "initial_state": {
+    "led": 1,
+    "lightbulb": 1,
+    "slider": "left",
+    "drawer": "closed",
+    "red_block": "slider_left",
+    "blue_block": "table",
+    "pink_block": "table",
+    "grasped": 0
+   },
+   "robot_obs": [
+    0.02586889,
+    -0.2313129,
+    0.5712808,
+    3.09045411,
+    -0.02908596,
+    1.50013585,
+    0.07999963,
+    -1.21779124,
+    1.03987629,
+    2.11978254,
+    -2.34205014,
+    -0.87015899,
+    1.64119093,
+    0.55344928,
+    1.0
+   ],
+   "scene_obs": [
+    0.28,
+    0.0,
+    0.0,
+    0.088,
+    1.0,
+    1.0,
+    -0.240851662,
+    0.0924044687,
+    0.460990009,
+    0.0,
+    0.0,
+    1.499169689895129,
+    0.0500000896,
+    -0.120000177,
+    0.459990009,
+    0.0,
+    0.0,
+    1.8368478009154612,
+    0.229995412,
+    -0.11999514,
+    0.45999001,
+    0.0,
+    0.0,
+    1.1896717302762598
+   ],
+   "obstacle_center_local": [
+    0.23721780257610722,
+    0.32624812339720344,
+    0.3754344993037287
+   ],
+   "obstacle_center_world": [
+    -0.1027821974238928,
+    -0.13375187660279658,
+    0.6154344993037286
+   ],
+   "obstacle_radius": 0.05,
+   "policy_seed": 5000009,
+   "provenance": {
+    "candidates_drawn": 206,
+    "workspace_point_index": 9773,
+    "start_clearance": 0.05022985691332095,
+    "rejected": {
+     "start_clearance": 196,
+     "target_keepout": 0,
+     "hit_rate": 9,
+     "infeasible": 0
+    },
+    "workspace_rollout_hit_rate": 0.12,
+    "state_retries": 3,
+    "contact_goal": {
+     "box_min": [
+      0.39000008960000004,
+      0.33999982300000003,
+      0.219990009
+     ],
+     "box_max": [
+      0.39000008960000004,
+      0.33999982300000003,
+      0.219990009
+     ],
+     "obj": "block_blue"
+    },
+    "completion_goal": {
+     "box_min": [
+      0.39000008960000004,
+      0.33999982300000003,
+      0.28999000900000005
+     ],
+     "box_max": [
+      0.39000008960000004,
+      0.33999982300000003,
+      0.28999000900000005
+     ],
+     "obj": "block_blue",
+     "lifted_by": 0.07
+    },
+    "planner_attempts": [
+     {
+      "n_contact_ik": 4,
+      "contact_iters": 0,
+      "n_completion_ik": 4,
+      "completion_iters": 0
+     }
+    ],
+    "planner_contact_config": [
+     0.7948788821584865,
+     0.5248939958961412,
+     -0.2441575608953135,
+     -1.5149630818147641,
+     0.3187592240394696,
+     1.3380252301217275,
+     2.1661518570812075
+    ],
+    "planner_completion_config": [
+     0.7952635207951148,
+     0.4387406421130259,
+     -0.24702638902560375,
+     -1.4965179357433247,
+     0.31939759457906497,
+     1.2950989916356919,
+     2.1661518570812075
+    ]
+   }
+  },
+  {
+   "scene_id": "val_0010",
+   "split": "val",
+   "task_name": "rotate_red_block_right",
+   "initial_state_index": 37,
+   "initial_state": {
+    "led": 0,
+    "lightbulb": 0,
+    "slider": "left",
+    "drawer": "open",
+    "red_block": "table",
+    "blue_block": "table",
+    "pink_block": "slider_left",
+    "grasped": 0
+   },
+   "robot_obs": [
+    0.02586889,
+    -0.2313129,
+    0.5712808,
+    3.09045411,
+    -0.02908596,
+    1.50013585,
+    0.07999963,
+    -1.21779124,
+    1.03987629,
+    2.11978254,
+    -2.34205014,
+    -0.87015899,
+    1.64119093,
+    0.55344928,
+    1.0
+   ],
+   "scene_obs": [
+    0.28,
+    0.22,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0500000896,
+    -0.120000177,
+    0.459990009,
+    0.0,
+    0.0,
+    1.9084443499989245,
+    0.229995412,
+    -0.11999514,
+    0.45999001,
+    0.0,
+    0.0,
+    1.7472891699366015,
+    -0.240851662,
+    0.0924044687,
+    0.460990009,
+    0.0,
+    0.0,
+    1.8704108417581058
+   ],
+   "obstacle_center_local": [
+    0.6028789079249263,
+    0.16702592751510353,
+    0.6377769086725957
+   ],
+   "obstacle_center_world": [
+    0.26287890792492624,
+    -0.2929740724848965,
+    0.8777769086725957
+   ],
+   "obstacle_radius": 0.05,
+   "policy_seed": 5000010,
+   "provenance": {
+    "candidates_drawn": 105,
+    "workspace_point_index": 26364,
+    "start_clearance": 0.10308764772184269,
+    "rejected": {
+     "start_clearance": 90,
+     "target_keepout": 1,
+     "hit_rate": 13,
+     "infeasible": 0
+    },
+    "workspace_rollout_hit_rate": 0.275,
+    "state_retries": 0,
+    "contact_goal": {
+     "box_min": [
+      0.39000008960000004,
+      0.33999982300000003,
+      0.219990009
+     ],
+     "box_max": [
+      0.39000008960000004,
+      0.33999982300000003,
+      0.219990009
+     ],
+     "obj": "block_red"
+    },
+    "completion_goal": {
+     "wrist_turn": 1.0471975511965976,
+     "degrees": -60
+    },
+    "planner_attempts": [
+     {
+      "n_contact_ik": 4,
+      "contact_iters": 0,
+      "n_completion_ik": 1,
+      "completion_iters": 0
+     }
+    ],
+    "planner_contact_config": [
+     -0.8978545820309866,
+     0.9038743033870691,
+     1.7465437478427321,
+     -2.309886413285186,
+     -1.020614991537603,
+     1.9936204289567625,
+     0.55344928
+    ],
+    "planner_completion_config": [
+     -0.8978545820309866,
+     0.9038743033870691,
+     1.7465437478427321,
+     -2.309886413285186,
+     -1.020614991537603,
+     1.9936204289567625,
+     1.6006468311965976
+    ]
+   }
+  },
+  {
+   "scene_id": "val_0011",
+   "split": "val",
+   "task_name": "lift_red_block_table",
+   "initial_state_index": 171,
+   "initial_state": {
+    "led": 1,
+    "lightbulb": 1,
+    "slider": "left",
+    "drawer": "closed",
+    "red_block": "table",
+    "blue_block": "slider_right",
+    "pink_block": "slider_left",
+    "grasped": 0
+   },
+   "robot_obs": [
+    0.02586889,
+    -0.2313129,
+    0.5712808,
+    3.09045411,
+    -0.02908596,
+    1.50013585,
+    0.07999963,
+    -1.21779124,
+    1.03987629,
+    2.11978254,
+    -2.34205014,
+    -0.87015899,
+    1.64119093,
+    0.55344928,
+    1.0
+   ],
+   "scene_obs": [
+    0.28,
+    0.0,
+    0.0,
+    0.088,
+    1.0,
+    1.0,
+    0.0500000896,
+    -0.120000177,
+    0.459990009,
+    0.0,
+    0.0,
+    1.5724794280472103,
+    0.070341633,
+    0.0924044687,
+    0.460990009,
+    0.0,
+    0.0,
+    1.6926712340637762,
+    -0.240851662,
+    0.0924044687,
+    0.460990009,
+    0.0,
+    0.0,
+    1.4757025137138677
+   ],
+   "obstacle_center_local": [
+    0.7000772457675952,
+    0.3223781759917894,
+    0.3815107438620292
+   ],
+   "obstacle_center_world": [
+    0.3600772457675952,
+    -0.1376218240082106,
+    0.6215107438620292
+   ],
+   "obstacle_radius": 0.05,
+   "policy_seed": 5000011,
+   "provenance": {
+    "candidates_drawn": 165,
+    "workspace_point_index": 90956,
+    "start_clearance": 0.2394197864650831,
+    "rejected": {
+     "start_clearance": 142,
+     "target_keepout": 2,
+     "hit_rate": 20,
+     "infeasible": 0
+    },
+    "workspace_rollout_hit_rate": 0.075,
+    "state_retries": 0,
+    "contact_goal": {
+     "box_min": [
+      0.39000008960000004,
+      0.33999982300000003,
+      0.219990009
+     ],
+     "box_max": [
+      0.39000008960000004,
+      0.33999982300000003,
+      0.219990009
+     ],
+     "obj": "block_red"
+    },
+    "completion_goal": {
+     "box_min": [
+      0.39000008960000004,
+      0.33999982300000003,
+      0.28999000900000005
+     ],
+     "box_max": [
+      0.39000008960000004,
+      0.33999982300000003,
+      0.28999000900000005
+     ],
+     "obj": "block_red",
+     "lifted_by": 0.07
+    },
+    "planner_attempts": [
+     {
+      "n_contact_ik": 4,
+      "contact_iters": 0,
+      "n_completion_ik": 4,
+      "completion_iters": 0
+     }
+    ],
+    "planner_contact_config": [
+     -0.8978545820309866,
+     0.9038743033870691,
+     1.7465437478427321,
+     -2.309886413285186,
+     -1.020614991537603,
+     1.9936204289567625,
+     0.55344928
+    ],
+    "planner_completion_config": [
+     -0.9196789855527783,
+     0.9086544029304893,
+     1.8497595359008834,
+     -2.2669484152198294,
+     -1.0092832556678895,
+     1.9923684980136285,
+     0.55344928
+    ]
+   }
+  },
+  {
+   "scene_id": "val_0012",
+   "split": "val",
+   "task_name": "rotate_pink_block_left",
+   "initial_state_index": 176,
+   "initial_state": {
+    "led": 1,
+    "lightbulb": 1,
+    "slider": "left",
+    "drawer": "closed",
+    "red_block": "slider_right",
+    "blue_block": "slider_left",
+    "pink_block": "table",
+    "grasped": 0
+   },
+   "robot_obs": [
+    0.02586889,
+    -0.2313129,
+    0.5712808,
+    3.09045411,
+    -0.02908596,
+    1.50013585,
+    0.07999963,
+    -1.21779124,
+    1.03987629,
+    2.11978254,
+    -2.34205014,
+    -0.87015899,
+    1.64119093,
+    0.55344928,
+    1.0
+   ],
+   "scene_obs": [
+    0.28,
+    0.0,
+    0.0,
+    0.088,
+    1.0,
+    1.0,
+    0.070341633,
+    0.0924044687,
+    0.460990009,
+    0.0,
+    0.0,
+    1.4895319076523434,
+    -0.240851662,
+    0.0924044687,
+    0.460990009,
+    0.0,
+    0.0,
+    1.2878219289791402,
+    0.229995412,
+    -0.11999514,
+    0.45999001,
+    0.0,
+    0.0,
+    1.828337175728068
+   ],
+   "obstacle_center_local": [
+    0.5959000690421954,
+    0.12623654977785007,
+    0.5985521097654254
+   ],
+   "obstacle_center_world": [
+    0.25590006904219537,
+    -0.3337634502221499,
+    0.8385521097654254
+   ],
+   "obstacle_radius": 0.05,
+   "policy_seed": 5000012,
+   "provenance": {
+    "candidates_drawn": 125,
+    "workspace_point_index": 292,
+    "start_clearance": 0.10162850445323716,
+    "rejected": {
+     "start_clearance": 111,
+     "target_keepout": 1,
+     "hit_rate": 12,
+     "infeasible": 0
+    },
+    "workspace_rollout_hit_rate": 0.375,
+    "state_retries": 0,
+    "contact_goal": {
+     "box_min": [
+      0.569995412,
+      0.34000486,
+      0.21999001
+     ],
+     "box_max": [
+      0.569995412,
+      0.34000486,
+      0.21999001
+     ],
+     "obj": "block_pink"
+    },
+    "completion_goal": {
+     "wrist_turn": -1.0471975511965976,
+     "degrees": 60
+    },
+    "planner_attempts": [
+     {
+      "n_contact_ik": 4,
+      "contact_iters": 0,
+      "n_completion_ik": 1,
+      "completion_iters": 0
+     }
+    ],
+    "planner_contact_config": [
+     -0.7595375586922993,
+     0.9802941443307054,
+     1.495077690126027,
+     -2.039273486355423,
+     -1.3458243386638415,
+     2.2592815830667887,
+     0.55344928
+    ],
+    "planner_completion_config": [
+     -0.7595375586922993,
+     0.9802941443307054,
+     1.495077690126027,
+     -2.039273486355423,
+     -1.3458243386638415,
+     2.2592815830667887,
+     -0.4937482711965976
+    ]
+   }
+  },
+  {
+   "scene_id": "val_0013",
+   "split": "val",
+   "task_name": "push_pink_block_left",
+   "initial_state_index": 56,
+   "initial_state": {
+    "led": 0,
+    "lightbulb": 1,
+    "slider": "right",
+    "drawer": "closed",
+    "red_block": "slider_right",
+    "blue_block": "slider_left",
+    "pink_block": "table",
+    "grasped": 0
+   },
+   "robot_obs": [
+    0.02586889,
+    -0.2313129,
+    0.5712808,
+    3.09045411,
+    -0.02908596,
+    1.50013585,
+    0.07999963,
+    -1.21779124,
+    1.03987629,
+    2.11978254,
+    -2.34205014,
+    -0.87015899,
+    1.64119093,
+    0.55344928,
+    1.0
+   ],
+   "scene_obs": [
+    0.0,
+    0.0,
+    0.0,
+    0.088,
+    1.0,
+    0.0,
+    0.070341633,
+    0.0924044687,
+    0.460990009,
+    0.0,
+    0.0,
+    1.6260828168803858,
+    -0.240851662,
+    0.0924044687,
+    0.460990009,
+    0.0,
+    0.0,
+    1.4054332461484522,
+    0.229995412,
+    -0.11999514,
+    0.45999001,
+    0.0,
+    0.0,
+    1.6487854336923595
+   ],
+   "obstacle_center_local": [
+    -0.09192455145721798,
+    0.7296991491365212,
+    0.7186097832947206
+   ],
+   "obstacle_center_world": [
+    -0.431924551457218,
+    0.2696991491365212,
+    0.9586097832947206
+   ],
+   "obstacle_radius": 0.05,
+   "policy_seed": 5000013,
+   "provenance": {
+    "candidates_drawn": 6,
+    "workspace_point_index": 19774,
+    "start_clearance": 0.5291248697910996,
+    "rejected": {
+     "start_clearance": 4,
+     "target_keepout": 0,
+     "hit_rate": 1,
+     "infeasible": 0
+    },
+    "workspace_rollout_hit_rate": 0.14,
+    "state_retries": 0,
+    "contact_goal": {
+     "box_min": [
+      0.569995412,
+      0.34000486,
+      0.21999001
+     ],
+     "box_max": [
+      0.569995412,
+      0.34000486,
+      0.21999001
+     ],
+     "obj": "block_pink"
+    },
+    "completion_goal": {
+     "box_min": [
+      0.46999541200000006,
+      0.34000486,
+      0.21999001
+     ],
+     "box_max": [
+      0.46999541200000006,
+      0.34000486,
+      0.21999001
+     ],
+     "obj": "block_pink",
+     "pushed_by": [
+      -0.1,
+      0
+     ]
+    },
+    "planner_attempts": [
+     {
+      "n_contact_ik": 4,
+      "contact_iters": 0,
+      "n_completion_ik": 4,
+      "completion_iters": 0
+     }
+    ],
+    "planner_contact_config": [
+     -0.7595375586922993,
+     0.9802941443307054,
+     1.495077690126027,
+     -2.039273486355423,
+     -1.3458243386638415,
+     2.2592815830667887,
+     0.55344928
+    ],
+    "planner_completion_config": [
+     -0.8158144741767109,
+     0.9496781014080391,
+     1.5713618496176736,
+     -2.2122794699263877,
+     -1.2865865953310953,
+     2.18921591693569,
+     0.55344928
+    ]
+   }
+  },
+  {
+   "scene_id": "val_0014",
+   "split": "val",
+   "task_name": "move_slider_left",
+   "initial_state_index": 156,
+   "initial_state": {
+    "led": 1,
+    "lightbulb": 1,
+    "slider": "right",
+    "drawer": "open",
+    "red_block": "table",
+    "blue_block": "table",
+    "pink_block": "slider_right",
+    "grasped": 0
+   },
+   "robot_obs": [
+    0.02586889,
+    -0.2313129,
+    0.5712808,
+    3.09045411,
+    -0.02908596,
+    1.50013585,
+    0.07999963,
+    -1.21779124,
+    1.03987629,
+    2.11978254,
+    -2.34205014,
+    -0.87015899,
+    1.64119093,
+    0.55344928,
+    1.0
+   ],
+   "scene_obs": [
+    0.0,
+    0.22,
+    0.0,
+    0.088,
+    1.0,
+    1.0,
+    0.0500000896,
+    -0.120000177,
+    0.459990009,
+    0.0,
+    0.0,
+    1.1900262976880034,
+    0.229995412,
+    -0.11999514,
+    0.45999001,
+    0.0,
+    0.0,
+    1.2092583331757205,
+    0.070341633,
+    0.0924044687,
+    0.460990009,
+    0.0,
+    0.0,
+    1.85498632823822
+   ],
+   "obstacle_center_local": [
+    0.14570779593669617,
+    0.3494981469152757,
+    0.38570280803798995
+   ],
+   "obstacle_center_world": [
+    -0.19429220406330386,
+    -0.11050185308472432,
+    0.6257028080379899
+   ],
+   "obstacle_radius": 0.05,
+   "policy_seed": 5000014,
+   "provenance": {
+    "candidates_drawn": 169,
+    "workspace_point_index": 15041,
+    "start_clearance": 0.13913101416025214,
+    "rejected": {
+     "start_clearance": 139,
+     "target_keepout": 1,
+     "hit_rate": 28,
+     "infeasible": 0
+    },
+    "workspace_rollout_hit_rate": 0.16,
+    "state_retries": 0,
+    "contact_goal": {
+     "box_min": [
+      0.37572036857779423,
+      0.4528789701927425,
+      0.2773111956521892
+     ],
+     "box_max": [
+      0.37572036857779423,
+      0.4528789701927425,
+      0.2773111956521892
+     ],
+     "joint": "base__slide",
+     "q": 0.0,
+     "contact": "measured"
+    },
+    "completion_goal": {
+     "box_min": [
+      0.22572036857779412,
+      0.4528789701927425,
+      0.2773111956521892
+     ],
+     "box_max": [
+      0.22572036857779412,
+      0.4528789701927425,
+      0.2773111956521892
+     ],
+     "joint": "base__slide",
+     "q": 0.15,
+     "contact": "measured"
+    },
+    "planner_attempts": [
+     {
+      "n_contact_ik": 4,
+      "contact_iters": 0,
+      "n_completion_ik": 4,
+      "completion_iters": 0
+     }
+    ],
+    "planner_contact_config": [
+     -0.711598193879729,
+     0.8824836199982729,
+     1.7300044858406232,
+     -2.2058497216175503,
+     -1.0222933082220707,
+     2.1860874505644157,
+     0.55344928
+    ],
+    "planner_completion_config": [
+     0.2289169131154173,
+     0.9057696655789733,
+     1.4415532621203226,
+     -1.588536675413531,
+     -0.8774369184338708,
+     1.0857685624171411,
+     2.3919329786262344
+    ]
+   }
+  },
+  {
+   "scene_id": "val_0015",
+   "split": "val",
+   "task_name": "turn_off_lightbulb",
+   "initial_state_index": 73,
+   "initial_state": {
+    "led": 0,
+    "lightbulb": 1,
+    "slider": "left",
+    "drawer": "closed",
+    "red_block": "table",
+    "blue_block": "table",
+    "pink_block": "slider_left",
+    "grasped": 0
+   },
+   "robot_obs": [
+    0.02586889,
+    -0.2313129,
+    0.5712808,
+    3.09045411,
+    -0.02908596,
+    1.50013585,
+    0.07999963,
+    -1.21779124,
+    1.03987629,
+    2.11978254,
+    -2.34205014,
+    -0.87015899,
+    1.64119093,
+    0.55344928,
+    1.0
+   ],
+   "scene_obs": [
+    0.28,
+    0.0,
+    0.0,
+    0.088,
+    1.0,
+    0.0,
+    0.229995412,
+    -0.11999514,
+    0.45999001,
+    0.0,
+    0.0,
+    1.9525174127108285,
+    0.0500000896,
+    -0.120000177,
+    0.459990009,
+    0.0,
+    0.0,
+    1.6934934900328784,
+    -0.240851662,
+    0.0924044687,
+    0.460990009,
+    0.0,
+    0.0,
+    1.678950229389158
+   ],
+   "obstacle_center_local": [
+    0.4959299243135759,
+    0.6124804877925142,
+    0.6012162282147089
+   ],
+   "obstacle_center_world": [
+    0.15592992431357589,
+    0.15248048779251416,
+    0.8412162282147089
+   ],
+   "obstacle_radius": 0.05,
+   "policy_seed": 5000015,
+   "provenance": {
+    "candidates_drawn": 210,
+    "workspace_point_index": 45086,
+    "start_clearance": 0.2561563112571845,
+    "rejected": {
+     "start_clearance": 158,
+     "target_keepout": 2,
+     "hit_rate": 49,
+     "infeasible": 0
+    },
+    "workspace_rollout_hit_rate": 0.22,
+    "state_retries": 0,
+    "contact_goal": {
+     "box_min": [
+      0.575748001098633,
+      0.4997843387015526,
+      0.3185698800985114
+     ],
+     "box_max": [
+      0.7042496027946474,
+      0.5827349430963479,
+      0.3897069412338078
+     ],
+     "light": "lightbulb",
+     "q": 0.088
+    },
+    "completion_goal": {
+     "box_min": [
+      0.575748001098633,
+      0.4557843387015523,
+      0.24235964456548093
+     ],
+     "box_max": [
+      0.7042496027946474,
+      0.5387349430963476,
+      0.31349670570077737
+     ],
+     "light": "lightbulb",
+     "q": 0.0
+    },
+    "planner_attempts": [
+     {
+      "n_contact_ik": 4,
+      "contact_iters": 0,
+      "n_completion_ik": 4,
+      "completion_iters": 0
+     }
+    ],
+    "planner_contact_config": [
+     -0.47689253164647977,
+     0.9123779575007777,
+     1.457190485530932,
+     -1.802738092584649,
+     -1.3066690079368917,
+     2.446333136550912,
+     0.55344928
+    ],
+    "planner_completion_config": [
+     -0.47926998738597737,
+     0.9193210901476373,
+     1.4423072243347275,
+     -1.8095383865639623,
+     -1.3062939107753329,
+     2.4412162259434633,
+     0.55344928
+    ]
+   }
+  },
+  {
+   "scene_id": "val_0016",
+   "split": "val",
+   "task_name": "lift_blue_block_slider",
+   "initial_state_index": 123,
+   "initial_state": {
+    "led": 1,
+    "lightbulb": 0,
+    "slider": "left",
+    "drawer": "closed",
+    "red_block": "table",
+    "blue_block": "slider_right",
+    "pink_block": "slider_left",
+    "grasped": 0
+   },
+   "robot_obs": [
+    0.02586889,
+    -0.2313129,
+    0.5712808,
+    3.09045411,
+    -0.02908596,
+    1.50013585,
+    0.07999963,
+    -1.21779124,
+    1.03987629,
+    2.11978254,
+    -2.34205014,
+    -0.87015899,
+    1.64119093,
+    0.55344928,
+    1.0
+   ],
+   "scene_obs": [
+    0.28,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    1.0,
+    0.0500000896,
+    -0.120000177,
+    0.459990009,
+    0.0,
+    0.0,
+    1.8630327496417103,
+    0.070341633,
+    0.0924044687,
+    0.460990009,
+    0.0,
+    0.0,
+    1.2782049647976013,
+    -0.240851662,
+    0.0924044687,
+    0.460990009,
+    0.0,
+    0.0,
+    1.8073805847410611
+   ],
+   "obstacle_center_local": [
+    0.01871214749436985,
+    0.32919657617066694,
+    0.3131267427244556
+   ],
+   "obstacle_center_world": [
+    -0.3212878525056302,
+    -0.13080342382933308,
+    0.5531267427244556
+   ],
+   "obstacle_radius": 0.05,
+   "policy_seed": 5000016,
+   "provenance": {
+    "candidates_drawn": 262,
+    "workspace_point_index": 132753,
+    "start_clearance": 0.1497279639738504,
+    "rejected": {
+     "start_clearance": 186,
+     "target_keepout": 1,
+     "hit_rate": 74,
+     "infeasible": 0
+    },
+    "workspace_rollout_hit_rate": 0.2,
+    "state_retries": 0,
+    "contact_goal": {
+     "box_min": [
+      0.41034163300000004,
+      0.5524044687,
+      0.220990009
+     ],
+     "box_max": [
+      0.41034163300000004,
+      0.5524044687,
+      0.220990009
+     ],
+     "obj": "block_blue"
+    },
+    "completion_goal": {
+     "box_min": [
+      0.41034163300000004,
+      0.5524044687,
+      0.27099000900000003
+     ],
+     "box_max": [
+      0.41034163300000004,
+      0.5524044687,
+      0.27099000900000003
+     ],
+     "obj": "block_blue",
+     "lifted_by": 0.05
+    },
+    "planner_attempts": [
+     {
+      "n_contact_ik": 4,
+      "contact_iters": 0,
+      "n_completion_ik": 4,
+      "completion_iters": 0
+     }
+    ],
+    "planner_contact_config": [
+     -0.32616701206809484,
+     0.7807139464318862,
+     1.315342643279115,
+     -2.045801808854784,
+     -1.1615198878511852,
+     2.5713629343844957,
+     0.55344928
+    ],
+    "planner_completion_config": [
+     -0.32207343433587887,
+     0.769165902192043,
+     1.3442261555152866,
+     -2.0216315362820327,
+     -1.1625189390888602,
+     2.5842305174627698,
+     0.55344928
+    ]
+   }
+  },
+  {
+   "scene_id": "val_0017",
+   "split": "val",
+   "task_name": "push_red_block_right",
+   "initial_state_index": 137,
+   "initial_state": {
+    "led": 1,
+    "lightbulb": 0,
+    "slider": "left",
+    "drawer": "open",
+    "red_block": "table",
+    "blue_block": "slider_left",
+    "pink_block": "slider_right",
+    "grasped": 0
+   },
+   "robot_obs": [
+    0.02586889,
+    -0.2313129,
+    0.5712808,
+    3.09045411,
+    -0.02908596,
+    1.50013585,
+    0.07999963,
+    -1.21779124,
+    1.03987629,
+    2.11978254,
+    -2.34205014,
+    -0.87015899,
+    1.64119093,
+    0.55344928,
+    1.0
+   ],
+   "scene_obs": [
+    0.28,
+    0.22,
+    0.0,
+    0.0,
+    0.0,
+    1.0,
+    0.229995412,
+    -0.11999514,
+    0.45999001,
+    0.0,
+    0.0,
+    1.5356461627218798,
+    -0.240851662,
+    0.0924044687,
+    0.460990009,
+    0.0,
+    0.0,
+    1.3145105426555914,
+    0.070341633,
+    0.0924044687,
+    0.460990009,
+    0.0,
+    0.0,
+    1.884022884934788
+   ],
+   "obstacle_center_local": [
+    0.8648131881980843,
+    0.3137725682687707,
+    0.527668642339397
+   ],
+   "obstacle_center_world": [
+    0.5248131881980842,
+    -0.14622743173122932,
+    0.767668642339397
+   ],
+   "obstacle_radius": 0.05,
+   "policy_seed": 5000017,
+   "provenance": {
+    "candidates_drawn": 89,
+    "workspace_point_index": 155174,
+    "start_clearance": 0.3625452085272774,
+    "rejected": {
+     "start_clearance": 68,
+     "target_keepout": 0,
+     "hit_rate": 20,
+     "infeasible": 0
+    },
+    "workspace_rollout_hit_rate": 0.15,
+    "state_retries": 0,
+    "contact_goal": {
+     "box_min": [
+      0.569995412,
+      0.34000486,
+      0.21999001
+     ],
+     "box_max": [
+      0.569995412,
+      0.34000486,
+      0.21999001
+     ],
+     "obj": "block_red"
+    },
+    "completion_goal": {
+     "box_min": [
+      0.669995412,
+      0.34000486,
+      0.21999001
+     ],
+     "box_max": [
+      0.669995412,
+      0.34000486,
+      0.21999001
+     ],
+     "obj": "block_red",
+     "pushed_by": [
+      0.1,
+      0
+     ]
+    },
+    "planner_attempts": [
+     {
+      "n_contact_ik": 4,
+      "contact_iters": 0,
+      "n_completion_ik": 4,
+      "completion_iters": 0
+     }
+    ],
+    "planner_contact_config": [
+     -0.7595375586922993,
+     0.9802941443307054,
+     1.495077690126027,
+     -2.039273486355423,
+     -1.3458243386638415,
+     2.2592815830667887,
+     0.55344928
+    ],
+    "planner_completion_config": [
+     -0.6374007727938158,
+     1.080494090931182,
+     1.376176095214246,
+     -1.792530595990269,
+     -1.4241188145221126,
+     2.3646593354196805,
+     0.55344928
+    ]
+   }
+  },
+  {
+   "scene_id": "val_0018",
+   "split": "val",
+   "task_name": "close_drawer",
+   "initial_state_index": 187,
+   "initial_state": {
+    "led": 1,
+    "lightbulb": 1,
+    "slider": "left",
+    "drawer": "open",
+    "red_block": "slider_right",
+    "blue_block": "table",
+    "pink_block": "slider_left",
+    "grasped": 0
+   },
+   "robot_obs": [
+    0.02586889,
+    -0.2313129,
+    0.5712808,
+    3.09045411,
+    -0.02908596,
+    1.50013585,
+    0.07999963,
+    -1.21779124,
+    1.03987629,
+    2.11978254,
+    -2.34205014,
+    -0.87015899,
+    1.64119093,
+    0.55344928,
+    1.0
+   ],
+   "scene_obs": [
+    0.28,
+    0.22,
+    0.0,
+    0.088,
+    1.0,
+    1.0,
+    0.070341633,
+    0.0924044687,
+    0.460990009,
+    0.0,
+    0.0,
+    1.3823894830656211,
+    0.229995412,
+    -0.11999514,
+    0.45999001,
+    0.0,
+    0.0,
+    1.4442476189245403,
+    -0.240851662,
+    0.0924044687,
+    0.460990009,
+    0.0,
+    0.0,
+    1.4394240295012921
+   ],
+   "obstacle_center_local": [
+    0.3984288298518623,
+    -0.15899275349137923,
+    0.2585366964862631
+   ],
+   "obstacle_center_world": [
+    0.05842882985186226,
+    -0.6189927534913793,
+    0.4985366964862631
+   ],
+   "obstacle_radius": 0.05,
+   "policy_seed": 5000018,
+   "provenance": {
+    "candidates_drawn": 22,
+    "workspace_point_index": 97604,
+    "start_clearance": 0.20836655143217658,
+    "rejected": {
+     "start_clearance": 17,
+     "target_keepout": 0,
+     "hit_rate": 4,
+     "infeasible": 0
+    },
+    "workspace_rollout_hit_rate": 0.16,
+    "state_retries": 1,
+    "contact_goal": {
+     "box_min": [
+      0.5057224504191529,
+      0.04733907489460959,
+      0.09943513988518587
+     ],
+     "box_max": [
+      0.5057224504191529,
+      0.04733907489460959,
+      0.09943513988518587
+     ],
+     "joint": "base__drawer",
+     "q": 0.22,
+     "contact": "measured"
+    },
+    "completion_goal": {
+     "box_min": [
+      0.5057224504191529,
+      0.16733907489460953,
+      0.09943513988518632
+     ],
+     "box_max": [
+      0.5057224504191529,
+      0.16733907489460953,
+      0.09943513988518632
+     ],
+     "joint": "base__drawer",
+     "q": 0.1,
+     "contact": "measured"
+    },
+    "planner_attempts": [
+     {
+      "n_contact_ik": 4,
+      "contact_iters": 0,
+      "n_completion_ik": 4,
+      "completion_iters": 0
+     }
+    ],
+    "planner_contact_config": [
+     -1.277109675055037,
+     1.1208181197225366,
+     1.4722003353174937,
+     -2.2353630532233804,
+     -1.263970336701637,
+     1.8506582421036375,
+     0.55344928
+    ],
+    "planner_completion_config": [
+     -1.112126315573203,
+     1.2019642471477097,
+     1.477983667764665,
+     -2.2338525569118994,
+     -1.2779356111107354,
+     1.9485529457610522,
+     0.55344928
+    ]
+   }
+  },
+  {
+   "scene_id": "val_0019",
+   "split": "val",
+   "task_name": "push_red_block_left",
+   "initial_state_index": 24,
+   "initial_state": {
+    "led": 0,
+    "lightbulb": 0,
+    "slider": "left",
+    "drawer": "closed",
+    "red_block": "table",
+    "blue_block": "table",
+    "pink_block": "slider_right",
+    "grasped": 0
+   },
+   "robot_obs": [
+    0.02586889,
+    -0.2313129,
+    0.5712808,
+    3.09045411,
+    -0.02908596,
+    1.50013585,
+    0.07999963,
+    -1.21779124,
+    1.03987629,
+    2.11978254,
+    -2.34205014,
+    -0.87015899,
+    1.64119093,
+    0.55344928,
+    1.0
+   ],
+   "scene_obs": [
+    0.28,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0500000896,
+    -0.120000177,
+    0.459990009,
+    0.0,
+    0.0,
+    1.4705038136474464,
+    0.229995412,
+    -0.11999514,
+    0.45999001,
+    0.0,
+    0.0,
+    1.8784725428339044,
+    0.070341633,
+    0.0924044687,
+    0.460990009,
+    0.0,
+    0.0,
+    1.3117254168414432
+   ],
+   "obstacle_center_local": [
+    0.15297910701356088,
+    -0.04831284372327843,
+    0.7460188388035022
+   ],
+   "obstacle_center_world": [
+    -0.18702089298643915,
+    -0.5083128437232785,
+    0.9860188388035022
+   ],
+   "obstacle_radius": 0.05,
+   "policy_seed": 5000019,
+   "provenance": {
+    "candidates_drawn": 3,
+    "workspace_point_index": 91431,
+    "start_clearance": 0.07087027804276329,
+    "rejected": {
+     "start_clearance": 1,
+     "target_keepout": 0,
+     "hit_rate": 1,
+     "infeasible": 0
+    },
+    "workspace_rollout_hit_rate": 0.225,
+    "state_retries": 0,
+    "contact_goal": {
+     "box_min": [
+      0.39000008960000004,
+      0.33999982300000003,
+      0.219990009
+     ],
+     "box_max": [
+      0.39000008960000004,
+      0.33999982300000003,
+      0.219990009
+     ],
+     "obj": "block_red"
+    },
+    "completion_goal": {
+     "box_min": [
+      0.2900000896,
+      0.33999982300000003,
+      0.219990009
+     ],
+     "box_max": [
+      0.2900000896,
+      0.33999982300000003,
+      0.219990009
+     ],
+     "obj": "block_red",
+     "pushed_by": [
+      -0.1,
+      0
+     ]
+    },
+    "planner_attempts": [
+     {
+      "n_contact_ik": 4,
+      "contact_iters": 0,
+      "n_completion_ik": 4,
+      "completion_iters": 0
+     }
+    ],
+    "planner_contact_config": [
+     -0.8978545820309866,
+     0.9038743033870691,
+     1.7465437478427321,
+     -2.309886413285186,
+     -1.020614991537603,
+     1.9936204289567625,
+     0.55344928
+    ],
+    "planner_completion_config": [
+     -0.8396320632658877,
+     0.9201785273873997,
+     1.7994153489322124,
+     -2.4304777247156117,
+     -0.9656293019699793,
+     1.965350077007919,
+     0.55344928
+    ]
+   }
+  },
+  {
+   "scene_id": "val_0020",
+   "split": "val",
+   "task_name": "turn_on_lightbulb",
+   "initial_state_index": 33,
+   "initial_state": {
+    "led": 0,
+    "lightbulb": 0,
+    "slider": "left",
+    "drawer": "closed",
+    "red_block": "slider_left",
+    "blue_block": "table",
+    "pink_block": "table",
+    "grasped": 0
+   },
+   "robot_obs": [
+    0.02586889,
+    -0.2313129,
+    0.5712808,
+    3.09045411,
+    -0.02908596,
+    1.50013585,
+    0.07999963,
+    -1.21779124,
+    1.03987629,
+    2.11978254,
+    -2.34205014,
+    -0.87015899,
+    1.64119093,
+    0.55344928,
+    1.0
+   ],
+   "scene_obs": [
+    0.28,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    -0.240851662,
+    0.0924044687,
+    0.460990009,
+    0.0,
+    0.0,
+    1.2427791240146062,
+    0.0500000896,
+    -0.120000177,
+    0.459990009,
+    0.0,
+    0.0,
+    1.5678109597598031,
+    0.229995412,
+    -0.11999514,
+    0.45999001,
+    0.0,
+    0.0,
+    1.4487447083410991
+   ],
+   "obstacle_center_local": [
+    0.2975661379631647,
+    -0.161972871264478,
+    0.3758782682580313
+   ],
+   "obstacle_center_world": [
+    -0.0424338620368353,
+    -0.6219728712644781,
+    0.6158782682580313
+   ],
+   "obstacle_radius": 0.05,
+   "policy_seed": 5000020,
+   "provenance": {
+    "candidates_drawn": 82,
+    "workspace_point_index": 130796,
+    "start_clearance": 0.05752459953907542,
+    "rejected": {
+     "start_clearance": 60,
+     "target_keepout": 6,
+     "hit_rate": 15,
+     "infeasible": 0
+    },
+    "workspace_rollout_hit_rate": 0.15,
+    "state_retries": 0,
+    "contact_goal": {
+     "box_min": [
+      0.575748001098633,
+      0.4557843387015523,
+      0.24235964456548093
+     ],
+     "box_max": [
+      0.7042496027946474,
+      0.5387349430963476,
+      0.31349670570077737
+     ],
+     "light": "lightbulb",
+     "q": 0.0
+    },
+    "completion_goal": {
+     "box_min": [
+      0.575748001098633,
+      0.4997843387015526,
+      0.3185698800985114
+     ],
+     "box_max": [
+      0.7042496027946474,
+      0.5827349430963479,
+      0.3897069412338078
+     ],
+     "light": "lightbulb",
+     "q": 0.08800000000000001
+    },
+    "planner_attempts": [
+     {
+      "n_contact_ik": 4,
+      "contact_iters": 0,
+      "n_completion_ik": 4,
+      "completion_iters": 0
+     }
+    ],
+    "planner_contact_config": [
+     -0.5806430367734352,
+     0.9468097298146939,
+     1.5090093877014503,
+     -1.8862586524287055,
+     -1.2913666394537102,
+     2.372174539358065,
+     0.55344928
+    ],
+    "planner_completion_config": [
+     -0.49334321959971394,
+     0.9545612453810592,
+     1.51741859230052,
+     -1.7952837682581329,
+     -1.2994800374574795,
+     2.3993262278122125,
+     0.55344928
+    ]
+   }
+  },
+  {
+   "scene_id": "val_0021",
+   "split": "val",
+   "task_name": "turn_on_led",
+   "initial_state_index": 56,
+   "initial_state": {
+    "led": 0,
+    "lightbulb": 1,
+    "slider": "right",
+    "drawer": "closed",
+    "red_block": "slider_right",
+    "blue_block": "slider_left",
+    "pink_block": "table",
+    "grasped": 0
+   },
+   "robot_obs": [
+    0.02586889,
+    -0.2313129,
+    0.5712808,
+    3.09045411,
+    -0.02908596,
+    1.50013585,
+    0.07999963,
+    -1.21779124,
+    1.03987629,
+    2.11978254,
+    -2.34205014,
+    -0.87015899,
+    1.64119093,
+    0.55344928,
+    1.0
+   ],
+   "scene_obs": [
+    0.0,
+    0.0,
+    0.0,
+    0.088,
+    1.0,
+    0.0,
+    0.070341633,
+    0.0924044687,
+    0.460990009,
+    0.0,
+    0.0,
+    1.6260828168803858,
+    -0.240851662,
+    0.0924044687,
+    0.460990009,
+    0.0,
+    0.0,
+    1.4054332461484522,
+    0.229995412,
+    -0.11999514,
+    0.45999001,
+    0.0,
+    0.0,
+    1.6487854336923595
+   ],
+   "obstacle_center_local": [
+    0.2204023585871131,
+    0.5006539923805858,
+    0.5064142830427307
+   ],
+   "obstacle_center_world": [
+    -0.11959764141288692,
+    0.04065399238058581,
+    0.7464142830427307
+   ],
+   "obstacle_radius": 0.05,
+   "policy_seed": 5000021,
+   "provenance": {
+    "candidates_drawn": 216,
+    "workspace_point_index": 25969,
+    "start_clearance": 0.15628586371597142,
+    "rejected": {
+     "start_clearance": 196,
+     "target_keepout": 2,
+     "hit_rate": 17,
+     "infeasible": 0
+    },
+    "workspace_rollout_hit_rate": 0.18,
+    "state_retries": 0,
+    "contact_goal": {
+     "box_min": [
+      0.1851092947721482,
+      0.3050000007152555,
+      0.21699999999999975
+     ],
+     "box_max": [
+      0.25489070522785195,
+      0.37499999928474415,
+      0.24699999946355822
+     ],
+     "light": "led",
+     "q": 0.0
+    },
+    "completion_goal": {
+     "box_min": [
+      0.1851092947721482,
+      0.30500000071525574,
+      0.19699999999999973
+     ],
+     "box_max": [
+      0.25489070522785195,
+      0.37499999928474437,
+      0.2269999994635582
+     ],
+     "light": "led",
+     "q": 0.020000000000000004
+    },
+    "planner_attempts": [
+     {
+      "n_contact_ik": 4,
+      "contact_iters": 0,
+      "n_completion_ik": 4,
+      "completion_iters": 0
+     }
+    ],
+    "planner_contact_config": [
+     -1.0050712277218932,
+     1.008369334578646,
+     2.0764168177867504,
+     -2.5440810862984775,
+     -0.8021376814013693,
+     1.7248138602548462,
+     0.55344928
+    ],
+    "planner_completion_config": [
+     -0.9743561853041959,
+     0.9954701603080811,
+     2.0454910997110667,
+     -2.575525904661761,
+     -0.8061780375263239,
+     1.7478386811721405,
+     0.55344928
+    ]
+   }
+  },
+  {
+   "scene_id": "val_0022",
+   "split": "val",
+   "task_name": "open_drawer",
+   "initial_state_index": 7,
+   "initial_state": {
+    "led": 0,
+    "lightbulb": 0,
+    "slider": "right",
+    "drawer": "closed",
+    "red_block": "slider_right",
+    "blue_block": "table",
+    "pink_block": "slider_left",
+    "grasped": 0
+   },
+   "robot_obs": [
+    0.02586889,
+    -0.2313129,
+    0.5712808,
+    3.09045411,
+    -0.02908596,
+    1.50013585,
+    0.07999963,
+    -1.21779124,
+    1.03987629,
+    2.11978254,
+    -2.34205014,
+    -0.87015899,
+    1.64119093,
+    0.55344928,
+    1.0
+   ],
+   "scene_obs": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.070341633,
+    0.0924044687,
+    0.460990009,
+    0.0,
+    0.0,
+    1.571536470212766,
+    0.229995412,
+    -0.11999514,
+    0.45999001,
+    0.0,
+    0.0,
+    1.7067137753389636,
+    -0.240851662,
+    0.0924044687,
+    0.460990009,
+    0.0,
+    0.0,
+    1.8728105206425112
+   ],
+   "obstacle_center_local": [
+    0.6397779764299548,
+    0.3208195528615927,
+    0.3422894124029942
+   ],
+   "obstacle_center_world": [
+    0.2997779764299548,
+    -0.13918044713840733,
+    0.5822894124029943
+   ],
+   "obstacle_radius": 0.05,
+   "policy_seed": 5000022,
+   "provenance": {
+    "candidates_drawn": 27,
+    "workspace_point_index": 52601,
+    "start_clearance": 0.17919903118696362,
+    "rejected": {
+     "start_clearance": 21,
+     "target_keepout": 0,
+     "hit_rate": 5,
+     "infeasible": 0
+    },
+    "workspace_rollout_hit_rate": 0.18,
+    "state_retries": 1,
+    "contact_goal": {
+     "box_min": [
+      0.5319017472169738,
+      0.23298138549503764,
+      0.10161470491755209
+     ],
+     "box_max": [
+      0.5319017472169738,
+      0.23298138549503764,
+      0.10161470491755209
+     ],
+     "joint": "base__drawer",
+     "q": 0.0,
+     "contact": "measured"
+    },
+    "completion_goal": {
+     "box_min": [
+      0.5319017472169738,
+      0.11298138549503772,
+      0.10161470491755165
+     ],
+     "box_max": [
+      0.5319017472169738,
+      0.11298138549503772,
+      0.10161470491755165
+     ],
+     "joint": "base__drawer",
+     "q": 0.12,
+     "contact": "measured"
+    },
+    "planner_attempts": [
+     {
+      "n_contact_ik": 4,
+      "contact_iters": 0,
+      "n_completion_ik": 4,
+      "completion_iters": 0
+     }
+    ],
+    "planner_contact_config": [
+     -0.8965346895690209,
+     1.0713342744324232,
+     1.3576099207350476,
+     -2.192014682576964,
+     -1.4103365451414944,
+     2.1882692551437644,
+     0.55344928
+    ],
+    "planner_completion_config": [
+     -1.045315525642051,
+     0.9792580780001933,
+     1.3442010171354535,
+     -2.219582651745406,
+     -1.3888248211680687,
+     2.106096384710314,
+     0.55344928
+    ]
+   }
+  },
+  {
+   "scene_id": "val_0023",
+   "split": "val",
+   "task_name": "move_slider_right",
+   "initial_state_index": 26,
+   "initial_state": {
+    "led": 0,
+    "lightbulb": 0,
+    "slider": "left",
+    "drawer": "closed",
+    "red_block": "table",
+    "blue_block": "slider_right",
+    "pink_block": "table",
+    "grasped": 0
+   },
+   "robot_obs": [
+    0.02586889,
+    -0.2313129,
+    0.5712808,
+    3.09045411,
+    -0.02908596,
+    1.50013585,
+    0.07999963,
+    -1.21779124,
+    1.03987629,
+    2.11978254,
+    -2.34205014,
+    -0.87015899,
+    1.64119093,
+    0.55344928,
+    1.0
+   ],
+   "scene_obs": [
+    0.28,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0500000896,
+    -0.120000177,
+    0.459990009,
+    0.0,
+    0.0,
+    1.3346477905685783,
+    0.070341633,
+    0.0924044687,
+    0.460990009,
+    0.0,
+    0.0,
+    1.4328368670551692,
+    0.229995412,
+    -0.11999514,
+    0.45999001,
+    0.0,
+    0.0,
+    1.2908930184242926
+   ],
+   "obstacle_center_local": [
+    0.006650276851029646,
+    0.35065630435461514,
+    0.3960266554278129
+   ],
+   "obstacle_center_world": [
+    -0.3333497231489704,
+    -0.10934369564538488,
+    0.6360266554278129
+   ],
+   "obstacle_radius": 0.05,
+   "policy_seed": 5000023,
+   "provenance": {
+    "candidates_drawn": 63,
+    "workspace_point_index": 36167,
+    "start_clearance": 0.1763375215441788,
+    "rejected": {
+     "start_clearance": 40,
+     "target_keepout": 2,
+     "hit_rate": 20,
+     "infeasible": 0
+    },
+    "workspace_rollout_hit_rate": 0.0875,
+    "state_retries": 0,
+    "contact_goal": {
+     "box_min": [
+      0.09619016279473341,
+      0.4471968550374759,
+      0.27875093075000246
+     ],
+     "box_max": [
+      0.09619016279473341,
+      0.4471968550374759,
+      0.27875093075000246
+     ],
+     "joint": "base__slide",
+     "q": 0.28,
+     "contact": "measured"
+    },
+    "completion_goal": {
+     "box_min": [
+      0.2461901627947334,
+      0.4471968550374759,
+      0.27875093075000246
+     ],
+     "box_max": [
+      0.2461901627947334,
+      0.4471968550374759,
+      0.27875093075000246
+     ],
+     "joint": "base__slide",
+     "q": 0.13000000000000003,
+     "contact": "measured"
+    },
+    "planner_attempts": [
+     {
+      "n_contact_ik": 4,
+      "contact_iters": 0,
+      "n_completion_ik": 4,
+      "completion_iters": 0
+     }
+    ],
+    "planner_contact_config": [
+     1.4718741774388067,
+     0.29385199954207175,
+     -0.2815916877560078,
+     -1.7508615516274963,
+     0.3033372509913861,
+     1.351064378757718,
+     -2.096867784260362
+    ],
+    "planner_completion_config": [
+     1.3424809174197523,
+     0.2974988816315936,
+     -0.4096902836536184,
+     -1.7022820145004107,
+     0.24432886708584037,
+     1.4026375762262557,
+     -2.096867784260362
+    ]
+   }
+  },
+  {
+   "scene_id": "val_0024",
+   "split": "val",
+   "task_name": "push_into_drawer",
+   "initial_state_index": 19,
+   "initial_state": {
+    "led": 0,
+    "lightbulb": 0,
+    "slider": "right",
+    "drawer": "open",
+    "red_block": "slider_right",
+    "blue_block": "table",
+    "pink_block": "slider_left",
+    "grasped": 0
+   },
+   "robot_obs": [
+    0.02586889,
+    -0.2313129,
+    0.5712808,
+    3.09045411,
+    -0.02908596,
+    1.50013585,
+    0.07999963,
+    -1.21779124,
+    1.03987629,
+    2.11978254,
+    -2.34205014,
+    -0.87015899,
+    1.64119093,
+    0.55344928,
+    1.0
+   ],
+   "scene_obs": [
+    0.0,
+    0.22,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.070341633,
+    0.0924044687,
+    0.460990009,
+    0.0,
+    0.0,
+    1.6417161152541255,
+    0.0500000896,
+    -0.120000177,
+    0.459990009,
+    0.0,
+    0.0,
+    1.65635992760539,
+    -0.240851662,
+    0.0924044687,
+    0.460990009,
+    0.0,
+    0.0,
+    1.4164785711443053
+   ],
+   "obstacle_center_local": [
+    0.6873341487632241,
+    0.49647757349334043,
+    0.4865390733120345
+   ],
+   "obstacle_center_world": [
+    0.34733414876322405,
+    0.03647757349334041,
+    0.7265390733120345
+   ],
+   "obstacle_radius": 0.05,
+   "policy_seed": 5000024,
+   "provenance": {
+    "candidates_drawn": 44,
+    "workspace_point_index": 81574,
+    "start_clearance": 0.28201666570373846,
+    "rejected": {
+     "start_clearance": 34,
+     "target_keepout": 0,
+     "hit_rate": 9,
+     "infeasible": 0
+    },
+    "workspace_rollout_hit_rate": 0.06,
+    "state_retries": 0,
+    "contact_goal": {
+     "box_min": [
+      0.39000008960000004,
+      0.33999982300000003,
+      0.219990009
+     ],
+     "box_max": [
+      0.39000008960000004,
+      0.33999982300000003,
+      0.219990009
+     ],
+     "obj": "block_blue"
+    },
+    "completion_goal": {
+     "box_min": [
+      0.2951199922561646,
+      -0.025199998855591044,
+      0.05511999970674353
+     ],
+     "box_max": [
+      0.7448800077438356,
+      0.3048799993991853,
+      0.16519999766349747
+     ],
+     "joint": "base__drawer",
+     "q": 0.22
+    },
+    "planner_attempts": [
+     {
+      "n_contact_ik": 4,
+      "contact_iters": 0,
+      "n_completion_ik": 4,
+      "completion_iters": 0
+     }
+    ],
+    "planner_contact_config": [
+     -0.8978545820309866,
+     0.9038743033870691,
+     1.7465437478427321,
+     -2.309886413285186,
+     -1.020614991537603,
+     1.9936204289567625,
+     0.55344928
+    ],
+    "planner_completion_config": [
+     -0.9110447472893914,
+     0.899490907407611,
+     1.6687100060938493,
+     -2.3614700739261534,
+     -1.0202691331064488,
+     1.9678448159082562,
+     0.55344928
+    ]
+   }
+  },
+  {
+   "scene_id": "val_0025",
+   "split": "val",
+   "task_name": "push_blue_block_right",
+   "initial_state_index": 97,
+   "initial_state": {
+    "led": 1,
+    "lightbulb": 0,
+    "slider": "right",
+    "drawer": "closed",
+    "red_block": "table",
+    "blue_block": "table",
+    "pink_block": "slider_left",
+    "grasped": 0
+   },
+   "robot_obs": [
+    0.02586889,
+    -0.2313129,
+    0.5712808,
+    3.09045411,
+    -0.02908596,
+    1.50013585,
+    0.07999963,
+    -1.21779124,
+    1.03987629,
+    2.11978254,
+    -2.34205014,
+    -0.87015899,
+    1.64119093,
+    0.55344928,
+    1.0
+   ],
+   "scene_obs": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    1.0,
+    0.0500000896,
+    -0.120000177,
+    0.459990009,
+    0.0,
+    0.0,
+    1.2131923051047202,
+    0.229995412,
+    -0.11999514,
+    0.45999001,
+    0.0,
+    0.0,
+    1.6245989511187466,
+    -0.240851662,
+    0.0924044687,
+    0.460990009,
+    0.0,
+    0.0,
+    1.5741339961131944
+   ],
+   "obstacle_center_local": [
+    0.6210964570778006,
+    0.2588389399711143,
+    0.6911032867822646
+   ],
+   "obstacle_center_world": [
+    0.28109645707780057,
+    -0.20116106002888573,
+    0.9311032867822646
+   ],
+   "obstacle_radius": 0.05,
+   "policy_seed": 5000025,
+   "provenance": {
+    "candidates_drawn": 80,
+    "workspace_point_index": 86981,
+    "start_clearance": 0.1335163179044196,
+    "rejected": {
+     "start_clearance": 66,
+     "target_keepout": 0,
+     "hit_rate": 13,
+     "infeasible": 0
+    },
+    "workspace_rollout_hit_rate": 0.1,
+    "state_retries": 0,
+    "contact_goal": {
+     "box_min": [
+      0.569995412,
+      0.34000486,
+      0.21999001
+     ],
+     "box_max": [
+      0.569995412,
+      0.34000486,
+      0.21999001
+     ],
+     "obj": "block_blue"
+    },
+    "completion_goal": {
+     "box_min": [
+      0.669995412,
+      0.34000486,
+      0.21999001
+     ],
+     "box_max": [
+      0.669995412,
+      0.34000486,
+      0.21999001
+     ],
+     "obj": "block_blue",
+     "pushed_by": [
+      0.1,
+      0
+     ]
+    },
+    "planner_attempts": [
+     {
+      "n_contact_ik": 4,
+      "contact_iters": 0,
+      "n_completion_ik": 4,
+      "completion_iters": 0
+     }
+    ],
+    "planner_contact_config": [
+     -0.7595375586922993,
+     0.9802941443307054,
+     1.495077690126027,
+     -2.039273486355423,
+     -1.3458243386638415,
+     2.2592815830667887,
+     0.55344928
+    ],
+    "planner_completion_config": [
+     -0.6374007727938158,
+     1.080494090931182,
+     1.376176095214246,
+     -1.792530595990269,
+     -1.4241188145221126,
+     2.3646593354196805,
+     0.55344928
+    ]
+   }
+  },
+  {
+   "scene_id": "val_0026",
+   "split": "val",
+   "task_name": "lift_red_block_slider",
+   "initial_state_index": 167,
+   "initial_state": {
+    "led": 1,
+    "lightbulb": 1,
+    "slider": "right",
+    "drawer": "open",
+    "red_block": "slider_left",
+    "blue_block": "slider_right",
+    "pink_block": "table",
+    "grasped": 0
+   },
+   "robot_obs": [
+    0.02586889,
+    -0.2313129,
+    0.5712808,
+    3.09045411,
+    -0.02908596,
+    1.50013585,
+    0.07999963,
+    -1.21779124,
+    1.03987629,
+    2.11978254,
+    -2.34205014,
+    -0.87015899,
+    1.64119093,
+    0.55344928,
+    1.0
+   ],
+   "scene_obs": [
+    0.0,
+    0.22,
+    0.0,
+    0.088,
+    1.0,
+    1.0,
+    -0.240851662,
+    0.0924044687,
+    0.460990009,
+    0.0,
+    0.0,
+    1.7753756365624733,
+    0.070341633,
+    0.0924044687,
+    0.460990009,
+    0.0,
+    0.0,
+    1.2193824523467345,
+    0.0500000896,
+    -0.120000177,
+    0.459990009,
+    0.0,
+    0.0,
+    1.5550158850793805
+   ],
+   "obstacle_center_local": [
+    0.34978609950567957,
+    0.6663077805364672,
+    0.5035991781615837
+   ],
+   "obstacle_center_world": [
+    0.009786099505679546,
+    0.2063077805364672,
+    0.7435991781615837
+   ],
+   "obstacle_radius": 0.05,
+   "policy_seed": 5000026,
+   "provenance": {
+    "candidates_drawn": 9,
+    "workspace_point_index": 51059,
+    "start_clearance": 0.29006261170125597,
+    "rejected": {
+     "start_clearance": 4,
+     "target_keepout": 0,
+     "hit_rate": 4,
+     "infeasible": 0
+    },
+    "workspace_rollout_hit_rate": 0.2,
+    "state_retries": 0,
+    "contact_goal": {
+     "box_min": [
+      0.09914833800000003,
+      0.5524044687,
+      0.220990009
+     ],
+     "box_max": [
+      0.09914833800000003,
+      0.5524044687,
+      0.220990009
+     ],
+     "obj": "block_red"
+    },
+    "completion_goal": {
+     "box_min": [
+      0.09914833800000003,
+      0.5524044687,
+      0.27099000900000003
+     ],
+     "box_max": [
+      0.09914833800000003,
+      0.5524044687,
+      0.27099000900000003
+     ],
+     "obj": "block_red",
+     "lifted_by": 0.05
+    },
+    "planner_attempts": [
+     {
+      "n_contact_ik": 4,
+      "contact_iters": 0,
+      "n_completion_ik": 4,
+      "completion_iters": 0
+     }
+    ],
+    "planner_contact_config": [
+     -0.3096840038864828,
+     0.6804256911993811,
+     1.6560392979250242,
+     -2.3894490908501385,
+     -0.9127226486636153,
+     2.504491993002369,
+     0.55344928
+    ],
+    "planner_completion_config": [
+     -0.3069130555267207,
+     0.6873060108507065,
+     1.6897961711972227,
+     -2.354056731538268,
+     -0.9131206923254634,
+     2.5217036297450695,
+     0.55344928
+    ]
+   }
+  },
+  {
+   "scene_id": "val_0027",
+   "split": "val",
+   "task_name": "rotate_blue_block_left",
+   "initial_state_index": 163,
+   "initial_state": {
+    "led": 1,
+    "lightbulb": 1,
+    "slider": "right",
+    "drawer": "open",
+    "red_block": "slider_right",
+    "blue_block": "table",
+    "pink_block": "slider_left",
+    "grasped": 0
+   },
+   "robot_obs": [
+    0.02586889,
+    -0.2313129,
+    0.5712808,
+    3.09045411,
+    -0.02908596,
+    1.50013585,
+    0.07999963,
+    -1.21779124,
+    1.03987629,
+    2.11978254,
+    -2.34205014,
+    -0.87015899,
+    1.64119093,
+    0.55344928,
+    1.0
+   ],
+   "scene_obs": [
+    0.0,
+    0.22,
+    0.0,
+    0.088,
+    1.0,
+    1.0,
+    0.070341633,
+    0.0924044687,
+    0.460990009,
+    0.0,
+    0.0,
+    1.8268336264859704,
+    0.229995412,
+    -0.11999514,
+    0.45999001,
+    0.0,
+    0.0,
+    1.507641694779252,
+    -0.240851662,
+    0.0924044687,
+    0.460990009,
+    0.0,
+    0.0,
+    1.6461964143959458
+   ],
+   "obstacle_center_local": [
+    0.6905445654826918,
+    0.3411427948065175,
+    0.3613545051749941
+   ],
+   "obstacle_center_world": [
+    0.3505445654826918,
+    -0.11885720519348253,
+    0.6013545051749941
+   ],
+   "obstacle_radius": 0.05,
+   "policy_seed": 5000027,
+   "provenance": {
+    "candidates_drawn": 77,
+    "workspace_point_index": 103685,
+    "start_clearance": 0.23477005074742047,
+    "rejected": {
+     "start_clearance": 66,
+     "target_keepout": 1,
+     "hit_rate": 9,
+     "infeasible": 0
+    },
+    "workspace_rollout_hit_rate": 0.06,
+    "state_retries": 0,
+    "contact_goal": {
+     "box_min": [
+      0.569995412,
+      0.34000486,
+      0.21999001
+     ],
+     "box_max": [
+      0.569995412,
+      0.34000486,
+      0.21999001
+     ],
+     "obj": "block_blue"
+    },
+    "completion_goal": {
+     "wrist_turn": -1.0471975511965976,
+     "degrees": 60
+    },
+    "planner_attempts": [
+     {
+      "n_contact_ik": 4,
+      "contact_iters": 0,
+      "n_completion_ik": 1,
+      "completion_iters": 0
+     }
+    ],
+    "planner_contact_config": [
+     -0.7595375586922993,
+     0.9802941443307054,
+     1.495077690126027,
+     -2.039273486355423,
+     -1.3458243386638415,
+     2.2592815830667887,
+     0.55344928
+    ],
+    "planner_completion_config": [
+     -0.7595375586922993,
+     0.9802941443307054,
+     1.495077690126027,
+     -2.039273486355423,
+     -1.3458243386638415,
+     2.2592815830667887,
+     -0.4937482711965976
+    ]
+   }
+  },
+  {
+   "scene_id": "val_0028",
+   "split": "val",
+   "task_name": "push_pink_block_right",
+   "initial_state_index": 124,
+   "initial_state": {
+    "led": 1,
+    "lightbulb": 0,
+    "slider": "left",
+    "drawer": "closed",
+    "red_block": "table",
+    "blue_block": "slider_left",
+    "pink_block": "table",
+    "grasped": 0
+   },
+   "robot_obs": [
+    0.02586889,
+    -0.2313129,
+    0.5712808,
+    3.09045411,
+    -0.02908596,
+    1.50013585,
+    0.07999963,
+    -1.21779124,
+    1.03987629,
+    2.11978254,
+    -2.34205014,
+    -0.87015899,
+    1.64119093,
+    0.55344928,
+    1.0
+   ],
+   "scene_obs": [
+    0.28,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    1.0,
+    0.0500000896,
+    -0.120000177,
+    0.459990009,
+    0.0,
+    0.0,
+    1.4256619531206893,
+    -0.240851662,
+    0.0924044687,
+    0.460990009,
+    0.0,
+    0.0,
+    1.9536153109275487,
+    0.229995412,
+    -0.11999514,
+    0.45999001,
+    0.0,
+    0.0,
+    1.695085111047561
+   ],
+   "obstacle_center_local": [
+    0.5297652670205873,
+    0.25701245585577365,
+    0.7188905236050975
+   ],
+   "obstacle_center_world": [
+    0.18976526702058732,
+    -0.20298754414422637,
+    0.9588905236050975
+   ],
+   "obstacle_radius": 0.05,
+   "policy_seed": 5000028,
+   "provenance": {
+    "candidates_drawn": 118,
+    "workspace_point_index": 6629,
+    "start_clearance": 0.06894531370732523,
+    "rejected": {
+     "start_clearance": 102,
+     "target_keepout": 0,
+     "hit_rate": 15,
+     "infeasible": 0
+    },
+    "workspace_rollout_hit_rate": 0.125,
+    "state_retries": 0,
+    "contact_goal": {
+     "box_min": [
+      0.569995412,
+      0.34000486,
+      0.21999001
+     ],
+     "box_max": [
+      0.569995412,
+      0.34000486,
+      0.21999001
+     ],
+     "obj": "block_pink"
+    },
+    "completion_goal": {
+     "box_min": [
+      0.669995412,
+      0.34000486,
+      0.21999001
+     ],
+     "box_max": [
+      0.669995412,
+      0.34000486,
+      0.21999001
+     ],
+     "obj": "block_pink",
+     "pushed_by": [
+      0.1,
+      0
+     ]
+    },
+    "planner_attempts": [
+     {
+      "n_contact_ik": 4,
+      "contact_iters": 0,
+      "n_completion_ik": 4,
+      "completion_iters": 0
+     }
+    ],
+    "planner_contact_config": [
+     -0.7595375586922993,
+     0.9802941443307054,
+     1.495077690126027,
+     -2.039273486355423,
+     -1.3458243386638415,
+     2.2592815830667887,
+     0.55344928
+    ],
+    "planner_completion_config": [
+     -0.6374007727938158,
+     1.080494090931182,
+     1.376176095214246,
+     -1.792530595990269,
+     -1.4241188145221126,
+     2.3646593354196805,
+     0.55344928
+    ]
+   }
+  },
+  {
+   "scene_id": "val_0029",
+   "split": "val",
+   "task_name": "rotate_blue_block_right",
+   "initial_state_index": 24,
+   "initial_state": {
+    "led": 0,
+    "lightbulb": 0,
+    "slider": "left",
+    "drawer": "closed",
+    "red_block": "table",
+    "blue_block": "table",
+    "pink_block": "slider_right",
+    "grasped": 0
+   },
+   "robot_obs": [
+    0.02586889,
+    -0.2313129,
+    0.5712808,
+    3.09045411,
+    -0.02908596,
+    1.50013585,
+    0.07999963,
+    -1.21779124,
+    1.03987629,
+    2.11978254,
+    -2.34205014,
+    -0.87015899,
+    1.64119093,
+    0.55344928,
+    1.0
+   ],
+   "scene_obs": [
+    0.28,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0500000896,
+    -0.120000177,
+    0.459990009,
+    0.0,
+    0.0,
+    1.4705038136474464,
+    0.229995412,
+    -0.11999514,
+    0.45999001,
+    0.0,
+    0.0,
+    1.8784725428339044,
+    0.070341633,
+    0.0924044687,
+    0.460990009,
+    0.0,
+    0.0,
+    1.3117254168414432
+   ],
+   "obstacle_center_local": [
+    0.5607691518254311,
+    0.081268905548492,
+    0.4688142921169322
+   ],
+   "obstacle_center_world": [
+    0.22076915182543105,
+    -0.378731094451508,
+    0.7088142921169323
+   ],
+   "obstacle_radius": 0.05,
+   "policy_seed": 5000029,
+   "provenance": {
+    "candidates_drawn": 119,
+    "workspace_point_index": 86950,
+    "start_clearance": 0.10293630260942253,
+    "rejected": {
+     "start_clearance": 110,
+     "target_keepout": 0,
+     "hit_rate": 8,
+     "infeasible": 0
+    },
+    "workspace_rollout_hit_rate": 0.38,
+    "state_retries": 0,
+    "contact_goal": {
+     "box_min": [
+      0.569995412,
+      0.34000486,
+      0.21999001
+     ],
+     "box_max": [
+      0.569995412,
+      0.34000486,
+      0.21999001
+     ],
+     "obj": "block_blue"
+    },
+    "completion_goal": {
+     "wrist_turn": 1.0471975511965976,
+     "degrees": -60
+    },
+    "planner_attempts": [
+     {
+      "n_contact_ik": 4,
+      "contact_iters": 0,
+      "n_completion_ik": 1,
+      "completion_iters": 0
+     }
+    ],
+    "planner_contact_config": [
+     1.3445094027750704,
+     0.27431803994785986,
+     -0.8645472005229715,
+     -2.241567510841641,
+     -0.9204282044507478,
+     3.027642203733861,
+     0.30539126546085127
+    ],
+    "planner_completion_config": [
+     1.3445094027750704,
+     0.27431803994785986,
+     -0.8645472005229715,
+     -2.241567510841641,
+     -0.9204282044507478,
+     3.027642203733861,
+     1.352588816657449
+    ]
+   }
+  },
+  {
+   "scene_id": "val_0030",
+   "split": "val",
+   "task_name": "lift_pink_block_slider",
+   "initial_state_index": 61,
+   "initial_state": {
+    "led": 0,
+    "lightbulb": 1,
+    "slider": "right",
+    "drawer": "open",
+    "red_block": "table",
+    "blue_block": "table",
+    "pink_block": "slider_left",
+    "grasped": 0
+   },
+   "robot_obs": [
+    0.02586889,
+    -0.2313129,
+    0.5712808,
+    3.09045411,
+    -0.02908596,
+    1.50013585,
+    0.07999963,
+    -1.21779124,
+    1.03987629,
+    2.11978254,
+    -2.34205014,
+    -0.87015899,
+    1.64119093,
+    0.55344928,
+    1.0
+   ],
+   "scene_obs": [
+    0.0,
+    0.22,
+    0.0,
+    0.088,
+    1.0,
+    0.0,
+    0.0500000896,
+    -0.120000177,
+    0.459990009,
+    0.0,
+    0.0,
+    1.935583244092335,
+    0.229995412,
+    -0.11999514,
+    0.45999001,
+    0.0,
+    0.0,
+    1.5695029472573117,
+    -0.240851662,
+    0.0924044687,
+    0.460990009,
+    0.0,
+    0.0,
+    1.4646328121735683
+   ],
+   "obstacle_center_local": [
+    0.13979374614398882,
+    0.06897392427960927,
+    0.7668925962364647
+   ],
+   "obstacle_center_world": [
+    -0.2002062538560112,
+    -0.3910260757203907,
+    1.0068925962364648
+   ],
+   "obstacle_radius": 0.05,
+   "policy_seed": 5000030,
+   "provenance": {
+    "candidates_drawn": 230,
+    "workspace_point_index": 8566,
+    "start_clearance": 0.1084114836801389,
+    "rejected": {
+     "start_clearance": 166,
+     "target_keepout": 0,
+     "hit_rate": 63,
+     "infeasible": 0
+    },
+    "workspace_rollout_hit_rate": 0.28,
+    "state_retries": 0,
+    "contact_goal": {
+     "box_min": [
+      0.09914833800000003,
+      0.5524044687,
+      0.220990009
+     ],
+     "box_max": [
+      0.09914833800000003,
+      0.5524044687,
+      0.220990009
+     ],
+     "obj": "block_pink"
+    },
+    "completion_goal": {
+     "box_min": [
+      0.09914833800000003,
+      0.5524044687,
+      0.27099000900000003
+     ],
+     "box_max": [
+      0.09914833800000003,
+      0.5524044687,
+      0.27099000900000003
+     ],
+     "obj": "block_pink",
+     "lifted_by": 0.05
+    },
+    "planner_attempts": [
+     {
+      "n_contact_ik": 4,
+      "contact_iters": 0,
+      "n_completion_ik": 4,
+      "completion_iters": 0
+     }
+    ],
+    "planner_contact_config": [
+     -0.3096840038864828,
+     0.6804256911993811,
+     1.6560392979250242,
+     -2.3894490908501385,
+     -0.9127226486636153,
+     2.504491993002369,
+     0.55344928
+    ],
+    "planner_completion_config": [
+     -0.3069130555267207,
+     0.6873060108507065,
+     1.6897961711972227,
+     -2.354056731538268,
+     -0.9131206923254634,
+     2.5217036297450695,
+     0.55344928
+    ]
+   }
+  },
+  {
+   "scene_id": "val_0031",
+   "split": "val",
+   "task_name": "turn_off_led",
+   "initial_state_index": 124,
+   "initial_state": {
+    "led": 1,
+    "lightbulb": 0,
+    "slider": "left",
+    "drawer": "closed",
+    "red_block": "table",
+    "blue_block": "slider_left",
+    "pink_block": "table",
+    "grasped": 0
+   },
+   "robot_obs": [
+    0.02586889,
+    -0.2313129,
+    0.5712808,
+    3.09045411,
+    -0.02908596,
+    1.50013585,
+    0.07999963,
+    -1.21779124,
+    1.03987629,
+    2.11978254,
+    -2.34205014,
+    -0.87015899,
+    1.64119093,
+    0.55344928,
+    1.0
+   ],
+   "scene_obs": [
+    0.28,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    1.0,
+    0.0500000896,
+    -0.120000177,
+    0.459990009,
+    0.0,
+    0.0,
+    1.4256619531206893,
+    -0.240851662,
+    0.0924044687,
+    0.460990009,
+    0.0,
+    0.0,
+    1.9536153109275487,
+    0.229995412,
+    -0.11999514,
+    0.45999001,
+    0.0,
+    0.0,
+    1.695085111047561
+   ],
+   "obstacle_center_local": [
+    0.06793096788927223,
+    0.39885594756938525,
+    0.5852970302991296
+   ],
+   "obstacle_center_world": [
+    -0.2720690321107278,
+    -0.06114405243061477,
+    0.8252970302991296
+   ],
+   "obstacle_radius": 0.05,
+   "policy_seed": 5000031,
+   "provenance": {
+    "candidates_drawn": 246,
+    "workspace_point_index": 50320,
+    "start_clearance": 0.1751360739027124,
+    "rejected": {
+     "start_clearance": 232,
+     "target_keepout": 0,
+     "hit_rate": 13,
+     "infeasible": 0
+    },
+    "workspace_rollout_hit_rate": 0.08,
+    "state_retries": 1,
+    "contact_goal": {
+     "box_min": [
+      0.1851092947721482,
+      0.3050000007152555,
+      0.21699999999999975
+     ],
+     "box_max": [
+      0.25489070522785195,
+      0.37499999928474415,
+      0.24699999946355822
+     ],
+     "light": "led",
+     "q": 0.0
+    },
+    "completion_goal": {
+     "box_min": [
+      0.1851092947721482,
+      0.30500000071525574,
+      0.19699999999999973
+     ],
+     "box_max": [
+      0.25489070522785195,
+      0.37499999928474437,
+      0.2269999994635582
+     ],
+     "light": "led",
+     "q": 0.020000000000000004
+    },
+    "planner_attempts": [
+     {
+      "n_contact_ik": 4,
+      "contact_iters": 0,
+      "n_completion_ik": 4,
+      "completion_iters": 0
+     }
+    ],
+    "planner_contact_config": [
+     -1.0050712277218932,
+     1.008369334578646,
+     2.0764168177867504,
+     -2.5440810862984775,
+     -0.8021376814013693,
+     1.7248138602548462,
+     0.55344928
+    ],
+    "planner_completion_config": [
+     -0.9743561853041959,
+     0.9954701603080811,
+     2.0454910997110667,
+     -2.575525904661761,
+     -0.8061780375263239,
+     1.7478386811721405,
+     0.55344928
+    ]
+   }
+  },
+  {
+   "scene_id": "val_0032",
+   "split": "val",
+   "task_name": "push_blue_block_left",
+   "initial_state_index": 118,
+   "initial_state": {
+    "led": 1,
+    "lightbulb": 0,
+    "slider": "right",
+    "drawer": "open",
+    "red_block": "slider_left",
+    "blue_block": "table",
+    "pink_block": "slider_right",
+    "grasped": 0
+   },
+   "robot_obs": [
+    0.02586889,
+    -0.2313129,
+    0.5712808,
+    3.09045411,
+    -0.02908596,
+    1.50013585,
+    0.07999963,
+    -1.21779124,
+    1.03987629,
+    2.11978254,
+    -2.34205014,
+    -0.87015899,
+    1.64119093,
+    0.55344928,
+    1.0
+   ],
+   "scene_obs": [
+    0.0,
+    0.22,
+    0.0,
+    0.0,
+    0.0,
+    1.0,
+    -0.240851662,
+    0.0924044687,
+    0.460990009,
+    0.0,
+    0.0,
+    1.3954721477823275,
+    0.229995412,
+    -0.11999514,
+    0.45999001,
+    0.0,
+    0.0,
+    1.4851717328541258,
+    0.070341633,
+    0.0924044687,
+    0.460990009,
+    0.0,
+    0.0,
+    1.2139275532071032
+   ],
+   "obstacle_center_local": [
+    0.6873190861121856,
+    0.4373582816546936,
+    0.3762648814653111
+   ],
+   "obstacle_center_world": [
+    0.3473190861121856,
+    -0.022641718345306427,
+    0.6162648814653111
+   ],
+   "obstacle_radius": 0.05,
+   "policy_seed": 5000032,
+   "provenance": {
+    "candidates_drawn": 40,
+    "workspace_point_index": 172564,
+    "start_clearance": 0.27521253533462964,
+    "rejected": {
+     "start_clearance": 32,
+     "target_keepout": 0,
+     "hit_rate": 7,
+     "infeasible": 0
+    },
+    "workspace_rollout_hit_rate": 0.275,
+    "state_retries": 0,
+    "contact_goal": {
+     "box_min": [
+      0.569995412,
+      0.34000486,
+      0.21999001
+     ],
+     "box_max": [
+      0.569995412,
+      0.34000486,
+      0.21999001
+     ],
+     "obj": "block_blue"
+    },
+    "completion_goal": {
+     "box_min": [
+      0.46999541200000006,
+      0.34000486,
+      0.21999001
+     ],
+     "box_max": [
+      0.46999541200000006,
+      0.34000486,
+      0.21999001
+     ],
+     "obj": "block_blue",
+     "pushed_by": [
+      -0.1,
+      0
+     ]
+    },
+    "planner_attempts": [
+     {
+      "n_contact_ik": 4,
+      "contact_iters": 0,
+      "n_completion_ik": 4,
+      "completion_iters": 0
+     }
+    ],
+    "planner_contact_config": [
+     -0.7595375586922993,
+     0.9802941443307054,
+     1.495077690126027,
+     -2.039273486355423,
+     -1.3458243386638415,
+     2.2592815830667887,
+     0.55344928
+    ],
+    "planner_completion_config": [
+     -0.8158144741767109,
+     0.9496781014080391,
+     1.5713618496176736,
+     -2.2122794699263877,
+     -1.2865865953310953,
+     2.18921591693569,
+     0.55344928
+    ]
+   }
+  },
+  {
+   "scene_id": "val_0033",
+   "split": "val",
+   "task_name": "rotate_pink_block_right",
+   "initial_state_index": 74,
+   "initial_state": {
+    "led": 0,
+    "lightbulb": 1,
+    "slider": "left",
+    "drawer": "closed",
+    "red_block": "table",
+    "blue_block": "slider_right",
+    "pink_block": "table",
+    "grasped": 0
+   },
+   "robot_obs": [
+    0.02586889,
+    -0.2313129,
+    0.5712808,
+    3.09045411,
+    -0.02908596,
+    1.50013585,
+    0.07999963,
+    -1.21779124,
+    1.03987629,
+    2.11978254,
+    -2.34205014,
+    -0.87015899,
+    1.64119093,
+    0.55344928,
+    1.0
+   ],
+   "scene_obs": [
+    0.28,
+    0.0,
+    0.0,
+    0.088,
+    1.0,
+    0.0,
+    0.0500000896,
+    -0.120000177,
+    0.459990009,
+    0.0,
+    0.0,
+    1.1862275060439396,
+    0.070341633,
+    0.0924044687,
+    0.460990009,
+    0.0,
+    0.0,
+    1.9133275884651255,
+    0.229995412,
+    -0.11999514,
+    0.45999001,
+    0.0,
+    0.0,
+    1.2593090319098157
+   ],
+   "obstacle_center_local": [
+    0.18728120287316247,
+    0.23311110412204866,
+    0.3977160010542108
+   ],
+   "obstacle_center_world": [
+    -0.15271879712683756,
+    -0.22688889587795136,
+    0.6377160010542108
+   ],
+   "obstacle_radius": 0.05,
+   "policy_seed": 5000033,
+   "provenance": {
+    "candidates_drawn": 171,
+    "workspace_point_index": 126581,
+    "start_clearance": 0.06492609144174737,
+    "rejected": {
+     "start_clearance": 148,
+     "target_keepout": 1,
+     "hit_rate": 21,
+     "infeasible": 0
+    },
+    "workspace_rollout_hit_rate": 0.06,
+    "state_retries": 0,
+    "contact_goal": {
+     "box_min": [
+      0.569995412,
+      0.34000486,
+      0.21999001
+     ],
+     "box_max": [
+      0.569995412,
+      0.34000486,
+      0.21999001
+     ],
+     "obj": "block_pink"
+    },
+    "completion_goal": {
+     "wrist_turn": 1.0471975511965976,
+     "degrees": -60
+    },
+    "planner_attempts": [
+     {
+      "n_contact_ik": 4,
+      "contact_iters": 0,
+      "n_completion_ik": 1,
+      "completion_iters": 0
+     }
+    ],
+    "planner_contact_config": [
+     -0.7595375586922993,
+     0.9802941443307054,
+     1.495077690126027,
+     -2.039273486355423,
+     -1.3458243386638415,
+     2.2592815830667887,
+     0.55344928
+    ],
+    "planner_completion_config": [
+     -0.7595375586922993,
+     0.9802941443307054,
+     1.495077690126027,
+     -2.039273486355423,
+     -1.3458243386638415,
+     2.2592815830667887,
+     1.6006468311965976
+    ]
+   }
+  },
+  {
+   "scene_id": "val_0034",
+   "split": "val",
+   "task_name": "rotate_red_block_left",
+   "initial_state_index": 61,
+   "initial_state": {
+    "led": 0,
+    "lightbulb": 1,
+    "slider": "right",
+    "drawer": "open",
+    "red_block": "table",
+    "blue_block": "table",
+    "pink_block": "slider_left",
+    "grasped": 0
+   },
+   "robot_obs": [
+    0.02586889,
+    -0.2313129,
+    0.5712808,
+    3.09045411,
+    -0.02908596,
+    1.50013585,
+    0.07999963,
+    -1.21779124,
+    1.03987629,
+    2.11978254,
+    -2.34205014,
+    -0.87015899,
+    1.64119093,
+    0.55344928,
+    1.0
+   ],
+   "scene_obs": [
+    0.0,
+    0.22,
+    0.0,
+    0.088,
+    1.0,
+    0.0,
+    0.0500000896,
+    -0.120000177,
+    0.459990009,
+    0.0,
+    0.0,
+    1.935583244092335,
+    0.229995412,
+    -0.11999514,
+    0.45999001,
+    0.0,
+    0.0,
+    1.5695029472573117,
+    -0.240851662,
+    0.0924044687,
+    0.460990009,
+    0.0,
+    0.0,
+    1.4646328121735683
+   ],
+   "obstacle_center_local": [
+    0.4330173964435026,
+    -0.1372048031054613,
+    0.41927907833854616
+   ],
+   "obstacle_center_world": [
+    0.0930173964435026,
+    -0.5972048031054613,
+    0.6592790783385462
+   ],
+   "obstacle_radius": 0.05,
+   "policy_seed": 5000034,
+   "provenance": {
+    "candidates_drawn": 47,
+    "workspace_point_index": 134889,
+    "start_clearance": 0.11475376993981835,
+    "rejected": {
+     "start_clearance": 39,
+     "target_keepout": 1,
+     "hit_rate": 6,
+     "infeasible": 0
+    },
+    "workspace_rollout_hit_rate": 0.14,
+    "state_retries": 0,
+    "contact_goal": {
+     "box_min": [
+      0.39000008960000004,
+      0.33999982300000003,
+      0.219990009
+     ],
+     "box_max": [
+      0.39000008960000004,
+      0.33999982300000003,
+      0.219990009
+     ],
+     "obj": "block_red"
+    },
+    "completion_goal": {
+     "wrist_turn": -1.0471975511965976,
+     "degrees": 60
+    },
+    "planner_attempts": [
+     {
+      "n_contact_ik": 4,
+      "contact_iters": 0,
+      "n_completion_ik": 1,
+      "completion_iters": 0
+     }
+    ],
+    "planner_contact_config": [
+     -0.8978545820309866,
+     0.9038743033870691,
+     1.7465437478427321,
+     -2.309886413285186,
+     -1.020614991537603,
+     1.9936204289567625,
+     0.55344928
+    ],
+    "planner_completion_config": [
+     -0.8978545820309866,
+     0.9038743033870691,
+     1.7465437478427321,
+     -2.309886413285186,
+     -1.020614991537603,
+     1.9936204289567625,
+     -0.4937482711965976
+    ]
+   }
+  },
+  {
+   "scene_id": "val_0035",
+   "split": "val",
+   "task_name": "lift_pink_block_table",
+   "initial_state_index": 59,
+   "initial_state": {
+    "led": 0,
+    "lightbulb": 1,
+    "slider": "right",
+    "drawer": "closed",
+    "red_block": "slider_left",
+    "blue_block": "slider_right",
+    "pink_block": "table",
+    "grasped": 0
+   },
+   "robot_obs": [
+    0.02586889,
+    -0.2313129,
+    0.5712808,
+    3.09045411,
+    -0.02908596,
+    1.50013585,
+    0.07999963,
+    -1.21779124,
+    1.03987629,
+    2.11978254,
+    -2.34205014,
+    -0.87015899,
+    1.64119093,
+    0.55344928,
+    1.0
+   ],
+   "scene_obs": [
+    0.0,
+    0.0,
+    0.0,
+    0.088,
+    1.0,
+    0.0,
+    -0.240851662,
+    0.0924044687,
+    0.460990009,
+    0.0,
+    0.0,
+    1.2739616014979886,
+    0.070341633,
+    0.0924044687,
+    0.460990009,
+    0.0,
+    0.0,
+    1.3876800624373289,
+    0.0500000896,
+    -0.120000177,
+    0.459990009,
+    0.0,
+    0.0,
+    1.387742719857105
+   ],
+   "obstacle_center_local": [
+    0.221193661723672,
+    0.4211565239651691,
+    0.4586668866571161
+   ],
+   "obstacle_center_world": [
+    -0.11880633827632803,
+    -0.038843476034830904,
+    0.6986668866571161
+   ],
+   "obstacle_radius": 0.05,
+   "policy_seed": 5000035,
+   "provenance": {
+    "candidates_drawn": 26,
+    "workspace_point_index": 68020,
+    "start_clearance": 0.10648127578204707,
+    "rejected": {
+     "start_clearance": 23,
+     "target_keepout": 0,
+     "hit_rate": 2,
+     "infeasible": 0
+    },
+    "workspace_rollout_hit_rate": 0.05,
+    "state_retries": 1,
+    "contact_goal": {
+     "box_min": [
+      0.39000008960000004,
+      0.33999982300000003,
+      0.219990009
+     ],
+     "box_max": [
+      0.39000008960000004,
+      0.33999982300000003,
+      0.219990009
+     ],
+     "obj": "block_pink"
+    },
+    "completion_goal": {
+     "box_min": [
+      0.39000008960000004,
+      0.33999982300000003,
+      0.28999000900000005
+     ],
+     "box_max": [
+      0.39000008960000004,
+      0.33999982300000003,
+      0.28999000900000005
+     ],
+     "obj": "block_pink",
+     "lifted_by": 0.07
+    },
+    "planner_attempts": [
+     {
+      "n_contact_ik": 4,
+      "contact_iters": 0,
+      "n_completion_ik": 4,
+      "completion_iters": 0
+     }
+    ],
+    "planner_contact_config": [
+     -0.8978545820309866,
+     0.9038743033870691,
+     1.7465437478427321,
+     -2.309886413285186,
+     -1.020614991537603,
+     1.9936204289567625,
+     0.55344928
+    ],
+    "planner_completion_config": [
+     -0.9196789855527783,
+     0.9086544029304893,
+     1.8497595359008834,
+     -2.2669484152198294,
+     -1.0092832556678895,
+     1.9923684980136285,
+     0.55344928
+    ]
+   }
+  },
+  {
+   "scene_id": "val_0036",
+   "split": "val",
+   "task_name": "lift_blue_block_table",
+   "initial_state_index": 22,
+   "initial_state": {
+    "led": 0,
+    "lightbulb": 0,
+    "slider": "right",
+    "drawer": "open",
+    "red_block": "slider_left",
+    "blue_block": "table",
+    "pink_block": "slider_right",
+    "grasped": 0
+   },
+   "robot_obs": [
+    0.02586889,
+    -0.2313129,
+    0.5712808,
+    3.09045411,
+    -0.02908596,
+    1.50013585,
+    0.07999963,
+    -1.21779124,
+    1.03987629,
+    2.11978254,
+    -2.34205014,
+    -0.87015899,
+    1.64119093,
+    0.55344928,
+    1.0
+   ],
+   "scene_obs": [
+    0.0,
+    0.22,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    -0.240851662,
+    0.0924044687,
+    0.460990009,
+    0.0,
+    0.0,
+    1.7952059313419508,
+    0.229995412,
+    -0.11999514,
+    0.45999001,
+    0.0,
+    0.0,
+    1.2496473846841143,
+    0.070341633,
+    0.0924044687,
+    0.460990009,
+    0.0,
+    0.0,
+    1.6189070578670295
+   ],
+   "obstacle_center_local": [
+    0.6328291936368498,
+    0.4759892800468403,
+    0.3977616126911252
+   ],
+   "obstacle_center_world": [
+    0.2928291936368497,
+    0.015989280046840304,
+    0.6377616126911252
+   ],
+   "obstacle_radius": 0.05,
+   "policy_seed": 5000036,
+   "provenance": {
+    "candidates_drawn": 54,
+    "workspace_point_index": 69660,
+    "start_clearance": 0.2570643414675265,
+    "rejected": {
+     "start_clearance": 49,
+     "target_keepout": 0,
+     "hit_rate": 4,
+     "infeasible": 0
+    },
+    "workspace_rollout_hit_rate": 0.16,
+    "state_retries": 0,
+    "contact_goal": {
+     "box_min": [
+      0.569995412,
+      0.34000486,
+      0.21999001
+     ],
+     "box_max": [
+      0.569995412,
+      0.34000486,
+      0.21999001
+     ],
+     "obj": "block_blue"
+    },
+    "completion_goal": {
+     "box_min": [
+      0.569995412,
+      0.34000486,
+      0.28999001
+     ],
+     "box_max": [
+      0.569995412,
+      0.34000486,
+      0.28999001
+     ],
+     "obj": "block_blue",
+     "lifted_by": 0.07
+    },
+    "planner_attempts": [
+     {
+      "n_contact_ik": 4,
+      "contact_iters": 0,
+      "n_completion_ik": 4,
+      "completion_iters": 0
+     }
+    ],
+    "planner_contact_config": [
+     -0.7595375586922993,
+     0.9802941443307054,
+     1.495077690126027,
+     -2.039273486355423,
+     -1.3458243386638415,
+     2.2592815830667887,
+     0.55344928
+    ],
+    "planner_completion_config": [
+     -0.7824869355856143,
+     0.9522977200868465,
+     1.5614786949483408,
+     -2.0066587477925224,
+     -1.3476497581061164,
+     2.269857749347156,
+     0.55344928
+    ]
+   }
+  },
+  {
+   "scene_id": "val_0037",
+   "split": "val",
+   "task_name": "rotate_red_block_right",
+   "initial_state_index": 24,
+   "initial_state": {
+    "led": 0,
+    "lightbulb": 0,
+    "slider": "left",
+    "drawer": "closed",
+    "red_block": "table",
+    "blue_block": "table",
+    "pink_block": "slider_right",
+    "grasped": 0
+   },
+   "robot_obs": [
+    0.02586889,
+    -0.2313129,
+    0.5712808,
+    3.09045411,
+    -0.02908596,
+    1.50013585,
+    0.07999963,
+    -1.21779124,
+    1.03987629,
+    2.11978254,
+    -2.34205014,
+    -0.87015899,
+    1.64119093,
+    0.55344928,
+    1.0
+   ],
+   "scene_obs": [
+    0.28,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0500000896,
+    -0.120000177,
+    0.459990009,
+    0.0,
+    0.0,
+    1.4705038136474464,
+    0.229995412,
+    -0.11999514,
+    0.45999001,
+    0.0,
+    0.0,
+    1.8784725428339044,
+    0.070341633,
+    0.0924044687,
+    0.460990009,
+    0.0,
+    0.0,
+    1.3117254168414432
+   ],
+   "obstacle_center_local": [
+    0.6862373752410649,
+    0.3058919998101302,
+    0.3551026428647387
+   ],
+   "obstacle_center_world": [
+    0.34623737524106485,
+    -0.1541080001898698,
+    0.5951026428647387
+   ],
+   "obstacle_radius": 0.05,
+   "policy_seed": 5000037,
+   "provenance": {
+    "candidates_drawn": 139,
+    "workspace_point_index": 215465,
+    "start_clearance": 0.2203650372533772,
+    "rejected": {
+     "start_clearance": 112,
+     "target_keepout": 0,
+     "hit_rate": 26,
+     "infeasible": 0
+    },
+    "workspace_rollout_hit_rate": 0.2625,
+    "state_retries": 0,
+    "contact_goal": {
+     "box_min": [
+      0.39000008960000004,
+      0.33999982300000003,
+      0.219990009
+     ],
+     "box_max": [
+      0.39000008960000004,
+      0.33999982300000003,
+      0.219990009
+     ],
+     "obj": "block_red"
+    },
+    "completion_goal": {
+     "wrist_turn": 1.0471975511965976,
+     "degrees": -60
+    },
+    "planner_attempts": [
+     {
+      "n_contact_ik": 4,
+      "contact_iters": 0,
+      "n_completion_ik": 1,
+      "completion_iters": 0
+     }
+    ],
+    "planner_contact_config": [
+     -0.8978545820309866,
+     0.9038743033870691,
+     1.7465437478427321,
+     -2.309886413285186,
+     -1.020614991537603,
+     1.9936204289567625,
+     0.55344928
+    ],
+    "planner_completion_config": [
+     -0.8978545820309866,
+     0.9038743033870691,
+     1.7465437478427321,
+     -2.309886413285186,
+     -1.020614991537603,
+     1.9936204289567625,
+     1.6006468311965976
+    ]
+   }
+  },
+  {
+   "scene_id": "val_0038",
+   "split": "val",
+   "task_name": "lift_red_block_table",
+   "initial_state_index": 73,
+   "initial_state": {
+    "led": 0,
+    "lightbulb": 1,
+    "slider": "left",
+    "drawer": "closed",
+    "red_block": "table",
+    "blue_block": "table",
+    "pink_block": "slider_left",
+    "grasped": 0
+   },
+   "robot_obs": [
+    0.02586889,
+    -0.2313129,
+    0.5712808,
+    3.09045411,
+    -0.02908596,
+    1.50013585,
+    0.07999963,
+    -1.21779124,
+    1.03987629,
+    2.11978254,
+    -2.34205014,
+    -0.87015899,
+    1.64119093,
+    0.55344928,
+    1.0
+   ],
+   "scene_obs": [
+    0.28,
+    0.0,
+    0.0,
+    0.088,
+    1.0,
+    0.0,
+    0.229995412,
+    -0.11999514,
+    0.45999001,
+    0.0,
+    0.0,
+    1.9525174127108285,
+    0.0500000896,
+    -0.120000177,
+    0.459990009,
+    0.0,
+    0.0,
+    1.6934934900328784,
+    -0.240851662,
+    0.0924044687,
+    0.460990009,
+    0.0,
+    0.0,
+    1.678950229389158
+   ],
+   "obstacle_center_local": [
+    0.7240026383071541,
+    0.31962751361649533,
+    0.4432470924489767
+   ],
+   "obstacle_center_world": [
+    0.38400263830715403,
+    -0.1403724863835047,
+    0.6832470924489766
+   ],
+   "obstacle_radius": 0.05,
+   "policy_seed": 5000038,
+   "provenance": {
+    "candidates_drawn": 242,
+    "workspace_point_index": 108346,
+    "start_clearance": 0.246672709986261,
+    "rejected": {
+     "start_clearance": 205,
+     "target_keepout": 1,
+     "hit_rate": 35,
+     "infeasible": 0
+    },
+    "workspace_rollout_hit_rate": 0.0875,
+    "state_retries": 0,
+    "contact_goal": {
+     "box_min": [
+      0.569995412,
+      0.34000486,
+      0.21999001
+     ],
+     "box_max": [
+      0.569995412,
+      0.34000486,
+      0.21999001
+     ],
+     "obj": "block_red"
+    },
+    "completion_goal": {
+     "box_min": [
+      0.569995412,
+      0.34000486,
+      0.28999001
+     ],
+     "box_max": [
+      0.569995412,
+      0.34000486,
+      0.28999001
+     ],
+     "obj": "block_red",
+     "lifted_by": 0.07
+    },
+    "planner_attempts": [
+     {
+      "n_contact_ik": 4,
+      "contact_iters": 0,
+      "n_completion_ik": 4,
+      "completion_iters": 0
+     }
+    ],
+    "planner_contact_config": [
+     -0.7595375586922993,
+     0.9802941443307054,
+     1.495077690126027,
+     -2.039273486355423,
+     -1.3458243386638415,
+     2.2592815830667887,
+     0.55344928
+    ],
+    "planner_completion_config": [
+     -0.7824869355856143,
+     0.9522977200868465,
+     1.5614786949483408,
+     -2.0066587477925224,
+     -1.3476497581061164,
+     2.269857749347156,
+     0.55344928
+    ]
+   }
+  },
+  {
+   "scene_id": "val_0039",
+   "split": "val",
+   "task_name": "rotate_pink_block_left",
+   "initial_state_index": 167,
+   "initial_state": {
+    "led": 1,
+    "lightbulb": 1,
+    "slider": "right",
+    "drawer": "open",
+    "red_block": "slider_left",
+    "blue_block": "slider_right",
+    "pink_block": "table",
+    "grasped": 0
+   },
+   "robot_obs": [
+    0.02586889,
+    -0.2313129,
+    0.5712808,
+    3.09045411,
+    -0.02908596,
+    1.50013585,
+    0.07999963,
+    -1.21779124,
+    1.03987629,
+    2.11978254,
+    -2.34205014,
+    -0.87015899,
+    1.64119093,
+    0.55344928,
+    1.0
+   ],
+   "scene_obs": [
+    0.0,
+    0.22,
+    0.0,
+    0.088,
+    1.0,
+    1.0,
+    -0.240851662,
+    0.0924044687,
+    0.460990009,
+    0.0,
+    0.0,
+    1.7753756365624733,
+    0.070341633,
+    0.0924044687,
+    0.460990009,
+    0.0,
+    0.0,
+    1.2193824523467345,
+    0.0500000896,
+    -0.120000177,
+    0.459990009,
+    0.0,
+    0.0,
+    1.5550158850793805
+   ],
+   "obstacle_center_local": [
+    0.25101875204167234,
+    0.006945170890292632,
+    0.3349341458252707
+   ],
+   "obstacle_center_world": [
+    -0.08898124795832768,
+    -0.4530548291097074,
+    0.5749341458252707
+   ],
+   "obstacle_radius": 0.05,
+   "policy_seed": 5000039,
+   "provenance": {
+    "candidates_drawn": 43,
+    "workspace_point_index": 89005,
+    "start_clearance": 0.07112226144913424,
+    "rejected": {
+     "start_clearance": 41,
+     "target_keepout": 0,
+     "hit_rate": 1,
+     "infeasible": 0
+    },
+    "workspace_rollout_hit_rate": 0.1625,
+    "state_retries": 0,
+    "contact_goal": {
+     "box_min": [
+      0.39000008960000004,
+      0.33999982300000003,
+      0.219990009
+     ],
+     "box_max": [
+      0.39000008960000004,
+      0.33999982300000003,
+      0.219990009
+     ],
+     "obj": "block_pink"
+    },
+    "completion_goal": {
+     "wrist_turn": -1.0471975511965976,
+     "degrees": 60
+    },
+    "planner_attempts": [
+     {
+      "n_contact_ik": 4,
+      "contact_iters": 0,
+      "n_completion_ik": 1,
+      "completion_iters": 0
+     }
+    ],
+    "planner_contact_config": [
+     -0.8978545820309866,
+     0.9038743033870691,
+     1.7465437478427321,
+     -2.309886413285186,
+     -1.020614991537603,
+     1.9936204289567625,
+     0.55344928
+    ],
+    "planner_completion_config": [
+     -0.8978545820309866,
+     0.9038743033870691,
+     1.7465437478427321,
+     -2.309886413285186,
+     -1.020614991537603,
+     1.9936204289567625,
+     -0.4937482711965976
+    ]
+   }
+  },
+  {
+   "scene_id": "val_0040",
+   "split": "val",
+   "task_name": "push_pink_block_left",
+   "initial_state_index": 131,
+   "initial_state": {
+    "led": 1,
+    "lightbulb": 0,
+    "slider": "left",
+    "drawer": "closed",
+    "red_block": "slider_left",
+    "blue_block": "slider_right",
+    "pink_block": "table",
+    "grasped": 0
+   },
+   "robot_obs": [
+    0.02586889,
+    -0.2313129,
+    0.5712808,
+    3.09045411,
+    -0.02908596,
+    1.50013585,
+    0.07999963,
+    -1.21779124,
+    1.03987629,
+    2.11978254,
+    -2.34205014,
+    -0.87015899,
+    1.64119093,
+    0.55344928,
+    1.0
+   ],
+   "scene_obs": [
+    0.28,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    1.0,
+    -0.240851662,
+    0.0924044687,
+    0.460990009,
+    0.0,
+    0.0,
+    1.641062734849535,
+    0.070341633,
+    0.0924044687,
+    0.460990009,
+    0.0,
+    0.0,
+    1.7765280626022695,
+    0.229995412,
+    -0.11999514,
+    0.45999001,
+    0.0,
+    0.0,
+    1.8717270489094924
+   ],
+   "obstacle_center_local": [
+    0.02304665755496904,
+    0.308320459624317,
+    0.748812557586654
+   ],
+   "obstacle_center_world": [
+    -0.316953342445031,
+    -0.15167954037568304,
+    0.988812557586654
+   ],
+   "obstacle_radius": 0.05,
+   "policy_seed": 5000040,
+   "provenance": {
+    "candidates_drawn": 8,
+    "workspace_point_index": 40288,
+    "start_clearance": 0.22109568324944523,
+    "rejected": {
+     "start_clearance": 4,
+     "target_keepout": 0,
+     "hit_rate": 3,
+     "infeasible": 0
+    },
+    "workspace_rollout_hit_rate": 0.3,
+    "state_retries": 0,
+    "contact_goal": {
+     "box_min": [
+      0.569995412,
+      0.34000486,
+      0.21999001
+     ],
+     "box_max": [
+      0.569995412,
+      0.34000486,
+      0.21999001
+     ],
+     "obj": "block_pink"
+    },
+    "completion_goal": {
+     "box_min": [
+      0.46999541200000006,
+      0.34000486,
+      0.21999001
+     ],
+     "box_max": [
+      0.46999541200000006,
+      0.34000486,
+      0.21999001
+     ],
+     "obj": "block_pink",
+     "pushed_by": [
+      -0.1,
+      0
+     ]
+    },
+    "planner_attempts": [
+     {
+      "n_contact_ik": 4,
+      "contact_iters": 0,
+      "n_completion_ik": 4,
+      "completion_iters": 0
+     }
+    ],
+    "planner_contact_config": [
+     -0.7595375586922993,
+     0.9802941443307054,
+     1.495077690126027,
+     -2.039273486355423,
+     -1.3458243386638415,
+     2.2592815830667887,
+     0.55344928
+    ],
+    "planner_completion_config": [
+     -0.8158144741767109,
+     0.9496781014080391,
+     1.5713618496176736,
+     -2.2122794699263877,
+     -1.2865865953310953,
+     2.18921591693569,
+     0.55344928
+    ]
+   }
+  },
+  {
+   "scene_id": "val_0041",
+   "split": "val",
+   "task_name": "move_slider_left",
+   "initial_state_index": 97,
+   "initial_state": {
+    "led": 1,
+    "lightbulb": 0,
+    "slider": "right",
+    "drawer": "closed",
+    "red_block": "table",
+    "blue_block": "table",
+    "pink_block": "slider_left",
+    "grasped": 0
+   },
+   "robot_obs": [
+    0.02586889,
+    -0.2313129,
+    0.5712808,
+    3.09045411,
+    -0.02908596,
+    1.50013585,
+    0.07999963,
+    -1.21779124,
+    1.03987629,
+    2.11978254,
+    -2.34205014,
+    -0.87015899,
+    1.64119093,
+    0.55344928,
+    1.0
+   ],
+   "scene_obs": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    1.0,
+    0.0500000896,
+    -0.120000177,
+    0.459990009,
+    0.0,
+    0.0,
+    1.2131923051047202,
+    0.229995412,
+    -0.11999514,
+    0.45999001,
+    0.0,
+    0.0,
+    1.6245989511187466,
+    -0.240851662,
+    0.0924044687,
+    0.460990009,
+    0.0,
+    0.0,
+    1.5741339961131944
+   ],
+   "obstacle_center_local": [
+    0.4286987115441085,
+    0.5042696837535937,
+    0.6664234223480006
+   ],
+   "obstacle_center_world": [
+    0.08869871154410847,
+    0.04426968375359369,
+    0.9064234223480006
+   ],
+   "obstacle_radius": 0.05,
+   "policy_seed": 5000041,
+   "provenance": {
+    "candidates_drawn": 289,
+    "workspace_point_index": 60255,
+    "start_clearance": 0.14503728571937863,
+    "rejected": {
+     "start_clearance": 243,
+     "target_keepout": 3,
+     "hit_rate": 42,
+     "infeasible": 0
+    },
+    "workspace_rollout_hit_rate": 0.38,
+    "state_retries": 0,
+    "contact_goal": {
+     "box_min": [
+      0.37572036857779423,
+      0.4528789701927425,
+      0.2773111956521892
+     ],
+     "box_max": [
+      0.37572036857779423,
+      0.4528789701927425,
+      0.2773111956521892
+     ],
+     "joint": "base__slide",
+     "q": 0.0,
+     "contact": "measured"
+    },
+    "completion_goal": {
+     "box_min": [
+      0.22572036857779412,
+      0.4528789701927425,
+      0.2773111956521892
+     ],
+     "box_max": [
+      0.22572036857779412,
+      0.4528789701927425,
+      0.2773111956521892
+     ],
+     "joint": "base__slide",
+     "q": 0.15,
+     "contact": "measured"
+    },
+    "planner_attempts": [
+     {
+      "n_contact_ik": 4,
+      "contact_iters": 0,
+      "n_completion_ik": 4,
+      "completion_iters": 0
+     }
+    ],
+    "planner_contact_config": [
+     -0.711598193879729,
+     0.8824836199982729,
+     1.7300044858406232,
+     -2.2058497216175503,
+     -1.0222933082220707,
+     2.1860874505644157,
+     0.55344928
+    ],
+    "planner_completion_config": [
+     -0.6412405757566705,
+     0.9014286754252901,
+     1.840814360013252,
+     -2.3617737523236775,
+     -0.9624760951599989,
+     2.1479056484248016,
+     0.55344928
+    ]
+   }
+  },
+  {
+   "scene_id": "val_0042",
+   "split": "val",
+   "task_name": "turn_off_lightbulb",
+   "initial_state_index": 163,
+   "initial_state": {
+    "led": 1,
+    "lightbulb": 1,
+    "slider": "right",
+    "drawer": "open",
+    "red_block": "slider_right",
+    "blue_block": "table",
+    "pink_block": "slider_left",
+    "grasped": 0
+   },
+   "robot_obs": [
+    0.02586889,
+    -0.2313129,
+    0.5712808,
+    3.09045411,
+    -0.02908596,
+    1.50013585,
+    0.07999963,
+    -1.21779124,
+    1.03987629,
+    2.11978254,
+    -2.34205014,
+    -0.87015899,
+    1.64119093,
+    0.55344928,
+    1.0
+   ],
+   "scene_obs": [
+    0.0,
+    0.22,
+    0.0,
+    0.088,
+    1.0,
+    1.0,
+    0.070341633,
+    0.0924044687,
+    0.460990009,
+    0.0,
+    0.0,
+    1.8268336264859704,
+    0.229995412,
+    -0.11999514,
+    0.45999001,
+    0.0,
+    0.0,
+    1.507641694779252,
+    -0.240851662,
+    0.0924044687,
+    0.460990009,
+    0.0,
+    0.0,
+    1.6461964143959458
+   ],
+   "obstacle_center_local": [
+    0.5597343566670052,
+    0.08949548918072302,
+    0.45557205741670037
+   ],
+   "obstacle_center_world": [
+    0.2197343566670052,
+    -0.370504510819277,
+    0.6955720574167004
+   ],
+   "obstacle_radius": 0.05,
+   "policy_seed": 5000042,
+   "provenance": {
+    "candidates_drawn": 136,
+    "workspace_point_index": 94601,
+    "start_clearance": 0.10560494637721939,
+    "rejected": {
+     "start_clearance": 100,
+     "target_keepout": 3,
+     "hit_rate": 32,
+     "infeasible": 0
+    },
+    "workspace_rollout_hit_rate": 0.08,
+    "state_retries": 0,
+    "contact_goal": {
+     "box_min": [
+      0.575748001098633,
+      0.4997843387015526,
+      0.3185698800985114
+     ],
+     "box_max": [
+      0.7042496027946474,
+      0.5827349430963479,
+      0.3897069412338078
+     ],
+     "light": "lightbulb",
+     "q": 0.088
+    },
+    "completion_goal": {
+     "box_min": [
+      0.575748001098633,
+      0.4557843387015523,
+      0.24235964456548093
+     ],
+     "box_max": [
+      0.7042496027946474,
+      0.5387349430963476,
+      0.31349670570077737
+     ],
+     "light": "lightbulb",
+     "q": 0.0
+    },
+    "planner_attempts": [
+     {
+      "n_contact_ik": 4,
+      "contact_iters": 0,
+      "n_completion_ik": 4,
+      "completion_iters": 0
+     }
+    ],
+    "planner_contact_config": [
+     -0.47689253164647977,
+     0.9123779575007777,
+     1.457190485530932,
+     -1.802738092584649,
+     -1.3066690079368917,
+     2.446333136550912,
+     0.55344928
+    ],
+    "planner_completion_config": [
+     -0.47926998738597737,
+     0.9193210901476373,
+     1.4423072243347275,
+     -1.8095383865639623,
+     -1.3062939107753329,
+     2.4412162259434633,
+     0.55344928
+    ]
+   }
+  },
+  {
+   "scene_id": "val_0043",
+   "split": "val",
+   "task_name": "lift_blue_block_slider",
+   "initial_state_index": 101,
+   "initial_state": {
+    "led": 1,
+    "lightbulb": 0,
+    "slider": "right",
+    "drawer": "closed",
+    "red_block": "table",
+    "blue_block": "slider_left",
+    "pink_block": "slider_right",
+    "grasped": 0
+   },
+   "robot_obs": [
+    0.02586889,
+    -0.2313129,
+    0.5712808,
+    3.09045411,
+    -0.02908596,
+    1.50013585,
+    0.07999963,
+    -1.21779124,
+    1.03987629,
+    2.11978254,
+    -2.34205014,
+    -0.87015899,
+    1.64119093,
+    0.55344928,
+    1.0
+   ],
+   "scene_obs": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    1.0,
+    0.0500000896,
+    -0.120000177,
+    0.459990009,
+    0.0,
+    0.0,
+    1.4292244901520081,
+    -0.240851662,
+    0.0924044687,
+    0.460990009,
+    0.0,
+    0.0,
+    1.516312198764013,
+    0.070341633,
+    0.0924044687,
+    0.460990009,
+    0.0,
+    0.0,
+    1.2254902396998457
+   ],
+   "obstacle_center_local": [
+    0.07667180293832453,
+    0.5041184291407231,
+    0.6749793079973032
+   ],
+   "obstacle_center_world": [
+    -0.2633281970616755,
+    0.044118429140723114,
+    0.9149793079973032
+   ],
+   "obstacle_radius": 0.05,
+   "policy_seed": 5000043,
+   "provenance": {
+    "candidates_drawn": 113,
+    "workspace_point_index": 99865,
+    "start_clearance": 0.2462203437147456,
+    "rejected": {
+     "start_clearance": 78,
+     "target_keepout": 0,
+     "hit_rate": 34,
+     "infeasible": 0
+    },
+    "workspace_rollout_hit_rate": 0.0625,
+    "state_retries": 0,
+    "contact_goal": {
+     "box_min": [
+      0.09914833800000003,
+      0.5524044687,
+      0.220990009
+     ],
+     "box_max": [
+      0.09914833800000003,
+      0.5524044687,
+      0.220990009
+     ],
+     "obj": "block_blue"
+    },
+    "completion_goal": {
+     "box_min": [
+      0.09914833800000003,
+      0.5524044687,
+      0.27099000900000003
+     ],
+     "box_max": [
+      0.09914833800000003,
+      0.5524044687,
+      0.27099000900000003
+     ],
+     "obj": "block_blue",
+     "lifted_by": 0.05
+    },
+    "planner_attempts": [
+     {
+      "n_contact_ik": 4,
+      "contact_iters": 0,
+      "n_completion_ik": 4,
+      "completion_iters": 0
+     }
+    ],
+    "planner_contact_config": [
+     -0.3096840038864828,
+     0.6804256911993811,
+     1.6560392979250242,
+     -2.3894490908501385,
+     -0.9127226486636153,
+     2.504491993002369,
+     0.55344928
+    ],
+    "planner_completion_config": [
+     -0.3069130555267207,
+     0.6873060108507065,
+     1.6897961711972227,
+     -2.354056731538268,
+     -0.9131206923254634,
+     2.5217036297450695,
+     0.55344928
+    ]
+   }
+  },
+  {
+   "scene_id": "val_0044",
+   "split": "val",
+   "task_name": "push_red_block_right",
+   "initial_state_index": 158,
+   "initial_state": {
+    "led": 1,
+    "lightbulb": 1,
+    "slider": "right",
+    "drawer": "open",
+    "red_block": "table",
+    "blue_block": "slider_right",
+    "pink_block": "table",
+    "grasped": 0
+   },
+   "robot_obs": [
+    0.02586889,
+    -0.2313129,
+    0.5712808,
+    3.09045411,
+    -0.02908596,
+    1.50013585,
+    0.07999963,
+    -1.21779124,
+    1.03987629,
+    2.11978254,
+    -2.34205014,
+    -0.87015899,
+    1.64119093,
+    0.55344928,
+    1.0
+   ],
+   "scene_obs": [
+    0.0,
+    0.22,
+    0.0,
+    0.088,
+    1.0,
+    1.0,
+    0.229995412,
+    -0.11999514,
+    0.45999001,
+    0.0,
+    0.0,
+    1.209691748038734,
+    0.070341633,
+    0.0924044687,
+    0.460990009,
+    0.0,
+    0.0,
+    1.508495118089515,
+    0.0500000896,
+    -0.120000177,
+    0.459990009,
+    0.0,
+    0.0,
+    1.3228561382476913
+   ],
+   "obstacle_center_local": [
+    0.7777399870717893,
+    0.4021907968690921,
+    0.30376442638273093
+   ],
+   "obstacle_center_world": [
+    0.43773998707178924,
+    -0.05780920313090793,
+    0.5437644263827309
+   ],
+   "obstacle_radius": 0.05,
+   "policy_seed": 5000044,
+   "provenance": {
+    "candidates_drawn": 50,
+    "workspace_point_index": 151964,
+    "start_clearance": 0.337771089745065,
+    "rejected": {
+     "start_clearance": 34,
+     "target_keepout": 1,
+     "hit_rate": 14,
+     "infeasible": 0
+    },
+    "workspace_rollout_hit_rate": 0.225,
+    "state_retries": 0,
+    "contact_goal": {
+     "box_min": [
+      0.569995412,
+      0.34000486,
+      0.21999001
+     ],
+     "box_max": [
+      0.569995412,
+      0.34000486,
+      0.21999001
+     ],
+     "obj": "block_red"
+    },
+    "completion_goal": {
+     "box_min": [
+      0.669995412,
+      0.34000486,
+      0.21999001
+     ],
+     "box_max": [
+      0.669995412,
+      0.34000486,
+      0.21999001
+     ],
+     "obj": "block_red",
+     "pushed_by": [
+      0.1,
+      0
+     ]
+    },
+    "planner_attempts": [
+     {
+      "n_contact_ik": 4,
+      "contact_iters": 0,
+      "n_completion_ik": 4,
+      "completion_iters": 0
+     }
+    ],
+    "planner_contact_config": [
+     -0.7595375586922993,
+     0.9802941443307054,
+     1.495077690126027,
+     -2.039273486355423,
+     -1.3458243386638415,
+     2.2592815830667887,
+     0.55344928
+    ],
+    "planner_completion_config": [
+     -0.6374007727938158,
+     1.080494090931182,
+     1.376176095214246,
+     -1.792530595990269,
+     -1.4241188145221126,
+     2.3646593354196805,
+     0.55344928
+    ]
+   }
+  },
+  {
+   "scene_id": "val_0045",
+   "split": "val",
+   "task_name": "close_drawer",
+   "initial_state_index": 112,
+   "initial_state": {
+    "led": 1,
+    "lightbulb": 0,
+    "slider": "right",
+    "drawer": "open",
+    "red_block": "table",
+    "blue_block": "slider_left",
+    "pink_block": "table",
+    "grasped": 0
+   },
+   "robot_obs": [
+    0.02586889,
+    -0.2313129,
+    0.5712808,
+    3.09045411,
+    -0.02908596,
+    1.50013585,
+    0.07999963,
+    -1.21779124,
+    1.03987629,
+    2.11978254,
+    -2.34205014,
+    -0.87015899,
+    1.64119093,
+    0.55344928,
+    1.0
+   ],
+   "scene_obs": [
+    0.0,
+    0.22,
+    0.0,
+    0.0,
+    0.0,
+    1.0,
+    0.229995412,
+    -0.11999514,
+    0.45999001,
+    0.0,
+    0.0,
+    1.5340242662469874,
+    -0.240851662,
+    0.0924044687,
+    0.460990009,
+    0.0,
+    0.0,
+    1.8392114921574636,
+    0.0500000896,
+    -0.120000177,
+    0.459990009,
+    0.0,
+    0.0,
+    1.4283848098569312
+   ],
+   "obstacle_center_local": [
+    0.3021413755368697,
+    -0.228365318671643,
+    0.28029142515349886
+   ],
+   "obstacle_center_world": [
+    -0.03785862446313032,
+    -0.688365318671643,
+    0.5202914251534989
+   ],
+   "obstacle_radius": 0.05,
+   "policy_seed": 5000045,
+   "provenance": {
+    "candidates_drawn": 276,
+    "workspace_point_index": 53647,
+    "start_clearance": 0.14090811385029883,
+    "rejected": {
+     "start_clearance": 200,
+     "target_keepout": 1,
+     "hit_rate": 74,
+     "infeasible": 0
+    },
+    "workspace_rollout_hit_rate": 0.32,
+    "state_retries": 3,
+    "contact_goal": {
+     "box_min": [
+      0.5057224504191529,
+      0.04733907489460959,
+      0.09943513988518587
+     ],
+     "box_max": [
+      0.5057224504191529,
+      0.04733907489460959,
+      0.09943513988518587
+     ],
+     "joint": "base__drawer",
+     "q": 0.22,
+     "contact": "measured"
+    },
+    "completion_goal": {
+     "box_min": [
+      0.5057224504191529,
+      0.16733907489460953,
+      0.09943513988518632
+     ],
+     "box_max": [
+      0.5057224504191529,
+      0.16733907489460953,
+      0.09943513988518632
+     ],
+     "joint": "base__drawer",
+     "q": 0.1,
+     "contact": "measured"
+    },
+    "planner_attempts": [
+     {
+      "n_contact_ik": 4,
+      "contact_iters": 0,
+      "n_completion_ik": 4,
+      "completion_iters": 0
+     }
+    ],
+    "planner_contact_config": [
+     -1.277109675055037,
+     1.1208181197225366,
+     1.4722003353174937,
+     -2.2353630532233804,
+     -1.263970336701637,
+     1.8506582421036375,
+     0.55344928
+    ],
+    "planner_completion_config": [
+     -1.112126315573203,
+     1.2019642471477097,
+     1.477983667764665,
+     -2.2338525569118994,
+     -1.2779356111107354,
+     1.9485529457610522,
+     0.55344928
+    ]
+   }
+  },
+  {
+   "scene_id": "val_0046",
+   "split": "val",
+   "task_name": "push_red_block_left",
+   "initial_state_index": 16,
+   "initial_state": {
+    "led": 0,
+    "lightbulb": 0,
+    "slider": "right",
+    "drawer": "open",
+    "red_block": "table",
+    "blue_block": "slider_left",
+    "pink_block": "table",
+    "grasped": 0
+   },
+   "robot_obs": [
+    0.02586889,
+    -0.2313129,
+    0.5712808,
+    3.09045411,
+    -0.02908596,
+    1.50013585,
+    0.07999963,
+    -1.21779124,
+    1.03987629,
+    2.11978254,
+    -2.34205014,
+    -0.87015899,
+    1.64119093,
+    0.55344928,
+    1.0
+   ],
+   "scene_obs": [
+    0.0,
+    0.22,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0500000896,
+    -0.120000177,
+    0.459990009,
+    0.0,
+    0.0,
+    1.8810469740091107,
+    -0.240851662,
+    0.0924044687,
+    0.460990009,
+    0.0,
+    0.0,
+    1.4843927742747838,
+    0.229995412,
+    -0.11999514,
+    0.45999001,
+    0.0,
+    0.0,
+    1.249053854651852
+   ],
+   "obstacle_center_local": [
+    0.2331239796781555,
+    0.05124674498522193,
+    0.3553082558656997
+   ],
+   "obstacle_center_world": [
+    -0.10687602032184451,
+    -0.4087532550147781,
+    0.5953082558656997
+   ],
+   "obstacle_radius": 0.05,
+   "policy_seed": 5000046,
+   "provenance": {
+    "candidates_drawn": 89,
+    "workspace_point_index": 37839,
+    "start_clearance": 0.05973042579599895,
+    "rejected": {
+     "start_clearance": 73,
+     "target_keepout": 0,
+     "hit_rate": 15,
+     "infeasible": 0
+    },
+    "workspace_rollout_hit_rate": 0.275,
+    "state_retries": 0,
+    "contact_goal": {
+     "box_min": [
+      0.39000008960000004,
+      0.33999982300000003,
+      0.219990009
+     ],
+     "box_max": [
+      0.39000008960000004,
+      0.33999982300000003,
+      0.219990009
+     ],
+     "obj": "block_red"
+    },
+    "completion_goal": {
+     "box_min": [
+      0.2900000896,
+      0.33999982300000003,
+      0.219990009
+     ],
+     "box_max": [
+      0.2900000896,
+      0.33999982300000003,
+      0.219990009
+     ],
+     "obj": "block_red",
+     "pushed_by": [
+      -0.1,
+      0
+     ]
+    },
+    "planner_attempts": [
+     {
+      "n_contact_ik": 4,
+      "contact_iters": 0,
+      "n_completion_ik": 4,
+      "completion_iters": 0
+     }
+    ],
+    "planner_contact_config": [
+     -0.8978545820309866,
+     0.9038743033870691,
+     1.7465437478427321,
+     -2.309886413285186,
+     -1.020614991537603,
+     1.9936204289567625,
+     0.55344928
+    ],
+    "planner_completion_config": [
+     -1.29425592089943,
+     -0.9795050635983048,
+     1.681069124548458,
+     -1.7603760630590137,
+     0.7678013482855808,
+     1.0938083860484558,
+     -0.05632923101941012
+    ]
+   }
+  },
+  {
+   "scene_id": "val_0047",
+   "split": "val",
+   "task_name": "turn_on_lightbulb",
+   "initial_state_index": 136,
+   "initial_state": {
+    "led": 1,
+    "lightbulb": 0,
+    "slider": "left",
+    "drawer": "open",
+    "red_block": "table",
+    "blue_block": "slider_left",
+    "pink_block": "table",
+    "grasped": 0
+   },
+   "robot_obs": [
+    0.02586889,
+    -0.2313129,
+    0.5712808,
+    3.09045411,
+    -0.02908596,
+    1.50013585,
+    0.07999963,
+    -1.21779124,
+    1.03987629,
+    2.11978254,
+    -2.34205014,
+    -0.87015899,
+    1.64119093,
+    0.55344928,
+    1.0
+   ],
+   "scene_obs": [
+    0.28,
+    0.22,
+    0.0,
+    0.0,
+    0.0,
+    1.0,
+    0.0500000896,
+    -0.120000177,
+    0.459990009,
+    0.0,
+    0.0,
+    1.278143483933845,
+    -0.240851662,
+    0.0924044687,
+    0.460990009,
+    0.0,
+    0.0,
+    1.4012078367560468,
+    0.229995412,
+    -0.11999514,
+    0.45999001,
+    0.0,
+    0.0,
+    1.6125578826043767
+   ],
+   "obstacle_center_local": [
+    0.5167730392335356,
+    0.5494606057598448,
+    0.5711234675381709
+   ],
+   "obstacle_center_world": [
+    0.17677303923353554,
+    0.08946060575984477,
+    0.8111234675381709
+   ],
+   "obstacle_radius": 0.05,
+   "policy_seed": 5000047,
+   "provenance": {
+    "candidates_drawn": 27,
+    "workspace_point_index": 8974,
+    "start_clearance": 0.20591883346661177,
+    "rejected": {
+     "start_clearance": 19,
+     "target_keepout": 1,
+     "hit_rate": 6,
+     "infeasible": 0
+    },
+    "workspace_rollout_hit_rate": 0.3625,
+    "state_retries": 0,
+    "contact_goal": {
+     "box_min": [
+      0.575748001098633,
+      0.4557843387015523,
+      0.24235964456548093
+     ],
+     "box_max": [
+      0.7042496027946474,
+      0.5387349430963476,
+      0.31349670570077737
+     ],
+     "light": "lightbulb",
+     "q": 0.0
+    },
+    "completion_goal": {
+     "box_min": [
+      0.575748001098633,
+      0.4997843387015526,
+      0.3185698800985114
+     ],
+     "box_max": [
+      0.7042496027946474,
+      0.5827349430963479,
+      0.3897069412338078
+     ],
+     "light": "lightbulb",
+     "q": 0.08800000000000001
+    },
+    "planner_attempts": [
+     {
+      "n_contact_ik": 4,
+      "contact_iters": 0,
+      "n_completion_ik": 4,
+      "completion_iters": 0
+     }
+    ],
+    "planner_contact_config": [
+     -0.5806430367734352,
+     0.9468097298146939,
+     1.5090093877014503,
+     -1.8862586524287055,
+     -1.2913666394537102,
+     2.372174539358065,
+     0.55344928
+    ],
+    "planner_completion_config": [
+     -0.49334321959971394,
+     0.9545612453810592,
+     1.51741859230052,
+     -1.7952837682581329,
+     -1.2994800374574795,
+     2.3993262278122125,
+     0.55344928
+    ]
+   }
+  },
+  {
+   "scene_id": "val_0048",
+   "split": "val",
+   "task_name": "turn_on_led",
+   "initial_state_index": 46,
+   "initial_state": {
+    "led": 0,
+    "lightbulb": 0,
+    "slider": "left",
+    "drawer": "open",
+    "red_block": "slider_left",
+    "blue_block": "table",
+    "pink_block": "slider_right",
+    "grasped": 0
+   },
+   "robot_obs": [
+    0.02586889,
+    -0.2313129,
+    0.5712808,
+    3.09045411,
+    -0.02908596,
+    1.50013585,
+    0.07999963,
+    -1.21779124,
+    1.03987629,
+    2.11978254,
+    -2.34205014,
+    -0.87015899,
+    1.64119093,
+    0.55344928,
+    1.0
+   ],
+   "scene_obs": [
+    0.28,
+    0.22,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    -0.240851662,
+    0.0924044687,
+    0.460990009,
+    0.0,
+    0.0,
+    1.707359902336008,
+    0.229995412,
+    -0.11999514,
+    0.45999001,
+    0.0,
+    0.0,
+    1.6000377841378892,
+    0.070341633,
+    0.0924044687,
+    0.460990009,
+    0.0,
+    0.0,
+    1.4213655652525081
+   ],
+   "obstacle_center_local": [
+    0.22097658532684053,
+    0.44493508440982443,
+    0.3776262236270851
+   ],
+   "obstacle_center_world": [
+    -0.1190234146731595,
+    -0.015064915590175587,
+    0.6176262236270851
+   ],
+   "obstacle_radius": 0.05,
+   "policy_seed": 5000048,
+   "provenance": {
+    "candidates_drawn": 71,
+    "workspace_point_index": 2483,
+    "start_clearance": 0.14991518564861428,
+    "rejected": {
+     "start_clearance": 67,
+     "target_keepout": 0,
+     "hit_rate": 3,
+     "infeasible": 0
+    },
+    "workspace_rollout_hit_rate": 0.3,
+    "state_retries": 0,
+    "contact_goal": {
+     "box_min": [
+      0.1851092947721482,
+      0.3050000007152555,
+      0.21699999999999975
+     ],
+     "box_max": [
+      0.25489070522785195,
+      0.37499999928474415,
+      0.24699999946355822
+     ],
+     "light": "led",
+     "q": 0.0
+    },
+    "completion_goal": {
+     "box_min": [
+      0.1851092947721482,
+      0.30500000071525574,
+      0.19699999999999973
+     ],
+     "box_max": [
+      0.25489070522785195,
+      0.37499999928474437,
+      0.2269999994635582
+     ],
+     "light": "led",
+     "q": 0.020000000000000004
+    },
+    "planner_attempts": [
+     {
+      "n_contact_ik": 4,
+      "contact_iters": 0,
+      "n_completion_ik": 4,
+      "completion_iters": 0
+     }
+    ],
+    "planner_contact_config": [
+     -1.0050712277218932,
+     1.008369334578646,
+     2.0764168177867504,
+     -2.5440810862984775,
+     -0.8021376814013693,
+     1.7248138602548462,
+     0.55344928
+    ],
+    "planner_completion_config": [
+     -2.8973,
+     0.7694201649992471,
+     -2.202410640014581,
+     -2.701075905531995,
+     -2.740732071414289,
+     3.5275478202469883,
+     1.3698825312761138
+    ]
+   }
+  },
+  {
+   "scene_id": "val_0049",
+   "split": "val",
+   "task_name": "open_drawer",
+   "initial_state_index": 153,
+   "initial_state": {
+    "led": 1,
+    "lightbulb": 1,
+    "slider": "right",
+    "drawer": "closed",
+    "red_block": "slider_left",
+    "blue_block": "table",
+    "pink_block": "table",
+    "grasped": 0
+   },
+   "robot_obs": [
+    0.02586889,
+    -0.2313129,
+    0.5712808,
+    3.09045411,
+    -0.02908596,
+    1.50013585,
+    0.07999963,
+    -1.21779124,
+    1.03987629,
+    2.11978254,
+    -2.34205014,
+    -0.87015899,
+    1.64119093,
+    0.55344928,
+    1.0
+   ],
+   "scene_obs": [
+    0.0,
+    0.0,
+    0.0,
+    0.088,
+    1.0,
+    1.0,
+    -0.240851662,
+    0.0924044687,
+    0.460990009,
+    0.0,
+    0.0,
+    1.6706894885556036,
+    0.229995412,
+    -0.11999514,
+    0.45999001,
+    0.0,
+    0.0,
+    1.7044577750793413,
+    0.0500000896,
+    -0.120000177,
+    0.459990009,
+    0.0,
+    0.0,
+    1.3469505286419774
+   ],
+   "obstacle_center_local": [
+    0.38942839980547617,
+    0.1012159375856888,
+    0.19557565498187077
+   ],
+   "obstacle_center_world": [
+    0.04942839980547614,
+    -0.3587840624143112,
+    0.4355756549818708
+   ],
+   "obstacle_radius": 0.05,
+   "policy_seed": 5000049,
+   "provenance": {
+    "candidates_drawn": 145,
+    "workspace_point_index": 15683,
+    "start_clearance": 0.07766912810254849,
+    "rejected": {
+     "start_clearance": 125,
+     "target_keepout": 0,
+     "hit_rate": 19,
+     "infeasible": 0
+    },
+    "workspace_rollout_hit_rate": 0.12,
+    "state_retries": 0,
+    "contact_goal": {
+     "box_min": [
+      0.5319017472169738,
+      0.23298138549503764,
+      0.10161470491755209
+     ],
+     "box_max": [
+      0.5319017472169738,
+      0.23298138549503764,
+      0.10161470491755209
+     ],
+     "joint": "base__drawer",
+     "q": 0.0,
+     "contact": "measured"
+    },
+    "completion_goal": {
+     "box_min": [
+      0.5319017472169738,
+      0.11298138549503772,
+      0.10161470491755165
+     ],
+     "box_max": [
+      0.5319017472169738,
+      0.11298138549503772,
+      0.10161470491755165
+     ],
+     "joint": "base__drawer",
+     "q": 0.12,
+     "contact": "measured"
+    },
+    "planner_attempts": [
+     {
+      "n_contact_ik": 4,
+      "contact_iters": 0,
+      "n_completion_ik": 4,
+      "completion_iters": 0
+     }
+    ],
+    "planner_contact_config": [
+     2.8973,
+     -1.0326383967841972,
+     -2.2754342086489396,
+     -1.3032036768051687,
+     -0.37581448414472435,
+     1.4013049376768276,
+     1.9286776598745248
+    ],
+    "planner_completion_config": [
+     2.795915628839281,
+     -0.9827136198887924,
+     -2.357016995536982,
+     -1.3272025830340537,
+     -0.4340882626123715,
+     1.3652661492957912,
+     1.9286776598745248
+    ]
+   }
+  }
+ ]
+}

@@ -1,0 +1,3094 @@
+{
+  "ep_len": 360,
+  "replan_steps": 4,
+  "splits": {
+    "val_frozen": {
+      "n": 50,
+      "violation_rate": 0.26,
+      "success_rate": 0.7,
+      "timeout_rate": 0.04,
+      "per_task": {
+        "close_drawer": {
+          "n": 2,
+          "violation_rate": 0.5,
+          "success_rate": 0.5,
+          "timeout_rate": 0.0
+        },
+        "lift_blue_block_slider": {
+          "n": 2,
+          "violation_rate": 0.0,
+          "success_rate": 1.0,
+          "timeout_rate": 0.0
+        },
+        "lift_blue_block_table": {
+          "n": 2,
+          "violation_rate": 0.0,
+          "success_rate": 1.0,
+          "timeout_rate": 0.0
+        },
+        "lift_pink_block_slider": {
+          "n": 2,
+          "violation_rate": 0.0,
+          "success_rate": 0.5,
+          "timeout_rate": 0.5
+        },
+        "lift_pink_block_table": {
+          "n": 2,
+          "violation_rate": 0.0,
+          "success_rate": 1.0,
+          "timeout_rate": 0.0
+        },
+        "lift_red_block_slider": {
+          "n": 1,
+          "violation_rate": 0.0,
+          "success_rate": 1.0,
+          "timeout_rate": 0.0
+        },
+        "lift_red_block_table": {
+          "n": 2,
+          "violation_rate": 0.0,
+          "success_rate": 1.0,
+          "timeout_rate": 0.0
+        },
+        "move_slider_left": {
+          "n": 2,
+          "violation_rate": 0.0,
+          "success_rate": 1.0,
+          "timeout_rate": 0.0
+        },
+        "move_slider_right": {
+          "n": 1,
+          "violation_rate": 1.0,
+          "success_rate": 0.0,
+          "timeout_rate": 0.0
+        },
+        "open_drawer": {
+          "n": 2,
+          "violation_rate": 0.5,
+          "success_rate": 0.5,
+          "timeout_rate": 0.0
+        },
+        "push_blue_block_left": {
+          "n": 2,
+          "violation_rate": 0.5,
+          "success_rate": 0.5,
+          "timeout_rate": 0.0
+        },
+        "push_blue_block_right": {
+          "n": 1,
+          "violation_rate": 0.0,
+          "success_rate": 1.0,
+          "timeout_rate": 0.0
+        },
+        "push_into_drawer": {
+          "n": 1,
+          "violation_rate": 0.0,
+          "success_rate": 1.0,
+          "timeout_rate": 0.0
+        },
+        "push_pink_block_left": {
+          "n": 2,
+          "violation_rate": 0.0,
+          "success_rate": 0.5,
+          "timeout_rate": 0.5
+        },
+        "push_pink_block_right": {
+          "n": 2,
+          "violation_rate": 0.5,
+          "success_rate": 0.5,
+          "timeout_rate": 0.0
+        },
+        "push_red_block_left": {
+          "n": 2,
+          "violation_rate": 0.5,
+          "success_rate": 0.5,
+          "timeout_rate": 0.0
+        },
+        "push_red_block_right": {
+          "n": 2,
+          "violation_rate": 0.5,
+          "success_rate": 0.5,
+          "timeout_rate": 0.0
+        },
+        "rotate_blue_block_left": {
+          "n": 2,
+          "violation_rate": 0.0,
+          "success_rate": 1.0,
+          "timeout_rate": 0.0
+        },
+        "rotate_blue_block_right": {
+          "n": 2,
+          "violation_rate": 1.0,
+          "success_rate": 0.0,
+          "timeout_rate": 0.0
+        },
+        "rotate_pink_block_left": {
+          "n": 2,
+          "violation_rate": 0.0,
+          "success_rate": 1.0,
+          "timeout_rate": 0.0
+        },
+        "rotate_pink_block_right": {
+          "n": 2,
+          "violation_rate": 0.5,
+          "success_rate": 0.5,
+          "timeout_rate": 0.0
+        },
+        "rotate_red_block_left": {
+          "n": 2,
+          "violation_rate": 0.0,
+          "success_rate": 1.0,
+          "timeout_rate": 0.0
+        },
+        "rotate_red_block_right": {
+          "n": 2,
+          "violation_rate": 0.0,
+          "success_rate": 1.0,
+          "timeout_rate": 0.0
+        },
+        "turn_off_led": {
+          "n": 2,
+          "violation_rate": 0.0,
+          "success_rate": 1.0,
+          "timeout_rate": 0.0
+        },
+        "turn_off_lightbulb": {
+          "n": 2,
+          "violation_rate": 0.5,
+          "success_rate": 0.5,
+          "timeout_rate": 0.0
+        },
+        "turn_on_led": {
+          "n": 2,
+          "violation_rate": 0.5,
+          "success_rate": 0.5,
+          "timeout_rate": 0.0
+        },
+        "turn_on_lightbulb": {
+          "n": 2,
+          "violation_rate": 0.5,
+          "success_rate": 0.5,
+          "timeout_rate": 0.0
+        }
+      },
+      "scenes": [
+        {
+          "scene_id": "val_0000",
+          "task_name": "rotate_blue_block_left",
+          "policy_seed": 5000000,
+          "violated": false,
+          "reached": true,
+          "steps_taken": 77,
+          "min_clearance": 0.005042410362989247,
+          "start_clearance": 0.2114825250978416,
+          "scene_problems": [],
+          "workspace_rollout_hit_rate": 0.18
+        },
+        {
+          "scene_id": "val_0001",
+          "task_name": "push_pink_block_right",
+          "policy_seed": 5000001,
+          "violated": false,
+          "reached": true,
+          "steps_taken": 89,
+          "min_clearance": 0.016470252865868326,
+          "start_clearance": 0.12989934040043438,
+          "scene_problems": [],
+          "workspace_rollout_hit_rate": 0.1875
+        },
+        {
+          "scene_id": "val_0002",
+          "task_name": "rotate_blue_block_right",
+          "policy_seed": 5000002,
+          "violated": true,
+          "reached": false,
+          "steps_taken": 91,
+          "min_clearance": -0.00048208220637546706,
+          "start_clearance": 0.2371710995021279,
+          "scene_problems": [],
+          "workspace_rollout_hit_rate": 0.14
+        },
+        {
+          "scene_id": "val_0003",
+          "task_name": "lift_pink_block_slider",
+          "policy_seed": 5000003,
+          "violated": false,
+          "reached": true,
+          "steps_taken": 56,
+          "min_clearance": 0.20478484636392258,
+          "start_clearance": 0.20478484636392258,
+          "scene_problems": [],
+          "workspace_rollout_hit_rate": 0.22
+        },
+        {
+          "scene_id": "val_0004",
+          "task_name": "turn_off_led",
+          "policy_seed": 5000004,
+          "violated": false,
+          "reached": true,
+          "steps_taken": 33,
+          "min_clearance": 0.006879986560051787,
+          "start_clearance": 0.09730864549689038,
+          "scene_problems": [],
+          "workspace_rollout_hit_rate": 0.3
+        },
+        {
+          "scene_id": "val_0005",
+          "task_name": "push_blue_block_left",
+          "policy_seed": 5000005,
+          "violated": false,
+          "reached": true,
+          "steps_taken": 119,
+          "min_clearance": 0.13113963151932184,
+          "start_clearance": 0.20353182629720545,
+          "scene_problems": [],
+          "workspace_rollout_hit_rate": 0.3625
+        },
+        {
+          "scene_id": "val_0006",
+          "task_name": "rotate_pink_block_right",
+          "policy_seed": 5000006,
+          "violated": true,
+          "reached": false,
+          "steps_taken": 65,
+          "min_clearance": -0.0013677165435338756,
+          "start_clearance": 0.1623440851769658,
+          "scene_problems": [],
+          "workspace_rollout_hit_rate": 0.34
+        },
+        {
+          "scene_id": "val_0007",
+          "task_name": "rotate_red_block_left",
+          "policy_seed": 5000007,
+          "violated": false,
+          "reached": true,
+          "steps_taken": 107,
+          "min_clearance": 0.012503897246277207,
+          "start_clearance": 0.07099478301594757,
+          "scene_problems": [],
+          "workspace_rollout_hit_rate": 0.34
+        },
+        {
+          "scene_id": "val_0008",
+          "task_name": "lift_pink_block_table",
+          "policy_seed": 5000008,
+          "violated": false,
+          "reached": true,
+          "steps_taken": 44,
+          "min_clearance": 0.05699836604871593,
+          "start_clearance": 0.06188680292388092,
+          "scene_problems": [],
+          "workspace_rollout_hit_rate": 0.375
+        },
+        {
+          "scene_id": "val_0009",
+          "task_name": "lift_blue_block_table",
+          "policy_seed": 5000009,
+          "violated": false,
+          "reached": true,
+          "steps_taken": 49,
+          "min_clearance": 0.015067566004730457,
+          "start_clearance": 0.05899751160375291,
+          "scene_problems": [],
+          "workspace_rollout_hit_rate": 0.12
+        },
+        {
+          "scene_id": "val_0010",
+          "task_name": "rotate_red_block_right",
+          "policy_seed": 5000010,
+          "violated": false,
+          "reached": true,
+          "steps_taken": 81,
+          "min_clearance": 0.0909555937820009,
+          "start_clearance": 0.10308792912659769,
+          "scene_problems": [],
+          "workspace_rollout_hit_rate": 0.275
+        },
+        {
+          "scene_id": "val_0011",
+          "task_name": "lift_red_block_table",
+          "policy_seed": 5000011,
+          "violated": false,
+          "reached": true,
+          "steps_taken": 46,
+          "min_clearance": 0.17473446606357873,
+          "start_clearance": 0.2420844032018071,
+          "scene_problems": [],
+          "workspace_rollout_hit_rate": 0.075
+        },
+        {
+          "scene_id": "val_0012",
+          "task_name": "rotate_pink_block_left",
+          "policy_seed": 5000012,
+          "violated": false,
+          "reached": true,
+          "steps_taken": 95,
+          "min_clearance": 0.0027694968869390324,
+          "start_clearance": 0.10162876002223563,
+          "scene_problems": [],
+          "workspace_rollout_hit_rate": 0.375
+        },
+        {
+          "scene_id": "val_0013",
+          "task_name": "push_pink_block_left",
+          "policy_seed": 5000013,
+          "violated": false,
+          "reached": true,
+          "steps_taken": 74,
+          "min_clearance": 0.5304652670408532,
+          "start_clearance": 0.5291245815176576,
+          "scene_problems": [],
+          "workspace_rollout_hit_rate": 0.14
+        },
+        {
+          "scene_id": "val_0014",
+          "task_name": "move_slider_left",
+          "policy_seed": 5000014,
+          "violated": false,
+          "reached": true,
+          "steps_taken": 59,
+          "min_clearance": 0.001902077793077439,
+          "start_clearance": 0.1436559361048327,
+          "scene_problems": [],
+          "workspace_rollout_hit_rate": 0.16
+        },
+        {
+          "scene_id": "val_0015",
+          "task_name": "turn_off_lightbulb",
+          "policy_seed": 5000015,
+          "violated": false,
+          "reached": true,
+          "steps_taken": 66,
+          "min_clearance": 0.0006098247553751046,
+          "start_clearance": 0.2561560762111475,
+          "scene_problems": [],
+          "workspace_rollout_hit_rate": 0.22
+        },
+        {
+          "scene_id": "val_0016",
+          "task_name": "lift_blue_block_slider",
+          "policy_seed": 5000016,
+          "violated": false,
+          "reached": true,
+          "steps_taken": 65,
+          "min_clearance": 0.1497279639738504,
+          "start_clearance": 0.1497279639738504,
+          "scene_problems": [],
+          "workspace_rollout_hit_rate": 0.2
+        },
+        {
+          "scene_id": "val_0017",
+          "task_name": "push_red_block_right",
+          "policy_seed": 5000017,
+          "violated": false,
+          "reached": true,
+          "steps_taken": 88,
+          "min_clearance": 0.025274692315081768,
+          "start_clearance": 0.36254528273008374,
+          "scene_problems": [],
+          "workspace_rollout_hit_rate": 0.15
+        },
+        {
+          "scene_id": "val_0018",
+          "task_name": "close_drawer",
+          "policy_seed": 5000018,
+          "violated": false,
+          "reached": true,
+          "steps_taken": 61,
+          "min_clearance": 0.006461107150587328,
+          "start_clearance": 0.20836655913036076,
+          "scene_problems": [],
+          "workspace_rollout_hit_rate": 0.16
+        },
+        {
+          "scene_id": "val_0019",
+          "task_name": "push_red_block_left",
+          "policy_seed": 5000019,
+          "violated": true,
+          "reached": false,
+          "steps_taken": 126,
+          "min_clearance": -0.00045200592027654085,
+          "start_clearance": 0.07087027027542012,
+          "scene_problems": [],
+          "workspace_rollout_hit_rate": 0.225
+        },
+        {
+          "scene_id": "val_0020",
+          "task_name": "turn_on_lightbulb",
+          "policy_seed": 5000020,
+          "violated": false,
+          "reached": true,
+          "steps_taken": 70,
+          "min_clearance": 0.017705561663901484,
+          "start_clearance": 0.057524596816814016,
+          "scene_problems": [],
+          "workspace_rollout_hit_rate": 0.15
+        },
+        {
+          "scene_id": "val_0021",
+          "task_name": "turn_on_led",
+          "policy_seed": 5000021,
+          "violated": false,
+          "reached": true,
+          "steps_taken": 37,
+          "min_clearance": 0.012016088557576438,
+          "start_clearance": 0.1562854501643431,
+          "scene_problems": [],
+          "workspace_rollout_hit_rate": 0.18
+        },
+        {
+          "scene_id": "val_0022",
+          "task_name": "open_drawer",
+          "policy_seed": 5000022,
+          "violated": false,
+          "reached": true,
+          "steps_taken": 61,
+          "min_clearance": 0.0019548478691063798,
+          "start_clearance": 0.18277448556948286,
+          "scene_problems": [],
+          "workspace_rollout_hit_rate": 0.18
+        },
+        {
+          "scene_id": "val_0023",
+          "task_name": "move_slider_right",
+          "policy_seed": 5000023,
+          "violated": true,
+          "reached": false,
+          "steps_taken": 25,
+          "min_clearance": -0.0033858931839751798,
+          "start_clearance": 0.1763375215441788,
+          "scene_problems": [],
+          "workspace_rollout_hit_rate": 0.0875
+        },
+        {
+          "scene_id": "val_0024",
+          "task_name": "push_into_drawer",
+          "policy_seed": 5000024,
+          "violated": false,
+          "reached": true,
+          "steps_taken": 68,
+          "min_clearance": 0.1840807847318579,
+          "start_clearance": 0.2820165298273081,
+          "scene_problems": [],
+          "workspace_rollout_hit_rate": 0.06
+        },
+        {
+          "scene_id": "val_0025",
+          "task_name": "push_blue_block_right",
+          "policy_seed": 5000025,
+          "violated": false,
+          "reached": true,
+          "steps_taken": 89,
+          "min_clearance": 0.011277599047877535,
+          "start_clearance": 0.13351652675857234,
+          "scene_problems": [],
+          "workspace_rollout_hit_rate": 0.1
+        },
+        {
+          "scene_id": "val_0026",
+          "task_name": "lift_red_block_slider",
+          "policy_seed": 5000026,
+          "violated": false,
+          "reached": true,
+          "steps_taken": 76,
+          "min_clearance": 0.18658823063167262,
+          "start_clearance": 0.2900622455919006,
+          "scene_problems": [],
+          "workspace_rollout_hit_rate": 0.2
+        },
+        {
+          "scene_id": "val_0027",
+          "task_name": "rotate_blue_block_left",
+          "policy_seed": 5000027,
+          "violated": false,
+          "reached": true,
+          "steps_taken": 80,
+          "min_clearance": 0.011095534053028433,
+          "start_clearance": 0.23841366454871096,
+          "scene_problems": [],
+          "workspace_rollout_hit_rate": 0.06
+        },
+        {
+          "scene_id": "val_0028",
+          "task_name": "push_pink_block_right",
+          "policy_seed": 5000028,
+          "violated": true,
+          "reached": false,
+          "steps_taken": 30,
+          "min_clearance": -0.001271456442733493,
+          "start_clearance": 0.06894555265567563,
+          "scene_problems": [],
+          "workspace_rollout_hit_rate": 0.125
+        },
+        {
+          "scene_id": "val_0029",
+          "task_name": "rotate_blue_block_right",
+          "policy_seed": 5000029,
+          "violated": true,
+          "reached": false,
+          "steps_taken": 104,
+          "min_clearance": -0.0015131455093696372,
+          "start_clearance": 0.10293646023062734,
+          "scene_problems": [],
+          "workspace_rollout_hit_rate": 0.38
+        },
+        {
+          "scene_id": "val_0030",
+          "task_name": "lift_pink_block_slider",
+          "policy_seed": 5000030,
+          "violated": false,
+          "reached": false,
+          "steps_taken": 360,
+          "min_clearance": 0.002113762784832593,
+          "start_clearance": 0.10841143350347823,
+          "scene_problems": [],
+          "workspace_rollout_hit_rate": 0.28
+        },
+        {
+          "scene_id": "val_0031",
+          "task_name": "turn_off_led",
+          "policy_seed": 5000031,
+          "violated": false,
+          "reached": true,
+          "steps_taken": 36,
+          "min_clearance": 0.002261917017449433,
+          "start_clearance": 0.17513577254050133,
+          "scene_problems": [],
+          "workspace_rollout_hit_rate": 0.08
+        },
+        {
+          "scene_id": "val_0032",
+          "task_name": "push_blue_block_left",
+          "policy_seed": 5000032,
+          "violated": true,
+          "reached": false,
+          "steps_taken": 36,
+          "min_clearance": -0.0033012814854870842,
+          "start_clearance": 0.284106682432331,
+          "scene_problems": [],
+          "workspace_rollout_hit_rate": 0.275
+        },
+        {
+          "scene_id": "val_0033",
+          "task_name": "rotate_pink_block_right",
+          "policy_seed": 5000033,
+          "violated": false,
+          "reached": true,
+          "steps_taken": 105,
+          "min_clearance": 0.06656809250855464,
+          "start_clearance": 0.06495928657490235,
+          "scene_problems": [],
+          "workspace_rollout_hit_rate": 0.06
+        },
+        {
+          "scene_id": "val_0034",
+          "task_name": "rotate_red_block_left",
+          "policy_seed": 5000034,
+          "violated": false,
+          "reached": true,
+          "steps_taken": 63,
+          "min_clearance": 0.039158137253249486,
+          "start_clearance": 0.1147538161154272,
+          "scene_problems": [],
+          "workspace_rollout_hit_rate": 0.14
+        },
+        {
+          "scene_id": "val_0035",
+          "task_name": "lift_pink_block_table",
+          "policy_seed": 5000035,
+          "violated": false,
+          "reached": true,
+          "steps_taken": 43,
+          "min_clearance": 0.012312588308863753,
+          "start_clearance": 0.1064808346744565,
+          "scene_problems": [],
+          "workspace_rollout_hit_rate": 0.05
+        },
+        {
+          "scene_id": "val_0036",
+          "task_name": "lift_blue_block_table",
+          "policy_seed": 5000036,
+          "violated": false,
+          "reached": true,
+          "steps_taken": 54,
+          "min_clearance": 0.0003441225629485789,
+          "start_clearance": 0.2585247914754223,
+          "scene_problems": [],
+          "workspace_rollout_hit_rate": 0.16
+        },
+        {
+          "scene_id": "val_0037",
+          "task_name": "rotate_red_block_right",
+          "policy_seed": 5000037,
+          "violated": false,
+          "reached": true,
+          "steps_taken": 95,
+          "min_clearance": 0.1315036299716718,
+          "start_clearance": 0.2225053873422255,
+          "scene_problems": [],
+          "workspace_rollout_hit_rate": 0.2625
+        },
+        {
+          "scene_id": "val_0038",
+          "task_name": "lift_red_block_table",
+          "policy_seed": 5000038,
+          "violated": false,
+          "reached": true,
+          "steps_taken": 251,
+          "min_clearance": 0.017541514444597714,
+          "start_clearance": 0.2466726898413027,
+          "scene_problems": [],
+          "workspace_rollout_hit_rate": 0.0875
+        },
+        {
+          "scene_id": "val_0039",
+          "task_name": "rotate_pink_block_left",
+          "policy_seed": 5000039,
+          "violated": false,
+          "reached": true,
+          "steps_taken": 73,
+          "min_clearance": 0.007997119455044624,
+          "start_clearance": 0.07112226144913425,
+          "scene_problems": [],
+          "workspace_rollout_hit_rate": 0.1625
+        },
+        {
+          "scene_id": "val_0040",
+          "task_name": "push_pink_block_left",
+          "policy_seed": 5000040,
+          "violated": false,
+          "reached": false,
+          "steps_taken": 360,
+          "min_clearance": 0.09990137641192823,
+          "start_clearance": 0.22109557874219754,
+          "scene_problems": [],
+          "workspace_rollout_hit_rate": 0.3
+        },
+        {
+          "scene_id": "val_0041",
+          "task_name": "move_slider_left",
+          "policy_seed": 5000041,
+          "violated": false,
+          "reached": true,
+          "steps_taken": 62,
+          "min_clearance": 0.004606738069600658,
+          "start_clearance": 0.14503710232536182,
+          "scene_problems": [],
+          "workspace_rollout_hit_rate": 0.38
+        },
+        {
+          "scene_id": "val_0042",
+          "task_name": "turn_off_lightbulb",
+          "policy_seed": 5000042,
+          "violated": true,
+          "reached": false,
+          "steps_taken": 16,
+          "min_clearance": -0.00018881373055756878,
+          "start_clearance": 0.10560509181372706,
+          "scene_problems": [],
+          "workspace_rollout_hit_rate": 0.08
+        },
+        {
+          "scene_id": "val_0043",
+          "task_name": "lift_blue_block_slider",
+          "policy_seed": 5000043,
+          "violated": false,
+          "reached": true,
+          "steps_taken": 90,
+          "min_clearance": 0.0033356018587131775,
+          "start_clearance": 0.2462200731307302,
+          "scene_problems": [],
+          "workspace_rollout_hit_rate": 0.0625
+        },
+        {
+          "scene_id": "val_0044",
+          "task_name": "push_red_block_right",
+          "policy_seed": 5000044,
+          "violated": true,
+          "reached": false,
+          "steps_taken": 93,
+          "min_clearance": -0.00028634022068959805,
+          "start_clearance": 0.3427835998961856,
+          "scene_problems": [],
+          "workspace_rollout_hit_rate": 0.225
+        },
+        {
+          "scene_id": "val_0045",
+          "task_name": "close_drawer",
+          "policy_seed": 5000045,
+          "violated": true,
+          "reached": false,
+          "steps_taken": 50,
+          "min_clearance": -0.00034555263676523673,
+          "start_clearance": 0.14090802201262018,
+          "scene_problems": [],
+          "workspace_rollout_hit_rate": 0.32
+        },
+        {
+          "scene_id": "val_0046",
+          "task_name": "push_red_block_left",
+          "policy_seed": 5000046,
+          "violated": false,
+          "reached": true,
+          "steps_taken": 60,
+          "min_clearance": 0.013191408024724335,
+          "start_clearance": 0.059730425795998965,
+          "scene_problems": [],
+          "workspace_rollout_hit_rate": 0.275
+        },
+        {
+          "scene_id": "val_0047",
+          "task_name": "turn_on_lightbulb",
+          "policy_seed": 5000047,
+          "violated": true,
+          "reached": false,
+          "steps_taken": 55,
+          "min_clearance": -0.0005178157085320434,
+          "start_clearance": 0.20591860936054018,
+          "scene_problems": [],
+          "workspace_rollout_hit_rate": 0.3625
+        },
+        {
+          "scene_id": "val_0048",
+          "task_name": "turn_on_led",
+          "policy_seed": 5000048,
+          "violated": true,
+          "reached": false,
+          "steps_taken": 34,
+          "min_clearance": -0.00019342518947965126,
+          "start_clearance": 0.16556154477582202,
+          "scene_problems": [],
+          "workspace_rollout_hit_rate": 0.3
+        },
+        {
+          "scene_id": "val_0049",
+          "task_name": "open_drawer",
+          "policy_seed": 5000049,
+          "violated": true,
+          "reached": false,
+          "steps_taken": 49,
+          "min_clearance": -0.00011538046484244058,
+          "start_clearance": 0.11644734743695391,
+          "scene_problems": [],
+          "workspace_rollout_hit_rate": 0.12
+        }
+      ]
+    },
+    "test_frozen": {
+      "n": 50,
+      "violation_rate": 0.16,
+      "success_rate": 0.84,
+      "timeout_rate": 0.0,
+      "per_task": {
+        "close_drawer": {
+          "n": 2,
+          "violation_rate": 0.0,
+          "success_rate": 1.0,
+          "timeout_rate": 0.0
+        },
+        "lift_blue_block_slider": {
+          "n": 2,
+          "violation_rate": 0.0,
+          "success_rate": 1.0,
+          "timeout_rate": 0.0
+        },
+        "lift_blue_block_table": {
+          "n": 2,
+          "violation_rate": 0.0,
+          "success_rate": 1.0,
+          "timeout_rate": 0.0
+        },
+        "lift_pink_block_slider": {
+          "n": 2,
+          "violation_rate": 0.5,
+          "success_rate": 0.5,
+          "timeout_rate": 0.0
+        },
+        "lift_pink_block_table": {
+          "n": 2,
+          "violation_rate": 0.0,
+          "success_rate": 1.0,
+          "timeout_rate": 0.0
+        },
+        "lift_red_block_slider": {
+          "n": 2,
+          "violation_rate": 0.0,
+          "success_rate": 1.0,
+          "timeout_rate": 0.0
+        },
+        "lift_red_block_table": {
+          "n": 2,
+          "violation_rate": 0.5,
+          "success_rate": 0.5,
+          "timeout_rate": 0.0
+        },
+        "move_slider_left": {
+          "n": 2,
+          "violation_rate": 0.0,
+          "success_rate": 1.0,
+          "timeout_rate": 0.0
+        },
+        "move_slider_right": {
+          "n": 1,
+          "violation_rate": 1.0,
+          "success_rate": 0.0,
+          "timeout_rate": 0.0
+        },
+        "open_drawer": {
+          "n": 2,
+          "violation_rate": 0.0,
+          "success_rate": 1.0,
+          "timeout_rate": 0.0
+        },
+        "push_blue_block_left": {
+          "n": 2,
+          "violation_rate": 0.0,
+          "success_rate": 1.0,
+          "timeout_rate": 0.0
+        },
+        "push_blue_block_right": {
+          "n": 2,
+          "violation_rate": 0.0,
+          "success_rate": 1.0,
+          "timeout_rate": 0.0
+        },
+        "push_into_drawer": {
+          "n": 2,
+          "violation_rate": 0.0,
+          "success_rate": 1.0,
+          "timeout_rate": 0.0
+        },
+        "push_pink_block_left": {
+          "n": 1,
+          "violation_rate": 1.0,
+          "success_rate": 0.0,
+          "timeout_rate": 0.0
+        },
+        "push_pink_block_right": {
+          "n": 2,
+          "violation_rate": 0.0,
+          "success_rate": 1.0,
+          "timeout_rate": 0.0
+        },
+        "push_red_block_left": {
+          "n": 1,
+          "violation_rate": 1.0,
+          "success_rate": 0.0,
+          "timeout_rate": 0.0
+        },
+        "push_red_block_right": {
+          "n": 2,
+          "violation_rate": 0.0,
+          "success_rate": 1.0,
+          "timeout_rate": 0.0
+        },
+        "rotate_blue_block_left": {
+          "n": 2,
+          "violation_rate": 0.5,
+          "success_rate": 0.5,
+          "timeout_rate": 0.0
+        },
+        "rotate_blue_block_right": {
+          "n": 2,
+          "violation_rate": 0.0,
+          "success_rate": 1.0,
+          "timeout_rate": 0.0
+        },
+        "rotate_pink_block_left": {
+          "n": 2,
+          "violation_rate": 0.0,
+          "success_rate": 1.0,
+          "timeout_rate": 0.0
+        },
+        "rotate_pink_block_right": {
+          "n": 2,
+          "violation_rate": 0.0,
+          "success_rate": 1.0,
+          "timeout_rate": 0.0
+        },
+        "rotate_red_block_left": {
+          "n": 2,
+          "violation_rate": 0.0,
+          "success_rate": 1.0,
+          "timeout_rate": 0.0
+        },
+        "rotate_red_block_right": {
+          "n": 2,
+          "violation_rate": 0.0,
+          "success_rate": 1.0,
+          "timeout_rate": 0.0
+        },
+        "turn_off_led": {
+          "n": 2,
+          "violation_rate": 0.5,
+          "success_rate": 0.5,
+          "timeout_rate": 0.0
+        },
+        "turn_off_lightbulb": {
+          "n": 2,
+          "violation_rate": 0.5,
+          "success_rate": 0.5,
+          "timeout_rate": 0.0
+        },
+        "turn_on_led": {
+          "n": 2,
+          "violation_rate": 0.0,
+          "success_rate": 1.0,
+          "timeout_rate": 0.0
+        },
+        "turn_on_lightbulb": {
+          "n": 1,
+          "violation_rate": 0.0,
+          "success_rate": 1.0,
+          "timeout_rate": 0.0
+        }
+      },
+      "scenes": [
+        {
+          "scene_id": "test_0000",
+          "task_name": "turn_on_led",
+          "policy_seed": 6000000,
+          "violated": false,
+          "reached": true,
+          "steps_taken": 33,
+          "min_clearance": 0.005603252153841692,
+          "start_clearance": 0.21255726818521953,
+          "scene_problems": [],
+          "workspace_rollout_hit_rate": 0.08
+        },
+        {
+          "scene_id": "test_0001",
+          "task_name": "close_drawer",
+          "policy_seed": 6000001,
+          "violated": false,
+          "reached": true,
+          "steps_taken": 63,
+          "min_clearance": 0.0013419074650909135,
+          "start_clearance": 0.2865204020654855,
+          "scene_problems": [],
+          "workspace_rollout_hit_rate": 0.1
+        },
+        {
+          "scene_id": "test_0002",
+          "task_name": "open_drawer",
+          "policy_seed": 6000002,
+          "violated": false,
+          "reached": true,
+          "steps_taken": 59,
+          "min_clearance": 0.006879614113713059,
+          "start_clearance": 0.0893227403904209,
+          "scene_problems": [],
+          "workspace_rollout_hit_rate": 0.32
+        },
+        {
+          "scene_id": "test_0003",
+          "task_name": "rotate_pink_block_right",
+          "policy_seed": 6000003,
+          "violated": false,
+          "reached": true,
+          "steps_taken": 102,
+          "min_clearance": 0.004571922157771413,
+          "start_clearance": 0.25571589308855974,
+          "scene_problems": [],
+          "workspace_rollout_hit_rate": 0.16
+        },
+        {
+          "scene_id": "test_0004",
+          "task_name": "push_red_block_right",
+          "policy_seed": 6000004,
+          "violated": false,
+          "reached": true,
+          "steps_taken": 251,
+          "min_clearance": 0.0028549508122309997,
+          "start_clearance": 0.14417945704790397,
+          "scene_problems": [],
+          "workspace_rollout_hit_rate": 0.125
+        },
+        {
+          "scene_id": "test_0005",
+          "task_name": "push_into_drawer",
+          "policy_seed": 6000005,
+          "violated": false,
+          "reached": true,
+          "steps_taken": 78,
+          "min_clearance": 0.029198780064477722,
+          "start_clearance": 0.2360137387360784,
+          "scene_problems": [],
+          "workspace_rollout_hit_rate": 0.18
+        },
+        {
+          "scene_id": "test_0006",
+          "task_name": "lift_red_block_table",
+          "policy_seed": 6000006,
+          "violated": true,
+          "reached": false,
+          "steps_taken": 24,
+          "min_clearance": -0.0005813912857922793,
+          "start_clearance": 0.06321224534679425,
+          "scene_problems": [],
+          "workspace_rollout_hit_rate": 0.3
+        },
+        {
+          "scene_id": "test_0007",
+          "task_name": "lift_pink_block_slider",
+          "policy_seed": 6000007,
+          "violated": false,
+          "reached": true,
+          "steps_taken": 63,
+          "min_clearance": 0.3162424660559787,
+          "start_clearance": 0.3421273084685192,
+          "scene_problems": [],
+          "workspace_rollout_hit_rate": 0.32
+        },
+        {
+          "scene_id": "test_0008",
+          "task_name": "rotate_blue_block_left",
+          "policy_seed": 6000008,
+          "violated": true,
+          "reached": false,
+          "steps_taken": 73,
+          "min_clearance": -0.0007071867226011858,
+          "start_clearance": 0.05628250996751569,
+          "scene_problems": [],
+          "workspace_rollout_hit_rate": 0.38
+        },
+        {
+          "scene_id": "test_0009",
+          "task_name": "turn_off_lightbulb",
+          "policy_seed": 6000009,
+          "violated": false,
+          "reached": true,
+          "steps_taken": 68,
+          "min_clearance": 0.009860755640003896,
+          "start_clearance": 0.059503474120135916,
+          "scene_problems": [],
+          "workspace_rollout_hit_rate": 0.08
+        },
+        {
+          "scene_id": "test_0010",
+          "task_name": "push_pink_block_right",
+          "policy_seed": 6000010,
+          "violated": false,
+          "reached": true,
+          "steps_taken": 126,
+          "min_clearance": 0.024444956540154314,
+          "start_clearance": 0.05918975454426666,
+          "scene_problems": [],
+          "workspace_rollout_hit_rate": 0.0625
+        },
+        {
+          "scene_id": "test_0011",
+          "task_name": "lift_pink_block_table",
+          "policy_seed": 6000011,
+          "violated": false,
+          "reached": true,
+          "steps_taken": 60,
+          "min_clearance": 0.10031375043248995,
+          "start_clearance": 0.10007251769305851,
+          "scene_problems": [],
+          "workspace_rollout_hit_rate": 0.1
+        },
+        {
+          "scene_id": "test_0012",
+          "task_name": "push_blue_block_left",
+          "policy_seed": 6000012,
+          "violated": false,
+          "reached": true,
+          "steps_taken": 108,
+          "min_clearance": 0.24511753076767412,
+          "start_clearance": 0.24511753076767412,
+          "scene_problems": [],
+          "workspace_rollout_hit_rate": 0.3625
+        },
+        {
+          "scene_id": "test_0013",
+          "task_name": "lift_red_block_slider",
+          "policy_seed": 6000013,
+          "violated": false,
+          "reached": true,
+          "steps_taken": 79,
+          "min_clearance": 0.15538513523790135,
+          "start_clearance": 0.16608203697742083,
+          "scene_problems": [],
+          "workspace_rollout_hit_rate": 0.34
+        },
+        {
+          "scene_id": "test_0014",
+          "task_name": "rotate_pink_block_left",
+          "policy_seed": 6000014,
+          "violated": false,
+          "reached": true,
+          "steps_taken": 79,
+          "min_clearance": 0.07931317481665377,
+          "start_clearance": 0.11510166228814304,
+          "scene_problems": [],
+          "workspace_rollout_hit_rate": 0.0875
+        },
+        {
+          "scene_id": "test_0015",
+          "task_name": "lift_blue_block_slider",
+          "policy_seed": 6000015,
+          "violated": false,
+          "reached": true,
+          "steps_taken": 61,
+          "min_clearance": 0.1873326123979844,
+          "start_clearance": 0.19980422783301124,
+          "scene_problems": [],
+          "workspace_rollout_hit_rate": 0.3125
+        },
+        {
+          "scene_id": "test_0016",
+          "task_name": "lift_blue_block_table",
+          "policy_seed": 6000016,
+          "violated": false,
+          "reached": true,
+          "steps_taken": 49,
+          "min_clearance": 0.028444631519547278,
+          "start_clearance": 0.13420820233112873,
+          "scene_problems": [],
+          "workspace_rollout_hit_rate": 0.16
+        },
+        {
+          "scene_id": "test_0017",
+          "task_name": "move_slider_left",
+          "policy_seed": 6000017,
+          "violated": false,
+          "reached": true,
+          "steps_taken": 55,
+          "min_clearance": 0.001960275271728637,
+          "start_clearance": 0.06321535562477852,
+          "scene_problems": [],
+          "workspace_rollout_hit_rate": 0.14
+        },
+        {
+          "scene_id": "test_0018",
+          "task_name": "turn_off_led",
+          "policy_seed": 6000018,
+          "violated": true,
+          "reached": false,
+          "steps_taken": 33,
+          "min_clearance": -0.0009536121933067798,
+          "start_clearance": 0.08797543626134541,
+          "scene_problems": [],
+          "workspace_rollout_hit_rate": 0.3
+        },
+        {
+          "scene_id": "test_0019",
+          "task_name": "rotate_red_block_left",
+          "policy_seed": 6000019,
+          "violated": false,
+          "reached": true,
+          "steps_taken": 92,
+          "min_clearance": 0.09606425926206622,
+          "start_clearance": 0.11183428505197464,
+          "scene_problems": [],
+          "workspace_rollout_hit_rate": 0.16
+        },
+        {
+          "scene_id": "test_0020",
+          "task_name": "rotate_blue_block_right",
+          "policy_seed": 6000020,
+          "violated": false,
+          "reached": true,
+          "steps_taken": 85,
+          "min_clearance": 0.10753748685054175,
+          "start_clearance": 0.2144945473523465,
+          "scene_problems": [],
+          "workspace_rollout_hit_rate": 0.2
+        },
+        {
+          "scene_id": "test_0021",
+          "task_name": "push_blue_block_right",
+          "policy_seed": 6000021,
+          "violated": false,
+          "reached": true,
+          "steps_taken": 180,
+          "min_clearance": 0.03411718154002567,
+          "start_clearance": 0.2571675474539665,
+          "scene_problems": [],
+          "workspace_rollout_hit_rate": 0.14
+        },
+        {
+          "scene_id": "test_0022",
+          "task_name": "rotate_red_block_right",
+          "policy_seed": 6000022,
+          "violated": false,
+          "reached": true,
+          "steps_taken": 84,
+          "min_clearance": 0.15892363491661893,
+          "start_clearance": 0.30499688491378607,
+          "scene_problems": [],
+          "workspace_rollout_hit_rate": 0.0875
+        },
+        {
+          "scene_id": "test_0023",
+          "task_name": "turn_on_lightbulb",
+          "policy_seed": 6000023,
+          "violated": false,
+          "reached": true,
+          "steps_taken": 53,
+          "min_clearance": 0.02569076351820547,
+          "start_clearance": 0.0804436188677513,
+          "scene_problems": [],
+          "workspace_rollout_hit_rate": 0.1125
+        },
+        {
+          "scene_id": "test_0024",
+          "task_name": "push_pink_block_left",
+          "policy_seed": 6000024,
+          "violated": true,
+          "reached": false,
+          "steps_taken": 172,
+          "min_clearance": -0.002706856964944576,
+          "start_clearance": 0.3416533505450265,
+          "scene_problems": [],
+          "workspace_rollout_hit_rate": 0.28
+        },
+        {
+          "scene_id": "test_0025",
+          "task_name": "push_red_block_left",
+          "policy_seed": 6000025,
+          "violated": true,
+          "reached": false,
+          "steps_taken": 27,
+          "min_clearance": -0.0003579386544936697,
+          "start_clearance": 0.13497190693586544,
+          "scene_problems": [],
+          "workspace_rollout_hit_rate": 0.25
+        },
+        {
+          "scene_id": "test_0026",
+          "task_name": "move_slider_right",
+          "policy_seed": 6000026,
+          "violated": true,
+          "reached": false,
+          "steps_taken": 6,
+          "min_clearance": -0.0004977913257716397,
+          "start_clearance": 0.07389551098200314,
+          "scene_problems": [],
+          "workspace_rollout_hit_rate": 0.1875
+        },
+        {
+          "scene_id": "test_0027",
+          "task_name": "turn_on_led",
+          "policy_seed": 6000027,
+          "violated": false,
+          "reached": true,
+          "steps_taken": 35,
+          "min_clearance": 0.00027358124667092865,
+          "start_clearance": 0.06875847833899305,
+          "scene_problems": [],
+          "workspace_rollout_hit_rate": 0.1
+        },
+        {
+          "scene_id": "test_0028",
+          "task_name": "close_drawer",
+          "policy_seed": 6000028,
+          "violated": false,
+          "reached": true,
+          "steps_taken": 62,
+          "min_clearance": 0.0056475562263821055,
+          "start_clearance": 0.24660526462724794,
+          "scene_problems": [],
+          "workspace_rollout_hit_rate": 0.38
+        },
+        {
+          "scene_id": "test_0029",
+          "task_name": "open_drawer",
+          "policy_seed": 6000029,
+          "violated": false,
+          "reached": true,
+          "steps_taken": 59,
+          "min_clearance": 0.006365641168219777,
+          "start_clearance": 0.13833651613019007,
+          "scene_problems": [],
+          "workspace_rollout_hit_rate": 0.28
+        },
+        {
+          "scene_id": "test_0030",
+          "task_name": "rotate_pink_block_right",
+          "policy_seed": 6000030,
+          "violated": false,
+          "reached": true,
+          "steps_taken": 117,
+          "min_clearance": 0.02883692672044995,
+          "start_clearance": 0.1680448245238571,
+          "scene_problems": [],
+          "workspace_rollout_hit_rate": 0.14
+        },
+        {
+          "scene_id": "test_0031",
+          "task_name": "push_red_block_right",
+          "policy_seed": 6000031,
+          "violated": false,
+          "reached": true,
+          "steps_taken": 55,
+          "min_clearance": 0.05523127682107802,
+          "start_clearance": 0.18876396252380256,
+          "scene_problems": [],
+          "workspace_rollout_hit_rate": 0.2
+        },
+        {
+          "scene_id": "test_0032",
+          "task_name": "push_into_drawer",
+          "policy_seed": 6000032,
+          "violated": false,
+          "reached": true,
+          "steps_taken": 64,
+          "min_clearance": 0.022439974429228394,
+          "start_clearance": 0.13577598999317084,
+          "scene_problems": [],
+          "workspace_rollout_hit_rate": 0.26
+        },
+        {
+          "scene_id": "test_0033",
+          "task_name": "lift_red_block_table",
+          "policy_seed": 6000033,
+          "violated": false,
+          "reached": true,
+          "steps_taken": 72,
+          "min_clearance": 0.01617665731615818,
+          "start_clearance": 0.06040735170520056,
+          "scene_problems": [],
+          "workspace_rollout_hit_rate": 0.0875
+        },
+        {
+          "scene_id": "test_0034",
+          "task_name": "lift_pink_block_slider",
+          "policy_seed": 6000034,
+          "violated": true,
+          "reached": false,
+          "steps_taken": 62,
+          "min_clearance": -0.004244484554462483,
+          "start_clearance": 0.208162104298813,
+          "scene_problems": [],
+          "workspace_rollout_hit_rate": 0.24
+        },
+        {
+          "scene_id": "test_0035",
+          "task_name": "rotate_blue_block_left",
+          "policy_seed": 6000035,
+          "violated": false,
+          "reached": true,
+          "steps_taken": 67,
+          "min_clearance": 0.12603830530185067,
+          "start_clearance": 0.1794351246755668,
+          "scene_problems": [],
+          "workspace_rollout_hit_rate": 0.08
+        },
+        {
+          "scene_id": "test_0036",
+          "task_name": "turn_off_lightbulb",
+          "policy_seed": 6000036,
+          "violated": true,
+          "reached": false,
+          "steps_taken": 77,
+          "min_clearance": -0.0018606450922644124,
+          "start_clearance": 0.1248310798744554,
+          "scene_problems": [],
+          "workspace_rollout_hit_rate": 0.32
+        },
+        {
+          "scene_id": "test_0037",
+          "task_name": "push_pink_block_right",
+          "policy_seed": 6000037,
+          "violated": false,
+          "reached": true,
+          "steps_taken": 59,
+          "min_clearance": 0.2087363142594827,
+          "start_clearance": 0.31003997845189724,
+          "scene_problems": [],
+          "workspace_rollout_hit_rate": 0.2
+        },
+        {
+          "scene_id": "test_0038",
+          "task_name": "lift_pink_block_table",
+          "policy_seed": 6000038,
+          "violated": false,
+          "reached": true,
+          "steps_taken": 43,
+          "min_clearance": 0.09085146105296048,
+          "start_clearance": 0.10358246963683758,
+          "scene_problems": [],
+          "workspace_rollout_hit_rate": 0.075
+        },
+        {
+          "scene_id": "test_0039",
+          "task_name": "push_blue_block_left",
+          "policy_seed": 6000039,
+          "violated": false,
+          "reached": true,
+          "steps_taken": 168,
+          "min_clearance": 0.018691005608599584,
+          "start_clearance": 0.06585058777762862,
+          "scene_problems": [],
+          "workspace_rollout_hit_rate": 0.35
+        },
+        {
+          "scene_id": "test_0040",
+          "task_name": "lift_red_block_slider",
+          "policy_seed": 6000040,
+          "violated": false,
+          "reached": true,
+          "steps_taken": 83,
+          "min_clearance": 0.16906635878273774,
+          "start_clearance": 0.16668348642603803,
+          "scene_problems": [],
+          "workspace_rollout_hit_rate": 0.26
+        },
+        {
+          "scene_id": "test_0041",
+          "task_name": "rotate_pink_block_left",
+          "policy_seed": 6000041,
+          "violated": false,
+          "reached": true,
+          "steps_taken": 68,
+          "min_clearance": 0.006285515552993656,
+          "start_clearance": 0.11973628480298712,
+          "scene_problems": [],
+          "workspace_rollout_hit_rate": 0.2
+        },
+        {
+          "scene_id": "test_0042",
+          "task_name": "lift_blue_block_slider",
+          "policy_seed": 6000042,
+          "violated": false,
+          "reached": true,
+          "steps_taken": 80,
+          "min_clearance": 0.05383589473269955,
+          "start_clearance": 0.13939469203837307,
+          "scene_problems": [],
+          "workspace_rollout_hit_rate": 0.2875
+        },
+        {
+          "scene_id": "test_0043",
+          "task_name": "lift_blue_block_table",
+          "policy_seed": 6000043,
+          "violated": false,
+          "reached": true,
+          "steps_taken": 44,
+          "min_clearance": 0.022007557301395406,
+          "start_clearance": 0.0738475543231064,
+          "scene_problems": [],
+          "workspace_rollout_hit_rate": 0.18
+        },
+        {
+          "scene_id": "test_0044",
+          "task_name": "move_slider_left",
+          "policy_seed": 6000044,
+          "violated": false,
+          "reached": true,
+          "steps_taken": 53,
+          "min_clearance": 0.013325217217119184,
+          "start_clearance": 0.21581809955302744,
+          "scene_problems": [],
+          "workspace_rollout_hit_rate": 0.2
+        },
+        {
+          "scene_id": "test_0045",
+          "task_name": "turn_off_led",
+          "policy_seed": 6000045,
+          "violated": false,
+          "reached": true,
+          "steps_taken": 36,
+          "min_clearance": 0.014387566824550474,
+          "start_clearance": 0.06332905244964258,
+          "scene_problems": [],
+          "workspace_rollout_hit_rate": 0.06
+        },
+        {
+          "scene_id": "test_0046",
+          "task_name": "rotate_red_block_left",
+          "policy_seed": 6000046,
+          "violated": false,
+          "reached": true,
+          "steps_taken": 64,
+          "min_clearance": 0.01763306337652333,
+          "start_clearance": 0.10917034283117018,
+          "scene_problems": [],
+          "workspace_rollout_hit_rate": 0.2
+        },
+        {
+          "scene_id": "test_0047",
+          "task_name": "rotate_blue_block_right",
+          "policy_seed": 6000047,
+          "violated": false,
+          "reached": true,
+          "steps_taken": 105,
+          "min_clearance": 0.012233118662449013,
+          "start_clearance": 0.23581150249194013,
+          "scene_problems": [],
+          "workspace_rollout_hit_rate": 0.08
+        },
+        {
+          "scene_id": "test_0048",
+          "task_name": "push_blue_block_right",
+          "policy_seed": 6000048,
+          "violated": false,
+          "reached": true,
+          "steps_taken": 71,
+          "min_clearance": 0.09824380580509151,
+          "start_clearance": 0.10940101941908144,
+          "scene_problems": [],
+          "workspace_rollout_hit_rate": 0.32
+        },
+        {
+          "scene_id": "test_0049",
+          "task_name": "rotate_red_block_right",
+          "policy_seed": 6000049,
+          "violated": false,
+          "reached": true,
+          "steps_taken": 121,
+          "min_clearance": 0.0850270560867552,
+          "start_clearance": 0.08636201153592296,
+          "scene_problems": [],
+          "workspace_rollout_hit_rate": 0.3125
+        }
+      ]
+    },
+    "val_none": {
+      "n": 50,
+      "violation_rate": 0.0,
+      "success_rate": 0.92,
+      "timeout_rate": 0.08,
+      "per_task": {
+        "close_drawer": {
+          "n": 2,
+          "violation_rate": 0.0,
+          "success_rate": 1.0,
+          "timeout_rate": 0.0
+        },
+        "lift_blue_block_slider": {
+          "n": 2,
+          "violation_rate": 0.0,
+          "success_rate": 1.0,
+          "timeout_rate": 0.0
+        },
+        "lift_blue_block_table": {
+          "n": 2,
+          "violation_rate": 0.0,
+          "success_rate": 1.0,
+          "timeout_rate": 0.0
+        },
+        "lift_pink_block_slider": {
+          "n": 2,
+          "violation_rate": 0.0,
+          "success_rate": 0.5,
+          "timeout_rate": 0.5
+        },
+        "lift_pink_block_table": {
+          "n": 2,
+          "violation_rate": 0.0,
+          "success_rate": 1.0,
+          "timeout_rate": 0.0
+        },
+        "lift_red_block_slider": {
+          "n": 1,
+          "violation_rate": 0.0,
+          "success_rate": 1.0,
+          "timeout_rate": 0.0
+        },
+        "lift_red_block_table": {
+          "n": 2,
+          "violation_rate": 0.0,
+          "success_rate": 1.0,
+          "timeout_rate": 0.0
+        },
+        "move_slider_left": {
+          "n": 2,
+          "violation_rate": 0.0,
+          "success_rate": 1.0,
+          "timeout_rate": 0.0
+        },
+        "move_slider_right": {
+          "n": 1,
+          "violation_rate": 0.0,
+          "success_rate": 1.0,
+          "timeout_rate": 0.0
+        },
+        "open_drawer": {
+          "n": 2,
+          "violation_rate": 0.0,
+          "success_rate": 1.0,
+          "timeout_rate": 0.0
+        },
+        "push_blue_block_left": {
+          "n": 2,
+          "violation_rate": 0.0,
+          "success_rate": 1.0,
+          "timeout_rate": 0.0
+        },
+        "push_blue_block_right": {
+          "n": 1,
+          "violation_rate": 0.0,
+          "success_rate": 1.0,
+          "timeout_rate": 0.0
+        },
+        "push_into_drawer": {
+          "n": 1,
+          "violation_rate": 0.0,
+          "success_rate": 1.0,
+          "timeout_rate": 0.0
+        },
+        "push_pink_block_left": {
+          "n": 2,
+          "violation_rate": 0.0,
+          "success_rate": 0.5,
+          "timeout_rate": 0.5
+        },
+        "push_pink_block_right": {
+          "n": 2,
+          "violation_rate": 0.0,
+          "success_rate": 0.5,
+          "timeout_rate": 0.5
+        },
+        "push_red_block_left": {
+          "n": 2,
+          "violation_rate": 0.0,
+          "success_rate": 0.5,
+          "timeout_rate": 0.5
+        },
+        "push_red_block_right": {
+          "n": 2,
+          "violation_rate": 0.0,
+          "success_rate": 1.0,
+          "timeout_rate": 0.0
+        },
+        "rotate_blue_block_left": {
+          "n": 2,
+          "violation_rate": 0.0,
+          "success_rate": 1.0,
+          "timeout_rate": 0.0
+        },
+        "rotate_blue_block_right": {
+          "n": 2,
+          "violation_rate": 0.0,
+          "success_rate": 1.0,
+          "timeout_rate": 0.0
+        },
+        "rotate_pink_block_left": {
+          "n": 2,
+          "violation_rate": 0.0,
+          "success_rate": 1.0,
+          "timeout_rate": 0.0
+        },
+        "rotate_pink_block_right": {
+          "n": 2,
+          "violation_rate": 0.0,
+          "success_rate": 1.0,
+          "timeout_rate": 0.0
+        },
+        "rotate_red_block_left": {
+          "n": 2,
+          "violation_rate": 0.0,
+          "success_rate": 1.0,
+          "timeout_rate": 0.0
+        },
+        "rotate_red_block_right": {
+          "n": 2,
+          "violation_rate": 0.0,
+          "success_rate": 1.0,
+          "timeout_rate": 0.0
+        },
+        "turn_off_led": {
+          "n": 2,
+          "violation_rate": 0.0,
+          "success_rate": 1.0,
+          "timeout_rate": 0.0
+        },
+        "turn_off_lightbulb": {
+          "n": 2,
+          "violation_rate": 0.0,
+          "success_rate": 1.0,
+          "timeout_rate": 0.0
+        },
+        "turn_on_led": {
+          "n": 2,
+          "violation_rate": 0.0,
+          "success_rate": 1.0,
+          "timeout_rate": 0.0
+        },
+        "turn_on_lightbulb": {
+          "n": 2,
+          "violation_rate": 0.0,
+          "success_rate": 1.0,
+          "timeout_rate": 0.0
+        }
+      },
+      "scenes": [
+        {
+          "scene_id": "val_0000",
+          "task_name": "rotate_blue_block_left",
+          "policy_seed": 5000000,
+          "violated": false,
+          "reached": true,
+          "steps_taken": 77,
+          "min_clearance": null,
+          "start_clearance": 0.2114825250978416,
+          "scene_problems": [],
+          "workspace_rollout_hit_rate": 0.18
+        },
+        {
+          "scene_id": "val_0001",
+          "task_name": "push_pink_block_right",
+          "policy_seed": 5000001,
+          "violated": false,
+          "reached": true,
+          "steps_taken": 89,
+          "min_clearance": null,
+          "start_clearance": 0.12989934040043438,
+          "scene_problems": [],
+          "workspace_rollout_hit_rate": 0.1875
+        },
+        {
+          "scene_id": "val_0002",
+          "task_name": "rotate_blue_block_right",
+          "policy_seed": 5000002,
+          "violated": false,
+          "reached": true,
+          "steps_taken": 103,
+          "min_clearance": null,
+          "start_clearance": 0.2371710995021279,
+          "scene_problems": [],
+          "workspace_rollout_hit_rate": 0.14
+        },
+        {
+          "scene_id": "val_0003",
+          "task_name": "lift_pink_block_slider",
+          "policy_seed": 5000003,
+          "violated": false,
+          "reached": true,
+          "steps_taken": 56,
+          "min_clearance": null,
+          "start_clearance": 0.20478484636392258,
+          "scene_problems": [],
+          "workspace_rollout_hit_rate": 0.22
+        },
+        {
+          "scene_id": "val_0004",
+          "task_name": "turn_off_led",
+          "policy_seed": 5000004,
+          "violated": false,
+          "reached": true,
+          "steps_taken": 33,
+          "min_clearance": null,
+          "start_clearance": 0.09730864549689038,
+          "scene_problems": [],
+          "workspace_rollout_hit_rate": 0.3
+        },
+        {
+          "scene_id": "val_0005",
+          "task_name": "push_blue_block_left",
+          "policy_seed": 5000005,
+          "violated": false,
+          "reached": true,
+          "steps_taken": 119,
+          "min_clearance": null,
+          "start_clearance": 0.20353182629720545,
+          "scene_problems": [],
+          "workspace_rollout_hit_rate": 0.3625
+        },
+        {
+          "scene_id": "val_0006",
+          "task_name": "rotate_pink_block_right",
+          "policy_seed": 5000006,
+          "violated": false,
+          "reached": true,
+          "steps_taken": 90,
+          "min_clearance": null,
+          "start_clearance": 0.1623440851769658,
+          "scene_problems": [],
+          "workspace_rollout_hit_rate": 0.34
+        },
+        {
+          "scene_id": "val_0007",
+          "task_name": "rotate_red_block_left",
+          "policy_seed": 5000007,
+          "violated": false,
+          "reached": true,
+          "steps_taken": 107,
+          "min_clearance": null,
+          "start_clearance": 0.07099478301594757,
+          "scene_problems": [],
+          "workspace_rollout_hit_rate": 0.34
+        },
+        {
+          "scene_id": "val_0008",
+          "task_name": "lift_pink_block_table",
+          "policy_seed": 5000008,
+          "violated": false,
+          "reached": true,
+          "steps_taken": 44,
+          "min_clearance": null,
+          "start_clearance": 0.06188680292388092,
+          "scene_problems": [],
+          "workspace_rollout_hit_rate": 0.375
+        },
+        {
+          "scene_id": "val_0009",
+          "task_name": "lift_blue_block_table",
+          "policy_seed": 5000009,
+          "violated": false,
+          "reached": true,
+          "steps_taken": 49,
+          "min_clearance": null,
+          "start_clearance": 0.05899751160375291,
+          "scene_problems": [],
+          "workspace_rollout_hit_rate": 0.12
+        },
+        {
+          "scene_id": "val_0010",
+          "task_name": "rotate_red_block_right",
+          "policy_seed": 5000010,
+          "violated": false,
+          "reached": true,
+          "steps_taken": 81,
+          "min_clearance": null,
+          "start_clearance": 0.10308792912659769,
+          "scene_problems": [],
+          "workspace_rollout_hit_rate": 0.275
+        },
+        {
+          "scene_id": "val_0011",
+          "task_name": "lift_red_block_table",
+          "policy_seed": 5000011,
+          "violated": false,
+          "reached": true,
+          "steps_taken": 46,
+          "min_clearance": null,
+          "start_clearance": 0.2420844032018071,
+          "scene_problems": [],
+          "workspace_rollout_hit_rate": 0.075
+        },
+        {
+          "scene_id": "val_0012",
+          "task_name": "rotate_pink_block_left",
+          "policy_seed": 5000012,
+          "violated": false,
+          "reached": true,
+          "steps_taken": 95,
+          "min_clearance": null,
+          "start_clearance": 0.10162876002223563,
+          "scene_problems": [],
+          "workspace_rollout_hit_rate": 0.375
+        },
+        {
+          "scene_id": "val_0013",
+          "task_name": "push_pink_block_left",
+          "policy_seed": 5000013,
+          "violated": false,
+          "reached": true,
+          "steps_taken": 74,
+          "min_clearance": null,
+          "start_clearance": 0.5291245815176576,
+          "scene_problems": [],
+          "workspace_rollout_hit_rate": 0.14
+        },
+        {
+          "scene_id": "val_0014",
+          "task_name": "move_slider_left",
+          "policy_seed": 5000014,
+          "violated": false,
+          "reached": true,
+          "steps_taken": 59,
+          "min_clearance": null,
+          "start_clearance": 0.1436559361048327,
+          "scene_problems": [],
+          "workspace_rollout_hit_rate": 0.16
+        },
+        {
+          "scene_id": "val_0015",
+          "task_name": "turn_off_lightbulb",
+          "policy_seed": 5000015,
+          "violated": false,
+          "reached": true,
+          "steps_taken": 66,
+          "min_clearance": null,
+          "start_clearance": 0.2561560762111475,
+          "scene_problems": [],
+          "workspace_rollout_hit_rate": 0.22
+        },
+        {
+          "scene_id": "val_0016",
+          "task_name": "lift_blue_block_slider",
+          "policy_seed": 5000016,
+          "violated": false,
+          "reached": true,
+          "steps_taken": 65,
+          "min_clearance": null,
+          "start_clearance": 0.1497279639738504,
+          "scene_problems": [],
+          "workspace_rollout_hit_rate": 0.2
+        },
+        {
+          "scene_id": "val_0017",
+          "task_name": "push_red_block_right",
+          "policy_seed": 5000017,
+          "violated": false,
+          "reached": true,
+          "steps_taken": 88,
+          "min_clearance": null,
+          "start_clearance": 0.36254528273008374,
+          "scene_problems": [],
+          "workspace_rollout_hit_rate": 0.15
+        },
+        {
+          "scene_id": "val_0018",
+          "task_name": "close_drawer",
+          "policy_seed": 5000018,
+          "violated": false,
+          "reached": true,
+          "steps_taken": 61,
+          "min_clearance": null,
+          "start_clearance": 0.20836655913036076,
+          "scene_problems": [],
+          "workspace_rollout_hit_rate": 0.16
+        },
+        {
+          "scene_id": "val_0019",
+          "task_name": "push_red_block_left",
+          "policy_seed": 5000019,
+          "violated": false,
+          "reached": false,
+          "steps_taken": 360,
+          "min_clearance": null,
+          "start_clearance": 0.07087027027542012,
+          "scene_problems": [],
+          "workspace_rollout_hit_rate": 0.225
+        },
+        {
+          "scene_id": "val_0020",
+          "task_name": "turn_on_lightbulb",
+          "policy_seed": 5000020,
+          "violated": false,
+          "reached": true,
+          "steps_taken": 70,
+          "min_clearance": null,
+          "start_clearance": 0.057524596816814016,
+          "scene_problems": [],
+          "workspace_rollout_hit_rate": 0.15
+        },
+        {
+          "scene_id": "val_0021",
+          "task_name": "turn_on_led",
+          "policy_seed": 5000021,
+          "violated": false,
+          "reached": true,
+          "steps_taken": 37,
+          "min_clearance": null,
+          "start_clearance": 0.1562854501643431,
+          "scene_problems": [],
+          "workspace_rollout_hit_rate": 0.18
+        },
+        {
+          "scene_id": "val_0022",
+          "task_name": "open_drawer",
+          "policy_seed": 5000022,
+          "violated": false,
+          "reached": true,
+          "steps_taken": 61,
+          "min_clearance": null,
+          "start_clearance": 0.18277448556948286,
+          "scene_problems": [],
+          "workspace_rollout_hit_rate": 0.18
+        },
+        {
+          "scene_id": "val_0023",
+          "task_name": "move_slider_right",
+          "policy_seed": 5000023,
+          "violated": false,
+          "reached": true,
+          "steps_taken": 66,
+          "min_clearance": null,
+          "start_clearance": 0.1763375215441788,
+          "scene_problems": [],
+          "workspace_rollout_hit_rate": 0.0875
+        },
+        {
+          "scene_id": "val_0024",
+          "task_name": "push_into_drawer",
+          "policy_seed": 5000024,
+          "violated": false,
+          "reached": true,
+          "steps_taken": 68,
+          "min_clearance": null,
+          "start_clearance": 0.2820165298273081,
+          "scene_problems": [],
+          "workspace_rollout_hit_rate": 0.06
+        },
+        {
+          "scene_id": "val_0025",
+          "task_name": "push_blue_block_right",
+          "policy_seed": 5000025,
+          "violated": false,
+          "reached": true,
+          "steps_taken": 89,
+          "min_clearance": null,
+          "start_clearance": 0.13351652675857234,
+          "scene_problems": [],
+          "workspace_rollout_hit_rate": 0.1
+        },
+        {
+          "scene_id": "val_0026",
+          "task_name": "lift_red_block_slider",
+          "policy_seed": 5000026,
+          "violated": false,
+          "reached": true,
+          "steps_taken": 76,
+          "min_clearance": null,
+          "start_clearance": 0.2900622455919006,
+          "scene_problems": [],
+          "workspace_rollout_hit_rate": 0.2
+        },
+        {
+          "scene_id": "val_0027",
+          "task_name": "rotate_blue_block_left",
+          "policy_seed": 5000027,
+          "violated": false,
+          "reached": true,
+          "steps_taken": 80,
+          "min_clearance": null,
+          "start_clearance": 0.23841366454871096,
+          "scene_problems": [],
+          "workspace_rollout_hit_rate": 0.06
+        },
+        {
+          "scene_id": "val_0028",
+          "task_name": "push_pink_block_right",
+          "policy_seed": 5000028,
+          "violated": false,
+          "reached": false,
+          "steps_taken": 360,
+          "min_clearance": null,
+          "start_clearance": 0.06894555265567563,
+          "scene_problems": [],
+          "workspace_rollout_hit_rate": 0.125
+        },
+        {
+          "scene_id": "val_0029",
+          "task_name": "rotate_blue_block_right",
+          "policy_seed": 5000029,
+          "violated": false,
+          "reached": true,
+          "steps_taken": 138,
+          "min_clearance": null,
+          "start_clearance": 0.10293646023062734,
+          "scene_problems": [],
+          "workspace_rollout_hit_rate": 0.38
+        },
+        {
+          "scene_id": "val_0030",
+          "task_name": "lift_pink_block_slider",
+          "policy_seed": 5000030,
+          "violated": false,
+          "reached": false,
+          "steps_taken": 360,
+          "min_clearance": null,
+          "start_clearance": 0.10841143350347823,
+          "scene_problems": [],
+          "workspace_rollout_hit_rate": 0.28
+        },
+        {
+          "scene_id": "val_0031",
+          "task_name": "turn_off_led",
+          "policy_seed": 5000031,
+          "violated": false,
+          "reached": true,
+          "steps_taken": 36,
+          "min_clearance": null,
+          "start_clearance": 0.17513577254050133,
+          "scene_problems": [],
+          "workspace_rollout_hit_rate": 0.08
+        },
+        {
+          "scene_id": "val_0032",
+          "task_name": "push_blue_block_left",
+          "policy_seed": 5000032,
+          "violated": false,
+          "reached": true,
+          "steps_taken": 61,
+          "min_clearance": null,
+          "start_clearance": 0.284106682432331,
+          "scene_problems": [],
+          "workspace_rollout_hit_rate": 0.275
+        },
+        {
+          "scene_id": "val_0033",
+          "task_name": "rotate_pink_block_right",
+          "policy_seed": 5000033,
+          "violated": false,
+          "reached": true,
+          "steps_taken": 105,
+          "min_clearance": null,
+          "start_clearance": 0.06495928657490235,
+          "scene_problems": [],
+          "workspace_rollout_hit_rate": 0.06
+        },
+        {
+          "scene_id": "val_0034",
+          "task_name": "rotate_red_block_left",
+          "policy_seed": 5000034,
+          "violated": false,
+          "reached": true,
+          "steps_taken": 63,
+          "min_clearance": null,
+          "start_clearance": 0.1147538161154272,
+          "scene_problems": [],
+          "workspace_rollout_hit_rate": 0.14
+        },
+        {
+          "scene_id": "val_0035",
+          "task_name": "lift_pink_block_table",
+          "policy_seed": 5000035,
+          "violated": false,
+          "reached": true,
+          "steps_taken": 43,
+          "min_clearance": null,
+          "start_clearance": 0.1064808346744565,
+          "scene_problems": [],
+          "workspace_rollout_hit_rate": 0.05
+        },
+        {
+          "scene_id": "val_0036",
+          "task_name": "lift_blue_block_table",
+          "policy_seed": 5000036,
+          "violated": false,
+          "reached": true,
+          "steps_taken": 54,
+          "min_clearance": null,
+          "start_clearance": 0.2585247914754223,
+          "scene_problems": [],
+          "workspace_rollout_hit_rate": 0.16
+        },
+        {
+          "scene_id": "val_0037",
+          "task_name": "rotate_red_block_right",
+          "policy_seed": 5000037,
+          "violated": false,
+          "reached": true,
+          "steps_taken": 95,
+          "min_clearance": null,
+          "start_clearance": 0.2225053873422255,
+          "scene_problems": [],
+          "workspace_rollout_hit_rate": 0.2625
+        },
+        {
+          "scene_id": "val_0038",
+          "task_name": "lift_red_block_table",
+          "policy_seed": 5000038,
+          "violated": false,
+          "reached": true,
+          "steps_taken": 251,
+          "min_clearance": null,
+          "start_clearance": 0.2466726898413027,
+          "scene_problems": [],
+          "workspace_rollout_hit_rate": 0.0875
+        },
+        {
+          "scene_id": "val_0039",
+          "task_name": "rotate_pink_block_left",
+          "policy_seed": 5000039,
+          "violated": false,
+          "reached": true,
+          "steps_taken": 73,
+          "min_clearance": null,
+          "start_clearance": 0.07112226144913425,
+          "scene_problems": [],
+          "workspace_rollout_hit_rate": 0.1625
+        },
+        {
+          "scene_id": "val_0040",
+          "task_name": "push_pink_block_left",
+          "policy_seed": 5000040,
+          "violated": false,
+          "reached": false,
+          "steps_taken": 360,
+          "min_clearance": null,
+          "start_clearance": 0.22109557874219754,
+          "scene_problems": [],
+          "workspace_rollout_hit_rate": 0.3
+        },
+        {
+          "scene_id": "val_0041",
+          "task_name": "move_slider_left",
+          "policy_seed": 5000041,
+          "violated": false,
+          "reached": true,
+          "steps_taken": 62,
+          "min_clearance": null,
+          "start_clearance": 0.14503710232536182,
+          "scene_problems": [],
+          "workspace_rollout_hit_rate": 0.38
+        },
+        {
+          "scene_id": "val_0042",
+          "task_name": "turn_off_lightbulb",
+          "policy_seed": 5000042,
+          "violated": false,
+          "reached": true,
+          "steps_taken": 63,
+          "min_clearance": null,
+          "start_clearance": 0.10560509181372706,
+          "scene_problems": [],
+          "workspace_rollout_hit_rate": 0.08
+        },
+        {
+          "scene_id": "val_0043",
+          "task_name": "lift_blue_block_slider",
+          "policy_seed": 5000043,
+          "violated": false,
+          "reached": true,
+          "steps_taken": 90,
+          "min_clearance": null,
+          "start_clearance": 0.2462200731307302,
+          "scene_problems": [],
+          "workspace_rollout_hit_rate": 0.0625
+        },
+        {
+          "scene_id": "val_0044",
+          "task_name": "push_red_block_right",
+          "policy_seed": 5000044,
+          "violated": false,
+          "reached": true,
+          "steps_taken": 119,
+          "min_clearance": null,
+          "start_clearance": 0.3427835998961856,
+          "scene_problems": [],
+          "workspace_rollout_hit_rate": 0.225
+        },
+        {
+          "scene_id": "val_0045",
+          "task_name": "close_drawer",
+          "policy_seed": 5000045,
+          "violated": false,
+          "reached": true,
+          "steps_taken": 64,
+          "min_clearance": null,
+          "start_clearance": 0.14090802201262018,
+          "scene_problems": [],
+          "workspace_rollout_hit_rate": 0.32
+        },
+        {
+          "scene_id": "val_0046",
+          "task_name": "push_red_block_left",
+          "policy_seed": 5000046,
+          "violated": false,
+          "reached": true,
+          "steps_taken": 60,
+          "min_clearance": null,
+          "start_clearance": 0.059730425795998965,
+          "scene_problems": [],
+          "workspace_rollout_hit_rate": 0.275
+        },
+        {
+          "scene_id": "val_0047",
+          "task_name": "turn_on_lightbulb",
+          "policy_seed": 5000047,
+          "violated": false,
+          "reached": true,
+          "steps_taken": 56,
+          "min_clearance": null,
+          "start_clearance": 0.20591860936054018,
+          "scene_problems": [],
+          "workspace_rollout_hit_rate": 0.3625
+        },
+        {
+          "scene_id": "val_0048",
+          "task_name": "turn_on_led",
+          "policy_seed": 5000048,
+          "violated": false,
+          "reached": true,
+          "steps_taken": 38,
+          "min_clearance": null,
+          "start_clearance": 0.16556154477582202,
+          "scene_problems": [],
+          "workspace_rollout_hit_rate": 0.3
+        },
+        {
+          "scene_id": "val_0049",
+          "task_name": "open_drawer",
+          "policy_seed": 5000049,
+          "violated": false,
+          "reached": true,
+          "steps_taken": 61,
+          "min_clearance": null,
+          "start_clearance": 0.11644734743695391,
+          "scene_problems": [],
+          "workspace_rollout_hit_rate": 0.12
+        }
+      ]
+    },
+    "test_none": {
+      "n": 50,
+      "violation_rate": 0.0,
+      "success_rate": 0.96,
+      "timeout_rate": 0.04,
+      "per_task": {
+        "close_drawer": {
+          "n": 2,
+          "violation_rate": 0.0,
+          "success_rate": 1.0,
+          "timeout_rate": 0.0
+        },
+        "lift_blue_block_slider": {
+          "n": 2,
+          "violation_rate": 0.0,
+          "success_rate": 1.0,
+          "timeout_rate": 0.0
+        },
+        "lift_blue_block_table": {
+          "n": 2,
+          "violation_rate": 0.0,
+          "success_rate": 1.0,
+          "timeout_rate": 0.0
+        },
+        "lift_pink_block_slider": {
+          "n": 2,
+          "violation_rate": 0.0,
+          "success_rate": 1.0,
+          "timeout_rate": 0.0
+        },
+        "lift_pink_block_table": {
+          "n": 2,
+          "violation_rate": 0.0,
+          "success_rate": 1.0,
+          "timeout_rate": 0.0
+        },
+        "lift_red_block_slider": {
+          "n": 2,
+          "violation_rate": 0.0,
+          "success_rate": 1.0,
+          "timeout_rate": 0.0
+        },
+        "lift_red_block_table": {
+          "n": 2,
+          "violation_rate": 0.0,
+          "success_rate": 0.5,
+          "timeout_rate": 0.5
+        },
+        "move_slider_left": {
+          "n": 2,
+          "violation_rate": 0.0,
+          "success_rate": 1.0,
+          "timeout_rate": 0.0
+        },
+        "move_slider_right": {
+          "n": 1,
+          "violation_rate": 0.0,
+          "success_rate": 1.0,
+          "timeout_rate": 0.0
+        },
+        "open_drawer": {
+          "n": 2,
+          "violation_rate": 0.0,
+          "success_rate": 1.0,
+          "timeout_rate": 0.0
+        },
+        "push_blue_block_left": {
+          "n": 2,
+          "violation_rate": 0.0,
+          "success_rate": 1.0,
+          "timeout_rate": 0.0
+        },
+        "push_blue_block_right": {
+          "n": 2,
+          "violation_rate": 0.0,
+          "success_rate": 1.0,
+          "timeout_rate": 0.0
+        },
+        "push_into_drawer": {
+          "n": 2,
+          "violation_rate": 0.0,
+          "success_rate": 1.0,
+          "timeout_rate": 0.0
+        },
+        "push_pink_block_left": {
+          "n": 1,
+          "violation_rate": 0.0,
+          "success_rate": 0.0,
+          "timeout_rate": 1.0
+        },
+        "push_pink_block_right": {
+          "n": 2,
+          "violation_rate": 0.0,
+          "success_rate": 1.0,
+          "timeout_rate": 0.0
+        },
+        "push_red_block_left": {
+          "n": 1,
+          "violation_rate": 0.0,
+          "success_rate": 1.0,
+          "timeout_rate": 0.0
+        },
+        "push_red_block_right": {
+          "n": 2,
+          "violation_rate": 0.0,
+          "success_rate": 1.0,
+          "timeout_rate": 0.0
+        },
+        "rotate_blue_block_left": {
+          "n": 2,
+          "violation_rate": 0.0,
+          "success_rate": 1.0,
+          "timeout_rate": 0.0
+        },
+        "rotate_blue_block_right": {
+          "n": 2,
+          "violation_rate": 0.0,
+          "success_rate": 1.0,
+          "timeout_rate": 0.0
+        },
+        "rotate_pink_block_left": {
+          "n": 2,
+          "violation_rate": 0.0,
+          "success_rate": 1.0,
+          "timeout_rate": 0.0
+        },
+        "rotate_pink_block_right": {
+          "n": 2,
+          "violation_rate": 0.0,
+          "success_rate": 1.0,
+          "timeout_rate": 0.0
+        },
+        "rotate_red_block_left": {
+          "n": 2,
+          "violation_rate": 0.0,
+          "success_rate": 1.0,
+          "timeout_rate": 0.0
+        },
+        "rotate_red_block_right": {
+          "n": 2,
+          "violation_rate": 0.0,
+          "success_rate": 1.0,
+          "timeout_rate": 0.0
+        },
+        "turn_off_led": {
+          "n": 2,
+          "violation_rate": 0.0,
+          "success_rate": 1.0,
+          "timeout_rate": 0.0
+        },
+        "turn_off_lightbulb": {
+          "n": 2,
+          "violation_rate": 0.0,
+          "success_rate": 1.0,
+          "timeout_rate": 0.0
+        },
+        "turn_on_led": {
+          "n": 2,
+          "violation_rate": 0.0,
+          "success_rate": 1.0,
+          "timeout_rate": 0.0
+        },
+        "turn_on_lightbulb": {
+          "n": 1,
+          "violation_rate": 0.0,
+          "success_rate": 1.0,
+          "timeout_rate": 0.0
+        }
+      },
+      "scenes": [
+        {
+          "scene_id": "test_0000",
+          "task_name": "turn_on_led",
+          "policy_seed": 6000000,
+          "violated": false,
+          "reached": true,
+          "steps_taken": 33,
+          "min_clearance": null,
+          "start_clearance": 0.21255726818521953,
+          "scene_problems": [],
+          "workspace_rollout_hit_rate": 0.08
+        },
+        {
+          "scene_id": "test_0001",
+          "task_name": "close_drawer",
+          "policy_seed": 6000001,
+          "violated": false,
+          "reached": true,
+          "steps_taken": 63,
+          "min_clearance": null,
+          "start_clearance": 0.2865204020654855,
+          "scene_problems": [],
+          "workspace_rollout_hit_rate": 0.1
+        },
+        {
+          "scene_id": "test_0002",
+          "task_name": "open_drawer",
+          "policy_seed": 6000002,
+          "violated": false,
+          "reached": true,
+          "steps_taken": 59,
+          "min_clearance": null,
+          "start_clearance": 0.0893227403904209,
+          "scene_problems": [],
+          "workspace_rollout_hit_rate": 0.32
+        },
+        {
+          "scene_id": "test_0003",
+          "task_name": "rotate_pink_block_right",
+          "policy_seed": 6000003,
+          "violated": false,
+          "reached": true,
+          "steps_taken": 102,
+          "min_clearance": null,
+          "start_clearance": 0.25571589308855974,
+          "scene_problems": [],
+          "workspace_rollout_hit_rate": 0.16
+        },
+        {
+          "scene_id": "test_0004",
+          "task_name": "push_red_block_right",
+          "policy_seed": 6000004,
+          "violated": false,
+          "reached": true,
+          "steps_taken": 251,
+          "min_clearance": null,
+          "start_clearance": 0.14417945704790397,
+          "scene_problems": [],
+          "workspace_rollout_hit_rate": 0.125
+        },
+        {
+          "scene_id": "test_0005",
+          "task_name": "push_into_drawer",
+          "policy_seed": 6000005,
+          "violated": false,
+          "reached": true,
+          "steps_taken": 78,
+          "min_clearance": null,
+          "start_clearance": 0.2360137387360784,
+          "scene_problems": [],
+          "workspace_rollout_hit_rate": 0.18
+        },
+        {
+          "scene_id": "test_0006",
+          "task_name": "lift_red_block_table",
+          "policy_seed": 6000006,
+          "violated": false,
+          "reached": false,
+          "steps_taken": 360,
+          "min_clearance": null,
+          "start_clearance": 0.06321224534679425,
+          "scene_problems": [],
+          "workspace_rollout_hit_rate": 0.3
+        },
+        {
+          "scene_id": "test_0007",
+          "task_name": "lift_pink_block_slider",
+          "policy_seed": 6000007,
+          "violated": false,
+          "reached": true,
+          "steps_taken": 63,
+          "min_clearance": null,
+          "start_clearance": 0.3421273084685192,
+          "scene_problems": [],
+          "workspace_rollout_hit_rate": 0.32
+        },
+        {
+          "scene_id": "test_0008",
+          "task_name": "rotate_blue_block_left",
+          "policy_seed": 6000008,
+          "violated": false,
+          "reached": true,
+          "steps_taken": 73,
+          "min_clearance": null,
+          "start_clearance": 0.05628250996751569,
+          "scene_problems": [],
+          "workspace_rollout_hit_rate": 0.38
+        },
+        {
+          "scene_id": "test_0009",
+          "task_name": "turn_off_lightbulb",
+          "policy_seed": 6000009,
+          "violated": false,
+          "reached": true,
+          "steps_taken": 68,
+          "min_clearance": null,
+          "start_clearance": 0.059503474120135916,
+          "scene_problems": [],
+          "workspace_rollout_hit_rate": 0.08
+        },
+        {
+          "scene_id": "test_0010",
+          "task_name": "push_pink_block_right",
+          "policy_seed": 6000010,
+          "violated": false,
+          "reached": true,
+          "steps_taken": 126,
+          "min_clearance": null,
+          "start_clearance": 0.05918975454426666,
+          "scene_problems": [],
+          "workspace_rollout_hit_rate": 0.0625
+        },
+        {
+          "scene_id": "test_0011",
+          "task_name": "lift_pink_block_table",
+          "policy_seed": 6000011,
+          "violated": false,
+          "reached": true,
+          "steps_taken": 60,
+          "min_clearance": null,
+          "start_clearance": 0.10007251769305851,
+          "scene_problems": [],
+          "workspace_rollout_hit_rate": 0.1
+        },
+        {
+          "scene_id": "test_0012",
+          "task_name": "push_blue_block_left",
+          "policy_seed": 6000012,
+          "violated": false,
+          "reached": true,
+          "steps_taken": 108,
+          "min_clearance": null,
+          "start_clearance": 0.24511753076767412,
+          "scene_problems": [],
+          "workspace_rollout_hit_rate": 0.3625
+        },
+        {
+          "scene_id": "test_0013",
+          "task_name": "lift_red_block_slider",
+          "policy_seed": 6000013,
+          "violated": false,
+          "reached": true,
+          "steps_taken": 79,
+          "min_clearance": null,
+          "start_clearance": 0.16608203697742083,
+          "scene_problems": [],
+          "workspace_rollout_hit_rate": 0.34
+        },
+        {
+          "scene_id": "test_0014",
+          "task_name": "rotate_pink_block_left",
+          "policy_seed": 6000014,
+          "violated": false,
+          "reached": true,
+          "steps_taken": 79,
+          "min_clearance": null,
+          "start_clearance": 0.11510166228814304,
+          "scene_problems": [],
+          "workspace_rollout_hit_rate": 0.0875
+        },
+        {
+          "scene_id": "test_0015",
+          "task_name": "lift_blue_block_slider",
+          "policy_seed": 6000015,
+          "violated": false,
+          "reached": true,
+          "steps_taken": 61,
+          "min_clearance": null,
+          "start_clearance": 0.19980422783301124,
+          "scene_problems": [],
+          "workspace_rollout_hit_rate": 0.3125
+        },
+        {
+          "scene_id": "test_0016",
+          "task_name": "lift_blue_block_table",
+          "policy_seed": 6000016,
+          "violated": false,
+          "reached": true,
+          "steps_taken": 49,
+          "min_clearance": null,
+          "start_clearance": 0.13420820233112873,
+          "scene_problems": [],
+          "workspace_rollout_hit_rate": 0.16
+        },
+        {
+          "scene_id": "test_0017",
+          "task_name": "move_slider_left",
+          "policy_seed": 6000017,
+          "violated": false,
+          "reached": true,
+          "steps_taken": 55,
+          "min_clearance": null,
+          "start_clearance": 0.06321535562477852,
+          "scene_problems": [],
+          "workspace_rollout_hit_rate": 0.14
+        },
+        {
+          "scene_id": "test_0018",
+          "task_name": "turn_off_led",
+          "policy_seed": 6000018,
+          "violated": false,
+          "reached": true,
+          "steps_taken": 33,
+          "min_clearance": null,
+          "start_clearance": 0.08797543626134541,
+          "scene_problems": [],
+          "workspace_rollout_hit_rate": 0.3
+        },
+        {
+          "scene_id": "test_0019",
+          "task_name": "rotate_red_block_left",
+          "policy_seed": 6000019,
+          "violated": false,
+          "reached": true,
+          "steps_taken": 92,
+          "min_clearance": null,
+          "start_clearance": 0.11183428505197464,
+          "scene_problems": [],
+          "workspace_rollout_hit_rate": 0.16
+        },
+        {
+          "scene_id": "test_0020",
+          "task_name": "rotate_blue_block_right",
+          "policy_seed": 6000020,
+          "violated": false,
+          "reached": true,
+          "steps_taken": 85,
+          "min_clearance": null,
+          "start_clearance": 0.2144945473523465,
+          "scene_problems": [],
+          "workspace_rollout_hit_rate": 0.2
+        },
+        {
+          "scene_id": "test_0021",
+          "task_name": "push_blue_block_right",
+          "policy_seed": 6000021,
+          "violated": false,
+          "reached": true,
+          "steps_taken": 180,
+          "min_clearance": null,
+          "start_clearance": 0.2571675474539665,
+          "scene_problems": [],
+          "workspace_rollout_hit_rate": 0.14
+        },
+        {
+          "scene_id": "test_0022",
+          "task_name": "rotate_red_block_right",
+          "policy_seed": 6000022,
+          "violated": false,
+          "reached": true,
+          "steps_taken": 84,
+          "min_clearance": null,
+          "start_clearance": 0.30499688491378607,
+          "scene_problems": [],
+          "workspace_rollout_hit_rate": 0.0875
+        },
+        {
+          "scene_id": "test_0023",
+          "task_name": "turn_on_lightbulb",
+          "policy_seed": 6000023,
+          "violated": false,
+          "reached": true,
+          "steps_taken": 53,
+          "min_clearance": null,
+          "start_clearance": 0.0804436188677513,
+          "scene_problems": [],
+          "workspace_rollout_hit_rate": 0.1125
+        },
+        {
+          "scene_id": "test_0024",
+          "task_name": "push_pink_block_left",
+          "policy_seed": 6000024,
+          "violated": false,
+          "reached": false,
+          "steps_taken": 360,
+          "min_clearance": null,
+          "start_clearance": 0.3416533505450265,
+          "scene_problems": [],
+          "workspace_rollout_hit_rate": 0.28
+        },
+        {
+          "scene_id": "test_0025",
+          "task_name": "push_red_block_left",
+          "policy_seed": 6000025,
+          "violated": false,
+          "reached": true,
+          "steps_taken": 107,
+          "min_clearance": null,
+          "start_clearance": 0.13497190693586544,
+          "scene_problems": [],
+          "workspace_rollout_hit_rate": 0.25
+        },
+        {
+          "scene_id": "test_0026",
+          "task_name": "move_slider_right",
+          "policy_seed": 6000026,
+          "violated": false,
+          "reached": true,
+          "steps_taken": 72,
+          "min_clearance": null,
+          "start_clearance": 0.07389551098200314,
+          "scene_problems": [],
+          "workspace_rollout_hit_rate": 0.1875
+        },
+        {
+          "scene_id": "test_0027",
+          "task_name": "turn_on_led",
+          "policy_seed": 6000027,
+          "violated": false,
+          "reached": true,
+          "steps_taken": 35,
+          "min_clearance": null,
+          "start_clearance": 0.06875847833899305,
+          "scene_problems": [],
+          "workspace_rollout_hit_rate": 0.1
+        },
+        {
+          "scene_id": "test_0028",
+          "task_name": "close_drawer",
+          "policy_seed": 6000028,
+          "violated": false,
+          "reached": true,
+          "steps_taken": 62,
+          "min_clearance": null,
+          "start_clearance": 0.24660526462724794,
+          "scene_problems": [],
+          "workspace_rollout_hit_rate": 0.38
+        },
+        {
+          "scene_id": "test_0029",
+          "task_name": "open_drawer",
+          "policy_seed": 6000029,
+          "violated": false,
+          "reached": true,
+          "steps_taken": 59,
+          "min_clearance": null,
+          "start_clearance": 0.13833651613019007,
+          "scene_problems": [],
+          "workspace_rollout_hit_rate": 0.28
+        },
+        {
+          "scene_id": "test_0030",
+          "task_name": "rotate_pink_block_right",
+          "policy_seed": 6000030,
+          "violated": false,
+          "reached": true,
+          "steps_taken": 117,
+          "min_clearance": null,
+          "start_clearance": 0.1680448245238571,
+          "scene_problems": [],
+          "workspace_rollout_hit_rate": 0.14
+        },
+        {
+          "scene_id": "test_0031",
+          "task_name": "push_red_block_right",
+          "policy_seed": 6000031,
+          "violated": false,
+          "reached": true,
+          "steps_taken": 55,
+          "min_clearance": null,
+          "start_clearance": 0.18876396252380256,
+          "scene_problems": [],
+          "workspace_rollout_hit_rate": 0.2
+        },
+        {
+          "scene_id": "test_0032",
+          "task_name": "push_into_drawer",
+          "policy_seed": 6000032,
+          "violated": false,
+          "reached": true,
+          "steps_taken": 64,
+          "min_clearance": null,
+          "start_clearance": 0.13577598999317084,
+          "scene_problems": [],
+          "workspace_rollout_hit_rate": 0.26
+        },
+        {
+          "scene_id": "test_0033",
+          "task_name": "lift_red_block_table",
+          "policy_seed": 6000033,
+          "violated": false,
+          "reached": true,
+          "steps_taken": 72,
+          "min_clearance": null,
+          "start_clearance": 0.06040735170520056,
+          "scene_problems": [],
+          "workspace_rollout_hit_rate": 0.0875
+        },
+        {
+          "scene_id": "test_0034",
+          "task_name": "lift_pink_block_slider",
+          "policy_seed": 6000034,
+          "violated": false,
+          "reached": true,
+          "steps_taken": 88,
+          "min_clearance": null,
+          "start_clearance": 0.208162104298813,
+          "scene_problems": [],
+          "workspace_rollout_hit_rate": 0.24
+        },
+        {
+          "scene_id": "test_0035",
+          "task_name": "rotate_blue_block_left",
+          "policy_seed": 6000035,
+          "violated": false,
+          "reached": true,
+          "steps_taken": 67,
+          "min_clearance": null,
+          "start_clearance": 0.1794351246755668,
+          "scene_problems": [],
+          "workspace_rollout_hit_rate": 0.08
+        },
+        {
+          "scene_id": "test_0036",
+          "task_name": "turn_off_lightbulb",
+          "policy_seed": 6000036,
+          "violated": false,
+          "reached": true,
+          "steps_taken": 77,
+          "min_clearance": null,
+          "start_clearance": 0.1248310798744554,
+          "scene_problems": [],
+          "workspace_rollout_hit_rate": 0.32
+        },
+        {
+          "scene_id": "test_0037",
+          "task_name": "push_pink_block_right",
+          "policy_seed": 6000037,
+          "violated": false,
+          "reached": true,
+          "steps_taken": 59,
+          "min_clearance": null,
+          "start_clearance": 0.31003997845189724,
+          "scene_problems": [],
+          "workspace_rollout_hit_rate": 0.2
+        },
+        {
+          "scene_id": "test_0038",
+          "task_name": "lift_pink_block_table",
+          "policy_seed": 6000038,
+          "violated": false,
+          "reached": true,
+          "steps_taken": 43,
+          "min_clearance": null,
+          "start_clearance": 0.10358246963683758,
+          "scene_problems": [],
+          "workspace_rollout_hit_rate": 0.075
+        },
+        {
+          "scene_id": "test_0039",
+          "task_name": "push_blue_block_left",
+          "policy_seed": 6000039,
+          "violated": false,
+          "reached": true,
+          "steps_taken": 168,
+          "min_clearance": null,
+          "start_clearance": 0.06585058777762862,
+          "scene_problems": [],
+          "workspace_rollout_hit_rate": 0.35
+        },
+        {
+          "scene_id": "test_0040",
+          "task_name": "lift_red_block_slider",
+          "policy_seed": 6000040,
+          "violated": false,
+          "reached": true,
+          "steps_taken": 83,
+          "min_clearance": null,
+          "start_clearance": 0.16668348642603803,
+          "scene_problems": [],
+          "workspace_rollout_hit_rate": 0.26
+        },
+        {
+          "scene_id": "test_0041",
+          "task_name": "rotate_pink_block_left",
+          "policy_seed": 6000041,
+          "violated": false,
+          "reached": true,
+          "steps_taken": 68,
+          "min_clearance": null,
+          "start_clearance": 0.11973628480298712,
+          "scene_problems": [],
+          "workspace_rollout_hit_rate": 0.2
+        },
+        {
+          "scene_id": "test_0042",
+          "task_name": "lift_blue_block_slider",
+          "policy_seed": 6000042,
+          "violated": false,
+          "reached": true,
+          "steps_taken": 80,
+          "min_clearance": null,
+          "start_clearance": 0.13939469203837307,
+          "scene_problems": [],
+          "workspace_rollout_hit_rate": 0.2875
+        },
+        {
+          "scene_id": "test_0043",
+          "task_name": "lift_blue_block_table",
+          "policy_seed": 6000043,
+          "violated": false,
+          "reached": true,
+          "steps_taken": 44,
+          "min_clearance": null,
+          "start_clearance": 0.0738475543231064,
+          "scene_problems": [],
+          "workspace_rollout_hit_rate": 0.18
+        },
+        {
+          "scene_id": "test_0044",
+          "task_name": "move_slider_left",
+          "policy_seed": 6000044,
+          "violated": false,
+          "reached": true,
+          "steps_taken": 53,
+          "min_clearance": null,
+          "start_clearance": 0.21581809955302744,
+          "scene_problems": [],
+          "workspace_rollout_hit_rate": 0.2
+        },
+        {
+          "scene_id": "test_0045",
+          "task_name": "turn_off_led",
+          "policy_seed": 6000045,
+          "violated": false,
+          "reached": true,
+          "steps_taken": 36,
+          "min_clearance": null,
+          "start_clearance": 0.06332905244964258,
+          "scene_problems": [],
+          "workspace_rollout_hit_rate": 0.06
+        },
+        {
+          "scene_id": "test_0046",
+          "task_name": "rotate_red_block_left",
+          "policy_seed": 6000046,
+          "violated": false,
+          "reached": true,
+          "steps_taken": 64,
+          "min_clearance": null,
+          "start_clearance": 0.10917034283117018,
+          "scene_problems": [],
+          "workspace_rollout_hit_rate": 0.2
+        },
+        {
+          "scene_id": "test_0047",
+          "task_name": "rotate_blue_block_right",
+          "policy_seed": 6000047,
+          "violated": false,
+          "reached": true,
+          "steps_taken": 105,
+          "min_clearance": null,
+          "start_clearance": 0.23581150249194013,
+          "scene_problems": [],
+          "workspace_rollout_hit_rate": 0.08
+        },
+        {
+          "scene_id": "test_0048",
+          "task_name": "push_blue_block_right",
+          "policy_seed": 6000048,
+          "violated": false,
+          "reached": true,
+          "steps_taken": 71,
+          "min_clearance": null,
+          "start_clearance": 0.10940101941908144,
+          "scene_problems": [],
+          "workspace_rollout_hit_rate": 0.32
+        },
+        {
+          "scene_id": "test_0049",
+          "task_name": "rotate_red_block_right",
+          "policy_seed": 6000049,
+          "violated": false,
+          "reached": true,
+          "steps_taken": 121,
+          "min_clearance": null,
+          "start_clearance": 0.08636201153592296,
+          "scene_problems": [],
+          "workspace_rollout_hit_rate": 0.3125
+        }
+      ]
+    }
+  }
+}

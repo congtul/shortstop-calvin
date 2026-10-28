@@ -1,0 +1,40 @@
+{
+ "config_index": 1,
+ "params": {
+  "epsilon": 0.01
+ },
+ "seeds": 3,
+ "n": 150,
+ "safe_success": 0.9066666666666666,
+ "violation": 0.013333333333333334,
+ "timeout": 0.08,
+ "mean_steps": 102.0,
+ "activation": 0.1842165634319798,
+ "fallback": 0.14521679284239505,
+ "intervention_precision": null,
+ "recovery": 0.8876404494382022,
+ "select_ms": {
+  "n": 4359,
+  "mean": 57.536948841477404,
+  "median": 58.94,
+  "min": 30.1,
+  "max": 93.34,
+  "p95": 61.38
+ },
+ "progress_ms": {
+  "n": 4359,
+  "mean": 24.874390915347558,
+  "median": 24.76,
+  "min": 23.36,
+  "max": 43.05,
+  "p95": 25.86
+ },
+ "propose_ms": {
+  "n": 4359,
+  "mean": 112.37449873824272,
+  "median": 107.03,
+  "min": 75.95,
+  "max": 264.93,
+  "p95": 154.16199999999995
+ }
+}
